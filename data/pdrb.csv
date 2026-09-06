@@ -1,0 +1,181 @@
+kab_kota,lapangan_usaha,tahun,adhb,adhk
+Kab. Alfa,"A. Pertanian, Kehutanan, dan Perikanan",2018,9889374.42,8225049.36
+Kab. Alfa,"A. Pertanian, Kehutanan, dan Perikanan",2019,10430918.36,8506818.74
+Kab. Alfa,"A. Pertanian, Kehutanan, dan Perikanan",2020,11038017.16,8826949.42
+Kab. Alfa,"A. Pertanian, Kehutanan, dan Perikanan",2021,11932121.41,9356473.18
+Kab. Alfa,"A. Pertanian, Kehutanan, dan Perikanan",2022,12830524.12,9865380.74
+Kab. Alfa,B. Pertambangan dan Penggalian,2018,13404514.13,11827919.45
+Kab. Alfa,B. Pertambangan dan Penggalian,2019,14421488.45,12476928.25
+Kab. Alfa,B. Pertambangan dan Penggalian,2020,15624059.45,13253536.67
+Kab. Alfa,B. Pertambangan dan Penggalian,2021,16691732.74,13882882.04
+Kab. Alfa,B. Pertambangan dan Penggalian,2022,18038247.49,14710006.43
+Kab. Alfa,C. Industri Pengolahan,2018,8685707.41,6804336.14
+Kab. Alfa,C. Industri Pengolahan,2019,9145677.96,7050588.71
+Kab. Alfa,C. Industri Pengolahan,2020,9511732.92,7216025.11
+Kab. Alfa,C. Industri Pengolahan,2021,10146706.9,7575170.56
+Kab. Alfa,C. Industri Pengolahan,2022,10669917.78,7838939.01
+Kab. Alfa,F. Konstruksi,2018,7777312.86,6612341.04
+Kab. Alfa,F. Konstruksi,2019,8171752.04,6864534.91
+Kab. Alfa,F. Konstruksi,2020,8614195.15,7149586.21
+Kab. Alfa,F. Konstruksi,2021,8977575.68,7361995.35
+Kab. Alfa,F. Konstruksi,2022,9310631.96,7543725.67
+Kab. Alfa,G. Perdagangan Besar dan Eceran,2018,14557633.37,12753309.61
+Kab. Alfa,G. Perdagangan Besar dan Eceran,2019,15188079.97,13068719.62
+Kab. Alfa,G. Perdagangan Besar dan Eceran,2020,15876056.8,13417476.68
+Kab. Alfa,G. Perdagangan Besar dan Eceran,2021,16677851.22,13844151.41
+Kab. Alfa,G. Perdagangan Besar dan Eceran,2022,17892854.35,14588274.0
+Kab. Alfa,"R,S,T,U. Jasa Lainnya",2018,8289331.81,7377019.78
+Kab. Alfa,"R,S,T,U. Jasa Lainnya",2019,8907366.72,7810963.68
+Kab. Alfa,"R,S,T,U. Jasa Lainnya",2020,9338341.81,8068985.11
+Kab. Alfa,"R,S,T,U. Jasa Lainnya",2021,9951656.53,8473023.07
+Kab. Alfa,"R,S,T,U. Jasa Lainnya",2022,10342318.87,8676704.29
+Kab. Beta,"A. Pertanian, Kehutanan, dan Perikanan",2018,5926480.8,4654388.7
+Kab. Beta,"A. Pertanian, Kehutanan, dan Perikanan",2019,6214099.54,4817172.27
+Kab. Beta,"A. Pertanian, Kehutanan, dan Perikanan",2020,6456940.65,4940705.54
+Kab. Beta,"A. Pertanian, Kehutanan, dan Perikanan",2021,6786589.83,5125803.85
+Kab. Beta,"A. Pertanian, Kehutanan, dan Perikanan",2022,7110589.86,5301078.24
+Kab. Beta,B. Pertambangan dan Penggalian,2018,5531082.37,4794450.57
+Kab. Beta,B. Pertambangan dan Penggalian,2019,5950186.12,5032911.07
+Kab. Beta,B. Pertambangan dan Penggalian,2020,6518332.13,5380035.94
+Kab. Beta,B. Pertambangan dan Penggalian,2021,7145076.81,5754605.81
+Kab. Beta,B. Pertambangan dan Penggalian,2022,7965477.05,6260088.24
+Kab. Beta,C. Industri Pengolahan,2018,7774165.85,6343503.54
+Kab. Beta,C. Industri Pengolahan,2019,8481266.08,6795409.94
+Kab. Beta,C. Industri Pengolahan,2020,8892505.58,6996143.47
+Kab. Beta,C. Industri Pengolahan,2021,9401861.41,7263199.84
+Kab. Beta,C. Industri Pengolahan,2022,9897211.16,7507694.16
+Kab. Beta,F. Konstruksi,2018,3635760.54,3149340.24
+Kab. Beta,F. Konstruksi,2019,3866150.41,3300460.49
+Kab. Beta,F. Konstruksi,2020,4058766.79,3414769.34
+Kab. Beta,F. Konstruksi,2021,4180909.82,3466646.5
+Kab. Beta,F. Konstruksi,2022,4336800.12,3543885.22
+Kab. Beta,G. Perdagangan Besar dan Eceran,2018,9588408.41,8692343.32
+Kab. Beta,G. Perdagangan Besar dan Eceran,2019,10459569.41,9330833.36
+Kab. Beta,G. Perdagangan Besar dan Eceran,2020,11562281.18,10150009.14
+Kab. Beta,G. Perdagangan Besar dan Eceran,2021,12322123.02,10644486.78
+Kab. Beta,G. Perdagangan Besar dan Eceran,2022,12857060.58,10929421.04
+Kab. Beta,"R,S,T,U. Jasa Lainnya",2018,2962219.17,2502180.25
+Kab. Beta,"R,S,T,U. Jasa Lainnya",2019,3143905.38,2603083.97
+Kab. Beta,"R,S,T,U. Jasa Lainnya",2020,3356880.36,2724406.33
+Kab. Beta,"R,S,T,U. Jasa Lainnya",2021,3573638.86,2842915.73
+Kab. Beta,"R,S,T,U. Jasa Lainnya",2022,3831538.49,2987747.03
+Kab. Gamma,"A. Pertanian, Kehutanan, dan Perikanan",2018,17591496.09,15513668.21
+Kab. Gamma,"A. Pertanian, Kehutanan, dan Perikanan",2019,19250713.01,16567499.6
+Kab. Gamma,"A. Pertanian, Kehutanan, dan Perikanan",2020,21335276.54,17918714.58
+Kab. Gamma,"A. Pertanian, Kehutanan, dan Perikanan",2021,23127549.77,18955560.29
+Kab. Gamma,"A. Pertanian, Kehutanan, dan Perikanan",2022,24810595.59,19844612.26
+Kab. Gamma,B. Pertambangan dan Penggalian,2018,16197525.42,12269342.23
+Kab. Gamma,B. Pertambangan dan Penggalian,2019,17547956.59,13111926.18
+Kab. Gamma,B. Pertambangan dan Penggalian,2020,18195807.99,13411539.2
+Kab. Gamma,B. Pertambangan dan Penggalian,2021,19343205.02,14063811.83
+Kab. Gamma,B. Pertambangan dan Penggalian,2022,20032496.72,14367361.74
+Kab. Gamma,C. Industri Pengolahan,2018,7810583.9,7346478.06
+Kab. Gamma,C. Industri Pengolahan,2019,8361268.15,7711519.56
+Kab. Gamma,C. Industri Pengolahan,2020,8966372.59,8108802.51
+Kab. Gamma,C. Industri Pengolahan,2021,9526653.96,8447971.91
+Kab. Gamma,C. Industri Pengolahan,2022,10290746.19,8948104.9
+Kab. Gamma,F. Konstruksi,2018,18613006.45,14126939.17
+Kab. Gamma,F. Konstruksi,2019,19133975.65,14332000.76
+Kab. Gamma,F. Konstruksi,2020,20105857.84,14862582.27
+Kab. Gamma,F. Konstruksi,2021,21571684.59,15737139.12
+Kab. Gamma,F. Konstruksi,2022,22663114.81,16316664.35
+Kab. Gamma,G. Perdagangan Besar dan Eceran,2018,10929692.26,10150288.56
+Kab. Gamma,G. Perdagangan Besar dan Eceran,2019,12031358.54,10937891.05
+Kab. Gamma,G. Perdagangan Besar dan Eceran,2020,13032346.82,11598184.73
+Kab. Gamma,G. Perdagangan Besar dan Eceran,2021,13983585.75,12182443.67
+Kab. Gamma,G. Perdagangan Besar dan Eceran,2022,15347844.5,13089158.33
+Kab. Gamma,"R,S,T,U. Jasa Lainnya",2018,5829590.2,4482333.04
+Kab. Gamma,"R,S,T,U. Jasa Lainnya",2019,6183191.76,4680054.32
+Kab. Gamma,"R,S,T,U. Jasa Lainnya",2020,6420140.18,4783599.06
+Kab. Gamma,"R,S,T,U. Jasa Lainnya",2021,6651532.01,4878699.06
+Kab. Gamma,"R,S,T,U. Jasa Lainnya",2022,7209882.26,5205741.51
+Kota Delta,"A. Pertanian, Kehutanan, dan Perikanan",2018,18299836.92,16570154.04
+Kota Delta,"A. Pertanian, Kehutanan, dan Perikanan",2019,19224037.38,17167537.4
+Kota Delta,"A. Pertanian, Kehutanan, dan Perikanan",2020,20146950.05,17744214.69
+Kota Delta,"A. Pertanian, Kehutanan, dan Perikanan",2021,21273238.65,18478433.86
+Kota Delta,"A. Pertanian, Kehutanan, dan Perikanan",2022,22821166.48,19550301.55
+Kota Delta,B. Pertambangan dan Penggalian,2018,3668906.72,2848408.73
+Kota Delta,B. Pertambangan dan Penggalian,2019,3741133.22,2863434.24
+Kota Delta,B. Pertambangan dan Penggalian,2020,3932941.95,2967699.88
+Kota Delta,B. Pertambangan dan Penggalian,2021,4085274.06,3039079.37
+Kota Delta,B. Pertambangan dan Penggalian,2022,4219293.28,3094417.89
+Kota Delta,C. Industri Pengolahan,2018,6138638.63,4849249.08
+Kota Delta,C. Industri Pengolahan,2019,6693216.33,5181206.32
+Kota Delta,C. Industri Pengolahan,2020,7055761.79,5352214.8
+Kota Delta,C. Industri Pengolahan,2021,7592420.41,5643694.2
+Kota Delta,C. Industri Pengolahan,2022,8106838.0,5905114.47
+Kota Delta,F. Konstruksi,2018,11813903.8,9571503.63
+Kota Delta,F. Konstruksi,2019,12992713.26,10275762.75
+Kota Delta,F. Konstruksi,2020,14459090.4,11163044.7
+Kota Delta,F. Konstruksi,2021,15737954.23,11860894.56
+Kota Delta,F. Konstruksi,2022,16990484.96,12499781.43
+Kota Delta,G. Perdagangan Besar dan Eceran,2018,19866895.24,14998947.61
+Kota Delta,G. Perdagangan Besar dan Eceran,2019,20975255.79,15607998.72
+Kota Delta,G. Perdagangan Besar dan Eceran,2020,21727689.1,15935388.73
+Kota Delta,G. Perdagangan Besar dan Eceran,2021,22910319.13,16561109.6
+Kota Delta,G. Perdagangan Besar dan Eceran,2022,24207162.53,17246912.0
+Kota Delta,"R,S,T,U. Jasa Lainnya",2018,17545269.1,16549511.61
+Kota Delta,"R,S,T,U. Jasa Lainnya",2019,18349184.83,17030630.21
+Kota Delta,"R,S,T,U. Jasa Lainnya",2020,19354929.54,17676420.89
+Kota Delta,"R,S,T,U. Jasa Lainnya",2021,20054088.61,18021646.4
+Kota Delta,"R,S,T,U. Jasa Lainnya",2022,21056620.46,18619542.22
+Kota Epsilon,"A. Pertanian, Kehutanan, dan Perikanan",2018,5612940.24,5183818.56
+Kota Epsilon,"A. Pertanian, Kehutanan, dan Perikanan",2019,5836270.08,5319381.9
+Kota Epsilon,"A. Pertanian, Kehutanan, dan Perikanan",2020,6036607.86,5429816.72
+Kota Epsilon,"A. Pertanian, Kehutanan, dan Perikanan",2021,6318095.48,5608475.23
+Kota Epsilon,"A. Pertanian, Kehutanan, dan Perikanan",2022,6447475.03,5648260.35
+Kota Epsilon,B. Pertambangan dan Penggalian,2018,1097614.42,922851.57
+Kota Epsilon,B. Pertambangan dan Penggalian,2019,1171625.04,962207.28
+Kota Epsilon,B. Pertambangan dan Penggalian,2020,1254272.75,1006166.67
+Kota Epsilon,B. Pertambangan dan Penggalian,2021,1402827.28,1099208.52
+Kota Epsilon,B. Pertambangan dan Penggalian,2022,1593440.95,1219578.63
+Kota Epsilon,C. Industri Pengolahan,2018,3066823.73,2340942.65
+Kota Epsilon,C. Industri Pengolahan,2019,3349550.78,2498518.55
+Kota Epsilon,C. Industri Pengolahan,2020,3734073.73,2721904.94
+Kota Epsilon,C. Industri Pengolahan,2021,3997462.79,2847531.56
+Kota Epsilon,C. Industri Pengolahan,2022,4327748.73,3012591.22
+Kota Epsilon,F. Konstruksi,2018,3625583.92,3386999.09
+Kota Epsilon,F. Konstruksi,2019,3803509.65,3500265.46
+Kota Epsilon,F. Konstruksi,2020,4004753.64,3630543.19
+Kota Epsilon,F. Konstruksi,2021,4137990.11,3695426.72
+Kota Epsilon,F. Konstruksi,2022,4350098.03,3826956.56
+Kota Epsilon,G. Perdagangan Besar dan Eceran,2018,2116987.38,1611194.81
+Kota Epsilon,G. Perdagangan Besar dan Eceran,2019,2249925.18,1679628.91
+Kota Epsilon,G. Perdagangan Besar dan Eceran,2020,2428352.07,1778166.39
+Kota Epsilon,G. Perdagangan Besar dan Eceran,2021,2642055.21,1897658.73
+Kota Epsilon,G. Perdagangan Besar dan Eceran,2022,2838153.19,1999528.21
+Kota Epsilon,"R,S,T,U. Jasa Lainnya",2018,817809.1,665368.03
+Kota Epsilon,"R,S,T,U. Jasa Lainnya",2019,879912.09,701458.9
+Kota Epsilon,"R,S,T,U. Jasa Lainnya",2020,936483.07,731502.52
+Kota Epsilon,"R,S,T,U. Jasa Lainnya",2021,1012380.15,774840.79
+Kota Epsilon,"R,S,T,U. Jasa Lainnya",2022,1087667.6,815676.59
+Provinsi X,"A. Pertanian, Kehutanan, dan Perikanan",2018,57320128.47,50147078.87
+Provinsi X,"A. Pertanian, Kehutanan, dan Perikanan",2019,60956038.37,52378409.91
+Provinsi X,"A. Pertanian, Kehutanan, dan Perikanan",2020,65013792.26000001,54860400.95
+Provinsi X,"A. Pertanian, Kehutanan, dan Perikanan",2021,69437595.14,57524746.41
+Provinsi X,"A. Pertanian, Kehutanan, dan Perikanan",2022,74020351.08,60209633.14
+Provinsi X,B. Pertambangan dan Penggalian,2018,39899643.06,32662972.55
+Provinsi X,B. Pertambangan dan Penggalian,2019,42832389.42,34447407.02
+Provinsi X,B. Pertambangan dan Penggalian,2020,45525414.27,36018978.36
+Provinsi X,B. Pertambangan dan Penggalian,2021,48668115.91,37839587.57
+Provinsi X,B. Pertambangan dan Penggalian,2022,51848955.48999999,39651452.93
+Provinsi X,C. Industri Pengolahan,2018,33475919.52,27684509.47
+Provinsi X,C. Industri Pengolahan,2019,36030979.3,29237243.08
+Provinsi X,C. Industri Pengolahan,2020,38160446.61,30395090.83
+Provinsi X,C. Industri Pengolahan,2021,40665105.47,31777568.07
+Provinsi X,C. Industri Pengolahan,2022,43292461.86,33212443.76
+Provinsi X,F. Konstruksi,2018,45465567.57,36847123.17
+Provinsi X,F. Konstruksi,2019,47968101.01,38273024.37
+Provinsi X,F. Konstruksi,2020,51242663.82,40220525.71
+Provinsi X,F. Konstruksi,2021,54606114.43,42122102.25
+Provinsi X,F. Konstruksi,2022,57651129.88,43731013.23
+Provinsi X,G. Perdagangan Besar dan Eceran,2018,57059616.66,48206083.91
+Provinsi X,G. Perdagangan Besar dan Eceran,2019,60904188.89,50625071.66
+Provinsi X,G. Perdagangan Besar dan Eceran,2020,64626725.97,52879225.67
+Provinsi X,G. Perdagangan Besar dan Eceran,2021,68535934.33,55129850.19
+Provinsi X,G. Perdagangan Besar dan Eceran,2022,73143075.15,57853293.58
+Provinsi X,"R,S,T,U. Jasa Lainnya",2018,35444219.38,31576412.71
+Provinsi X,"R,S,T,U. Jasa Lainnya",2019,37463560.78,32826191.08
+Provinsi X,"R,S,T,U. Jasa Lainnya",2020,39406774.96,33984913.91
+Provinsi X,"R,S,T,U. Jasa Lainnya",2021,41243296.16,34991125.05
+Provinsi X,"R,S,T,U. Jasa Lainnya",2022,43528027.68,36305411.64
