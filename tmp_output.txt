@@ -1,0 +1,20 @@
+﻿python : Traceback (most recent call last):
+At line:1 char:1
++ python -c "
++ ~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "<string>", line 8, in <module>
+    print(col, ':', df[col].tolist())
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Victus\AppData\Local\Python\pythoncore-3.14-64\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2206' in position 13: character maps to <undefined>
+Shape: (10, 20)
+Cols: ['ILOR ', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'ETK', 'Unnamed: 11', 'Unnamed: 12', 'Unnamed: 13', 'Unnamed: 14', 'Unnamed: 15', 'Unnamed: 16', 'Unnamed: 17', 'Unnamed: 18', 'Unnamed: 19']
+ILOR  : [nan, nan, nan, nan, nan, nan, nan, nan, 'Interpretasi', nan]
+Unnamed: 1 : ['Tahun', 2020, 2021, 2022, 2023, 2024, 2025, nan, nan, 'Berdasarkan tabel Incremental Labour-Output Ratio (ILOR), kinerja penyerapan tenaga kerja terhadap tambahan output ekonomi di Kepri mengalami fluktuasi yang cukup tajam selama periode 2021 hingga 2025. Pada tahun 2021, 2022, dan 2024, nilai ILOR tercatat bernilai negatif (masing-masing -4,15; -6,99; dan -1,97) yang mengindikasikan terjadinya fenomena jobless growth, di mana PDRB bertambah namun jumlah penduduk bekerja justru mengalami pengurangan akibat dominasi sektor padat modal. Sebaliknya, pada tahun 2023 dan 2025, nilai ILOR kembali positif masing-masing sebesar 5,00 dan 0,90, yang menandakan bahwa ekspansi output ekonomi pada tahun-tahun tersebut berhasil kembali menggerakkan penyerapan tenaga kerja baru di pasar labor.']
+Unnamed: 2 : ['Jumlah Penduduk Bekerja (TK)', 1062004, 1037133, 973125, 1023125, 1003390, 1016540, nan, nan, nan]
+Unnamed: 3 : 
