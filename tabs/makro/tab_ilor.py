@@ -329,7 +329,7 @@ def layout():
                                                    "color": COLORS["primary"] if row["etk"] > 0 else COLORS["accent"]}
                                         ),
                                         html.Td(
-                                            "✅ TK Positif" if row["etk"] > 0 else "⚠️ Jobless Growth",
+                                            "TK Positif" if row["etk"] > 0 else "Jobless Growth",
                                             style={"padding": "9px 14px", "textAlign": "center", "fontSize": "12px"}
                                         ),
                                     ],

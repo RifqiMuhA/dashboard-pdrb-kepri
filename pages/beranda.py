@@ -58,8 +58,7 @@ layout = html.Div(
                                     className="hero-title",
                                 ),
                                 html.P(
-                                    "Eksplorasi visual dan analisis komprehensif struktur ekonomi riil, disparitas wilayah, "
-                                    "sumber pertumbuhan, serta indikator makroekonomi 7 Kabupaten/Kota di Provinsi Kepulauan Riau (2021–2025).",
+                                    "Pemantauan dan analisis indikator PDRB 7 Kabupaten/Kota Provinsi Kepulauan Riau (2021–2025).",
                                     className="hero-subtitle",
                                 ),
                                 html.Div(
@@ -162,16 +161,14 @@ layout = html.Div(
                         dcc.Graph(
                             id="home-ranking-chart",
                             config={"displayModeBar": False},
-                            style={"height": "350px"},
+                            style={"height": "480px"},
                         ),
-                        # Mini Summary Badges
-                        html.Div(id="home-map-kpis", style={"marginTop": "auto", "paddingTop": "14px"}),
                     ],
                 ),
             ],
         ),
 
-        # ── 4. Modul Navigasi Analisis Cepat (Kartu Biru Tua Transisi) ─────────
+        # ── 4. Modul Navigasi Analisis Cepat ─────────────────────────────────
         html.Div(
             className="home-modules-grid",
             children=[
@@ -179,45 +176,24 @@ layout = html.Div(
                     href="/monitoring",
                     className="home-module-card",
                     children=[
-                        html.Div([
-                            html.Div("6 Sub-Tab Analisis", className="home-module-tag"),
-                            html.H4("Monitoring Perilaku Ekonomi", className="home-module-title"),
-                            html.P(
-                                "Nilai nominal PDRB, tren laju pertumbuhan, kontribusi 17 sektor, PDRB perkapita, dekomposisi sumber pertumbuhan (SOG), dan indeks implisit.",
-                                className="home-module-desc",
-                            ),
-                        ]),
-                        html.Div(["Buka Modul Monitoring ", html.Span("→")], className="home-module-arrow"),
+                        html.H4("Monitoring Perilaku Ekonomi", className="home-module-title"),
+                        html.Div(["Buka Modul ", html.Span("→")], className="home-module-arrow"),
                     ],
                 ),
                 dcc.Link(
                     href="/wilayah",
                     className="home-module-card",
                     children=[
-                        html.Div([
-                            html.Div("5 Metode Regional", className="home-module-tag"),
-                            html.H4("Analisis Antar Wilayah & Sektoral", className="home-module-title"),
-                            html.P(
-                                "Indeks ketimpangan Williamson & Bonet, identifikasi keunggulan kompetitif Shift-Share, Tipologi Klassen, dan Location Quotient (LQ).",
-                                className="home-module-desc",
-                            ),
-                        ]),
-                        html.Div(["Buka Analisis Wilayah ", html.Span("→")], className="home-module-arrow"),
+                        html.H4("Analisis Antar Wilayah & Sektoral", className="home-module-title"),
+                        html.Div(["Buka Modul ", html.Span("→")], className="home-module-arrow"),
                     ],
                 ),
                 dcc.Link(
                     href="/makro",
                     className="home-module-card",
                     children=[
-                        html.Div([
-                            html.Div("Makroekonomi & Efisiensi", className="home-module-tag"),
-                            html.H4("Analisis Makroekonomi Daerah", className="home-module-title"),
-                            html.P(
-                                "Karakteristik konsumsi rumah tangga (APC & MPC), rasio penerimaan pajak (Tax Ratio & Buoyancy), ICOR modal, dan elastisitas penyerapan tenaga kerja (ILOR).",
-                                className="home-module-desc",
-                            ),
-                        ]),
-                        html.Div(["Buka Analisis Makro ", html.Span("→")], className="home-module-arrow"),
+                        html.H4("Analisis Makroekonomi Daerah", className="home-module-title"),
+                        html.Div(["Buka Modul ", html.Span("→")], className="home-module-arrow"),
                     ],
                 ),
             ],
@@ -230,7 +206,6 @@ layout = html.Div(
 @callback(
     Output("home-spatial-map", "figure"),
     Output("home-ranking-chart", "figure"),
-    Output("home-map-kpis", "children"),
     Output("home-map-badge", "children"),
     Input("home-map-indikator", "value"),
     Input("home-map-tahun", "value"),
@@ -406,72 +381,5 @@ def update_beranda_visuals(indikator, tahun):
         paper_bgcolor="white",
     )
 
-    # ── Bangun Mini Summary Badges ────────────────────────────────────────
-    top_row = df_sorted.iloc[-1]
-    bot_row = df_sorted.iloc[0]
+    return fig_map, fig_rank, badge_text
 
-    if indikator == "adhk":
-        top_txt = f"Rp {top_row['display_val']:,.1f} M"
-        bot_txt = f"Rp {bot_row['display_val']:,.1f} M"
-        prov_txt = f"Rp {prov_val:,.1f} M (Total)"
-    elif indikator == "perkapita":
-        top_txt = f"Rp {top_row['display_val']:.1f} Jt"
-        bot_txt = f"Rp {bot_row['display_val']:.1f} Jt"
-        prov_txt = f"Rp {prov_val:.1f} Jt (Rata-rata)"
-    else:
-        top_txt = f"{top_row['display_val']:+.2f}%"
-        bot_txt = f"{bot_row['display_val']:+.2f}%"
-        prov_txt = f"{prov_val:+.2f}% (Kepri)"
-
-    summary_badges = html.Div(
-        style={"display": "flex", "gap": "10px", "justifyContent": "space-between", "flexWrap": "wrap"},
-        children=[
-            html.Div(
-                style={
-                    "flex": "1",
-                    "minWidth": "100px",
-                    "padding": "10px 14px",
-                    "backgroundColor": "rgba(242, 183, 5, 0.12)",
-                    "borderRadius": "8px",
-                    "borderLeft": f"3px solid {COLORS['accent']}",
-                },
-                children=[
-                    html.Div("TERTINGGI", style={"fontSize": "10px", "fontWeight": "700", "color": COLORS["accent_dark"]}),
-                    html.Div(f"{top_row['kab_kota']}", style={"fontSize": "12px", "fontWeight": "700", "color": COLORS["primary_dark"]}),
-                    html.Div(top_txt, style={"fontSize": "13px", "fontWeight": "700", "color": COLORS["primary"]}),
-                ],
-            ),
-            html.Div(
-                style={
-                    "flex": "1",
-                    "minWidth": "100px",
-                    "padding": "10px 14px",
-                    "backgroundColor": "rgba(23, 58, 102, 0.08)",
-                    "borderRadius": "8px",
-                    "borderLeft": f"3px solid {COLORS['primary']}",
-                },
-                children=[
-                    html.Div("ACUAN PROVINSI", style={"fontSize": "10px", "fontWeight": "700", "color": COLORS["primary"]}),
-                    html.Div("Provinsi Kepri", style={"fontSize": "12px", "fontWeight": "700", "color": COLORS["primary_dark"]}),
-                    html.Div(prov_txt, style={"fontSize": "13px", "fontWeight": "700", "color": COLORS["primary"]}),
-                ],
-            ),
-            html.Div(
-                style={
-                    "flex": "1",
-                    "minWidth": "100px",
-                    "padding": "10px 14px",
-                    "backgroundColor": "#F7F7F7",
-                    "borderRadius": "8px",
-                    "borderLeft": "3px solid #9B9B9B",
-                },
-                children=[
-                    html.Div("TERENDAH", style={"fontSize": "10px", "fontWeight": "700", "color": "#757575"}),
-                    html.Div(f"{bot_row['kab_kota']}", style={"fontSize": "12px", "fontWeight": "700", "color": COLORS["primary_dark"]}),
-                    html.Div(bot_txt, style={"fontSize": "13px", "fontWeight": "700", "color": COLORS["primary_dark"]}),
-                ],
-            ),
-        ],
-    )
-
-    return fig_map, fig_rank, summary_badges, badge_text
