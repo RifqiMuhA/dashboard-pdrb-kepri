@@ -167,37 +167,6 @@ layout = html.Div(
                 ),
             ],
         ),
-
-        # ── 4. Modul Navigasi Analisis Cepat ─────────────────────────────────
-        html.Div(
-            className="home-modules-grid",
-            children=[
-                dcc.Link(
-                    href="/monitoring",
-                    className="home-module-card",
-                    children=[
-                        html.H4("Monitoring Perilaku Ekonomi", className="home-module-title"),
-                        html.Div(["Buka Modul ", html.Span("→")], className="home-module-arrow"),
-                    ],
-                ),
-                dcc.Link(
-                    href="/wilayah",
-                    className="home-module-card",
-                    children=[
-                        html.H4("Analisis Antar Wilayah & Sektoral", className="home-module-title"),
-                        html.Div(["Buka Modul ", html.Span("→")], className="home-module-arrow"),
-                    ],
-                ),
-                dcc.Link(
-                    href="/makro",
-                    className="home-module-card",
-                    children=[
-                        html.H4("Analisis Makroekonomi Daerah", className="home-module-title"),
-                        html.Div(["Buka Modul ", html.Span("→")], className="home-module-arrow"),
-                    ],
-                ),
-            ],
-        ),
     ]
 )
 
