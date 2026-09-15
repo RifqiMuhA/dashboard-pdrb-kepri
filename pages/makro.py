@@ -21,7 +21,7 @@ layout = html.Div(
             className="custom-tabs",
             value="konsumsi",
             children=[
-                dcc.Tab(label="Konsumsi RT (APC/APS)", value="konsumsi", className="tab", selected_className="tab--selected"),
+                dcc.Tab(label="Konsumsi RT (APC & MPC)", value="konsumsi", className="tab", selected_className="tab--selected"),
                 dcc.Tab(label="RPI", value="rpi", className="tab", selected_className="tab--selected"),
                 dcc.Tab(label="ICOR", value="icor", className="tab", selected_className="tab--selected"),
                 dcc.Tab(label="ILOR & Elastisitas TK", value="ilor", className="tab", selected_className="tab--selected"),

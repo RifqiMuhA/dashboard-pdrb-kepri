@@ -21,15 +21,37 @@ import pandas as pd
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 
-PROVINSI_LABEL = "Provinsi X"  # sesuaikan dengan label provinsi di data kalian
+PROVINSI_LABEL = "Provinsi Kepulauan Riau"
+
+KAB_KOTA_ORDER = [
+    "Kabupaten Karimun",
+    "Kabupaten Bintan",
+    "Kabupaten Natuna",
+    "Kabupaten Lingga",
+    "Kabupaten Kepulauan Anambas",
+    "Kota Batam",
+    "Kota Tanjungpinang",
+]
 
 
 def load_all_data(data_dir: Path = DATA_DIR) -> dict:
-    tables = ["pdrb", "penduduk", "pengeluaran_provinsi", "pajak_provinsi", "tenaga_kerja_provinsi"]
+    tables = [
+        "pdrb",
+        "penduduk",
+        "perkapita",
+        "sumber_pertumbuhan",
+        "implisit",
+        "pengeluaran_provinsi",
+        "pajak_provinsi",
+        "tenaga_kerja_provinsi",
+    ]
     data = {}
     for table in tables:
         csv_path = data_dir / f"{table}.csv"
-        data[table] = pd.read_csv(csv_path)
+        if csv_path.exists():
+            data[table] = pd.read_csv(csv_path)
+        else:
+            data[table] = pd.DataFrame()
     return data
 
 
@@ -38,16 +60,31 @@ DATA = load_all_data()
 
 
 def get_kab_kota_list(exclude_provinsi: bool = True) -> list:
-    df = DATA["pdrb"]
-    kk = sorted(df["kab_kota"].unique().tolist())
-    if exclude_provinsi and PROVINSI_LABEL in kk:
-        kk.remove(PROVINSI_LABEL)
-    return kk
+    df = DATA.get("pdrb", pd.DataFrame())
+    if df.empty or "kab_kota" not in df.columns:
+        return [kk for kk in KAB_KOTA_ORDER if not exclude_provinsi or kk != PROVINSI_LABEL]
+    
+    unique_kk = df["kab_kota"].unique().tolist()
+    # Urutkan berdasarkan urutan resmi KAB_KOTA_ORDER
+    ordered = [kk for kk in KAB_KOTA_ORDER if kk in unique_kk]
+    # Sisa jika ada wilayah lain
+    for kk in sorted(unique_kk):
+        if kk not in ordered and (not exclude_provinsi or kk != PROVINSI_LABEL):
+            ordered.append(kk)
+    if not exclude_provinsi and PROVINSI_LABEL in unique_kk and PROVINSI_LABEL not in ordered:
+        ordered.append(PROVINSI_LABEL)
+    return ordered
 
 
 def get_lapangan_usaha_list() -> list:
-    return sorted(DATA["pdrb"]["lapangan_usaha"].unique().tolist())
+    df = DATA.get("pdrb", pd.DataFrame())
+    if df.empty or "lapangan_usaha" not in df.columns:
+        return []
+    return sorted(df["lapangan_usaha"].unique().tolist())
 
 
 def get_years_list() -> list:
-    return sorted(DATA["pdrb"]["tahun"].unique().tolist())
+    df = DATA.get("pdrb", pd.DataFrame())
+    if df.empty or "tahun" not in df.columns:
+        return [2021, 2022, 2023, 2024, 2025]
+    return sorted(df["tahun"].unique().tolist())

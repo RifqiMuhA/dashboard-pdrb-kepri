@@ -1,31 +1,49 @@
-kab_kota,tahun,jumlah_penduduk
-Kab. Alfa,2018,674081
-Kab. Alfa,2019,683228
-Kab. Alfa,2020,690910
-Kab. Alfa,2021,694875
-Kab. Alfa,2022,702243
-Kab. Beta,2018,1085629
-Kab. Beta,2019,1092713
-Kab. Beta,2020,1111838
-Kab. Beta,2021,1118264
-Kab. Beta,2022,1139368
-Kab. Gamma,2018,448670
-Kab. Gamma,2019,456590
-Kab. Gamma,2020,465055
-Kab. Gamma,2021,474214
-Kab. Gamma,2022,482290
-Kota Delta,2018,1469216
-Kota Delta,2019,1490722
-Kota Delta,2020,1515594
-Kota Delta,2021,1526231
-Kota Delta,2022,1546135
-Kota Epsilon,2018,1071334
-Kota Epsilon,2019,1090472
-Kota Epsilon,2020,1103495
-Kota Epsilon,2021,1115386
-Kota Epsilon,2022,1131664
-Provinsi X,2018,4748930
-Provinsi X,2019,4813725
-Provinsi X,2020,4886892
-Provinsi X,2021,4928970
-Provinsi X,2022,5001700
+kab_kota,tahun,jumlah_penduduk,penduduk_ribu
+Kabupaten Karimun,2020,252090,252.09
+Kabupaten Karimun,2021,254960,254.96
+Kabupaten Karimun,2022,257800,257.8
+Kabupaten Karimun,2023,260600,260.6
+Kabupaten Karimun,2024,263340,263.34
+Kabupaten Karimun,2025,266010,266.01
+Kabupaten Bintan,2020,158770,158.77
+Kabupaten Bintan,2021,161180,161.18
+Kabupaten Bintan,2022,163560,163.56
+Kabupaten Bintan,2023,165890,165.89
+Kabupaten Bintan,2024,168190,168.19
+Kabupaten Bintan,2025,170460,170.46
+Kabupaten Natuna,2020,81130,81.13
+Kabupaten Natuna,2021,82280,82.28
+Kabupaten Natuna,2022,83430,83.43
+Kabupaten Natuna,2023,84560,84.56
+Kabupaten Natuna,2024,85660,85.66
+Kabupaten Natuna,2025,86760,86.76
+Kabupaten Lingga,2020,97990,97.99
+Kabupaten Lingga,2021,99020,99.02
+Kabupaten Lingga,2022,100030,100.03
+Kabupaten Lingga,2023,101030,101.03
+Kabupaten Lingga,2024,102010,102.01
+Kabupaten Lingga,2025,102950,102.95
+Kabupaten Kepulauan Anambas,2020,47110,47.11
+Kabupaten Kepulauan Anambas,2021,47780,47.78
+Kabupaten Kepulauan Anambas,2022,48440,48.44
+Kabupaten Kepulauan Anambas,2023,49090,49.09
+Kabupaten Kepulauan Anambas,2024,49730,49.73
+Kabupaten Kepulauan Anambas,2025,50360,50.36
+Kota Batam,2020,1193960,1193.96
+Kota Batam,2021,1215140,1215.14
+Kota Batam,2022,1236010,1236.01
+Kota Batam,2023,1256610,1256.61
+Kota Batam,2024,1276930,1276.93
+Kota Batam,2025,1296960,1296.96
+Kota Tanjungpinang,2020,226810,226.81
+Kota Tanjungpinang,2021,229540,229.54
+Kota Tanjungpinang,2022,232200,232.2
+Kota Tanjungpinang,2023,234840,234.84
+Kota Tanjungpinang,2024,237430,237.43
+Kota Tanjungpinang,2025,239960,239.96
+Provinsi Kepulauan Riau,2020,2057860,2057.86
+Provinsi Kepulauan Riau,2021,2089890,2089.89
+Provinsi Kepulauan Riau,2022,2121480,2121.48
+Provinsi Kepulauan Riau,2023,2152630,2152.63
+Provinsi Kepulauan Riau,2024,2183290,2183.29
+Provinsi Kepulauan Riau,2025,2213460,2213.46

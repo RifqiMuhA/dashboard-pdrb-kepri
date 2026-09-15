@@ -33,7 +33,56 @@ CATEGORY_PALETTE = [
     COLORS["primary_dark"],
     "#7FB3E8",
     "#F7D269",
+    "#2A9D8F",
+    "#E76F51",
+    "#7209B7",
+    "#4361EE",
+    "#4CC9F0",
+    "#52B788",
+    "#8D99AE",
+    "#EF476F",
+    "#B56576",
 ]
+
+# Mapping warna konsisten per Kabupaten/Kota di Kepulauan Riau
+KABKOTA_COLORS = {
+    "Kabupaten Karimun": "#1B5FAE",
+    "Kabupaten Bintan": "#F2B705",        # Kuning aksen (sorotan analisis)
+    "Kabupaten Natuna": "#2A9D8F",        # Teal / Hijau Laut
+    "Kabupaten Lingga": "#E76F51",        # Coral / Terracotta
+    "Kabupaten Kepulauan Anambas": "#457B9D", # Slate Blue
+    "Kota Batam": "#0C203A",              # Navy Gelap (kontras industri)
+    "Kota Tanjungpinang": "#7209B7",      # Violet / Ungu Elegan
+    "Provinsi Kepulauan Riau": "#C99204", # Kuning Tua / Garis Referensi
+}
+
+# Mapping warna konsisten per Lapangan Usaha (17 Sektor Utama)
+SEKTOR_COLORS = {
+    "A": "#2A9D8F",  # Pertanian, Kehutanan dan Perikanan
+    "B": "#70798C",  # Pertambangan dan Penggalian
+    "C": "#173A66",  # Industri Pengolahan (Primary Navy)
+    "D": "#F4A261",  # Pengadaan Listrik dan Gas
+    "E": "#52B788",  # Pengadaan Air, Pengelolaan Sampah
+    "F": "#E76F51",  # Konstruksi
+    "G": "#34659D",  # Perdagangan Besar dan Eceran
+    "H": "#457B9D",  # Transportasi dan Pergudangan
+    "I": "#F2B705",  # Penyediaan Akomodasi dan Makan Minum (Pariwisata)
+    "J": "#7209B7",  # Informasi dan Komunikasi
+    "K": "#3A0CA3",  # Jasa Keuangan dan Asuransi
+    "L": "#4361EE",  # Real Estat
+    "M,N": "#4CC9F0", # Jasa Perusahaan
+    "O": "#8D99AE",  # Administrasi Pemerintahan
+    "P": "#06D6A0",  # Jasa Pendidikan
+    "Q": "#EF476F",  # Jasa Kesehatan
+    "R,S,T,U": "#B56576", # Jasa Lainnya
+}
+
+def get_sektor_color_by_name(nama_lu: str) -> str:
+    """Mengambil warna sektor berdasarkan kode awal nama lapangan usaha."""
+    for kode, color in SEKTOR_COLORS.items():
+        if nama_lu.startswith(f"{kode}."):
+            return color
+    return COLORS["primary"]
 
 FONT_FAMILY = "Inter, -apple-system, Segoe UI, sans-serif"
 

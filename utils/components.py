@@ -71,3 +71,28 @@ def page_heading(title: str, subtitle: str = ""):
     if subtitle:
         els.append(html.Div(subtitle, className="page-subtitle"))
     return html.Div(els)
+
+
+def mascot_insight_bubble(
+    title: str,
+    content,
+    mascot_src: str = "/assets/maskot_1.webp",
+    container_id: str = None,
+):
+    """
+    Komponen Insight Bubble Chat elegan dengan Maskot di sisi kiri,
+    sesuai gaya desain kartu hero APC & MPC.
+    """
+    bubble_children = [
+        html.H3(title, className="chat-bubble-title"),
+        html.P(content, className="chat-bubble-body"),
+    ]
+    card_el = html.Div(className="chat-bubble-card", children=bubble_children)
+    mascot_el = html.Img(src=mascot_src, className="mascot-avatar")
+
+    kwargs = {"className": "mascot-bubble-container"}
+    if container_id:
+        kwargs["id"] = container_id
+
+    return html.Div([mascot_el, card_el], **kwargs)
+

@@ -1,181 +1,681 @@
-kab_kota,lapangan_usaha,tahun,adhb,adhk
-Kab. Alfa,"A. Pertanian, Kehutanan, dan Perikanan",2018,9889374.42,8225049.36
-Kab. Alfa,"A. Pertanian, Kehutanan, dan Perikanan",2019,10430918.36,8506818.74
-Kab. Alfa,"A. Pertanian, Kehutanan, dan Perikanan",2020,11038017.16,8826949.42
-Kab. Alfa,"A. Pertanian, Kehutanan, dan Perikanan",2021,11932121.41,9356473.18
-Kab. Alfa,"A. Pertanian, Kehutanan, dan Perikanan",2022,12830524.12,9865380.74
-Kab. Alfa,B. Pertambangan dan Penggalian,2018,13404514.13,11827919.45
-Kab. Alfa,B. Pertambangan dan Penggalian,2019,14421488.45,12476928.25
-Kab. Alfa,B. Pertambangan dan Penggalian,2020,15624059.45,13253536.67
-Kab. Alfa,B. Pertambangan dan Penggalian,2021,16691732.74,13882882.04
-Kab. Alfa,B. Pertambangan dan Penggalian,2022,18038247.49,14710006.43
-Kab. Alfa,C. Industri Pengolahan,2018,8685707.41,6804336.14
-Kab. Alfa,C. Industri Pengolahan,2019,9145677.96,7050588.71
-Kab. Alfa,C. Industri Pengolahan,2020,9511732.92,7216025.11
-Kab. Alfa,C. Industri Pengolahan,2021,10146706.9,7575170.56
-Kab. Alfa,C. Industri Pengolahan,2022,10669917.78,7838939.01
-Kab. Alfa,F. Konstruksi,2018,7777312.86,6612341.04
-Kab. Alfa,F. Konstruksi,2019,8171752.04,6864534.91
-Kab. Alfa,F. Konstruksi,2020,8614195.15,7149586.21
-Kab. Alfa,F. Konstruksi,2021,8977575.68,7361995.35
-Kab. Alfa,F. Konstruksi,2022,9310631.96,7543725.67
-Kab. Alfa,G. Perdagangan Besar dan Eceran,2018,14557633.37,12753309.61
-Kab. Alfa,G. Perdagangan Besar dan Eceran,2019,15188079.97,13068719.62
-Kab. Alfa,G. Perdagangan Besar dan Eceran,2020,15876056.8,13417476.68
-Kab. Alfa,G. Perdagangan Besar dan Eceran,2021,16677851.22,13844151.41
-Kab. Alfa,G. Perdagangan Besar dan Eceran,2022,17892854.35,14588274.0
-Kab. Alfa,"R,S,T,U. Jasa Lainnya",2018,8289331.81,7377019.78
-Kab. Alfa,"R,S,T,U. Jasa Lainnya",2019,8907366.72,7810963.68
-Kab. Alfa,"R,S,T,U. Jasa Lainnya",2020,9338341.81,8068985.11
-Kab. Alfa,"R,S,T,U. Jasa Lainnya",2021,9951656.53,8473023.07
-Kab. Alfa,"R,S,T,U. Jasa Lainnya",2022,10342318.87,8676704.29
-Kab. Beta,"A. Pertanian, Kehutanan, dan Perikanan",2018,5926480.8,4654388.7
-Kab. Beta,"A. Pertanian, Kehutanan, dan Perikanan",2019,6214099.54,4817172.27
-Kab. Beta,"A. Pertanian, Kehutanan, dan Perikanan",2020,6456940.65,4940705.54
-Kab. Beta,"A. Pertanian, Kehutanan, dan Perikanan",2021,6786589.83,5125803.85
-Kab. Beta,"A. Pertanian, Kehutanan, dan Perikanan",2022,7110589.86,5301078.24
-Kab. Beta,B. Pertambangan dan Penggalian,2018,5531082.37,4794450.57
-Kab. Beta,B. Pertambangan dan Penggalian,2019,5950186.12,5032911.07
-Kab. Beta,B. Pertambangan dan Penggalian,2020,6518332.13,5380035.94
-Kab. Beta,B. Pertambangan dan Penggalian,2021,7145076.81,5754605.81
-Kab. Beta,B. Pertambangan dan Penggalian,2022,7965477.05,6260088.24
-Kab. Beta,C. Industri Pengolahan,2018,7774165.85,6343503.54
-Kab. Beta,C. Industri Pengolahan,2019,8481266.08,6795409.94
-Kab. Beta,C. Industri Pengolahan,2020,8892505.58,6996143.47
-Kab. Beta,C. Industri Pengolahan,2021,9401861.41,7263199.84
-Kab. Beta,C. Industri Pengolahan,2022,9897211.16,7507694.16
-Kab. Beta,F. Konstruksi,2018,3635760.54,3149340.24
-Kab. Beta,F. Konstruksi,2019,3866150.41,3300460.49
-Kab. Beta,F. Konstruksi,2020,4058766.79,3414769.34
-Kab. Beta,F. Konstruksi,2021,4180909.82,3466646.5
-Kab. Beta,F. Konstruksi,2022,4336800.12,3543885.22
-Kab. Beta,G. Perdagangan Besar dan Eceran,2018,9588408.41,8692343.32
-Kab. Beta,G. Perdagangan Besar dan Eceran,2019,10459569.41,9330833.36
-Kab. Beta,G. Perdagangan Besar dan Eceran,2020,11562281.18,10150009.14
-Kab. Beta,G. Perdagangan Besar dan Eceran,2021,12322123.02,10644486.78
-Kab. Beta,G. Perdagangan Besar dan Eceran,2022,12857060.58,10929421.04
-Kab. Beta,"R,S,T,U. Jasa Lainnya",2018,2962219.17,2502180.25
-Kab. Beta,"R,S,T,U. Jasa Lainnya",2019,3143905.38,2603083.97
-Kab. Beta,"R,S,T,U. Jasa Lainnya",2020,3356880.36,2724406.33
-Kab. Beta,"R,S,T,U. Jasa Lainnya",2021,3573638.86,2842915.73
-Kab. Beta,"R,S,T,U. Jasa Lainnya",2022,3831538.49,2987747.03
-Kab. Gamma,"A. Pertanian, Kehutanan, dan Perikanan",2018,17591496.09,15513668.21
-Kab. Gamma,"A. Pertanian, Kehutanan, dan Perikanan",2019,19250713.01,16567499.6
-Kab. Gamma,"A. Pertanian, Kehutanan, dan Perikanan",2020,21335276.54,17918714.58
-Kab. Gamma,"A. Pertanian, Kehutanan, dan Perikanan",2021,23127549.77,18955560.29
-Kab. Gamma,"A. Pertanian, Kehutanan, dan Perikanan",2022,24810595.59,19844612.26
-Kab. Gamma,B. Pertambangan dan Penggalian,2018,16197525.42,12269342.23
-Kab. Gamma,B. Pertambangan dan Penggalian,2019,17547956.59,13111926.18
-Kab. Gamma,B. Pertambangan dan Penggalian,2020,18195807.99,13411539.2
-Kab. Gamma,B. Pertambangan dan Penggalian,2021,19343205.02,14063811.83
-Kab. Gamma,B. Pertambangan dan Penggalian,2022,20032496.72,14367361.74
-Kab. Gamma,C. Industri Pengolahan,2018,7810583.9,7346478.06
-Kab. Gamma,C. Industri Pengolahan,2019,8361268.15,7711519.56
-Kab. Gamma,C. Industri Pengolahan,2020,8966372.59,8108802.51
-Kab. Gamma,C. Industri Pengolahan,2021,9526653.96,8447971.91
-Kab. Gamma,C. Industri Pengolahan,2022,10290746.19,8948104.9
-Kab. Gamma,F. Konstruksi,2018,18613006.45,14126939.17
-Kab. Gamma,F. Konstruksi,2019,19133975.65,14332000.76
-Kab. Gamma,F. Konstruksi,2020,20105857.84,14862582.27
-Kab. Gamma,F. Konstruksi,2021,21571684.59,15737139.12
-Kab. Gamma,F. Konstruksi,2022,22663114.81,16316664.35
-Kab. Gamma,G. Perdagangan Besar dan Eceran,2018,10929692.26,10150288.56
-Kab. Gamma,G. Perdagangan Besar dan Eceran,2019,12031358.54,10937891.05
-Kab. Gamma,G. Perdagangan Besar dan Eceran,2020,13032346.82,11598184.73
-Kab. Gamma,G. Perdagangan Besar dan Eceran,2021,13983585.75,12182443.67
-Kab. Gamma,G. Perdagangan Besar dan Eceran,2022,15347844.5,13089158.33
-Kab. Gamma,"R,S,T,U. Jasa Lainnya",2018,5829590.2,4482333.04
-Kab. Gamma,"R,S,T,U. Jasa Lainnya",2019,6183191.76,4680054.32
-Kab. Gamma,"R,S,T,U. Jasa Lainnya",2020,6420140.18,4783599.06
-Kab. Gamma,"R,S,T,U. Jasa Lainnya",2021,6651532.01,4878699.06
-Kab. Gamma,"R,S,T,U. Jasa Lainnya",2022,7209882.26,5205741.51
-Kota Delta,"A. Pertanian, Kehutanan, dan Perikanan",2018,18299836.92,16570154.04
-Kota Delta,"A. Pertanian, Kehutanan, dan Perikanan",2019,19224037.38,17167537.4
-Kota Delta,"A. Pertanian, Kehutanan, dan Perikanan",2020,20146950.05,17744214.69
-Kota Delta,"A. Pertanian, Kehutanan, dan Perikanan",2021,21273238.65,18478433.86
-Kota Delta,"A. Pertanian, Kehutanan, dan Perikanan",2022,22821166.48,19550301.55
-Kota Delta,B. Pertambangan dan Penggalian,2018,3668906.72,2848408.73
-Kota Delta,B. Pertambangan dan Penggalian,2019,3741133.22,2863434.24
-Kota Delta,B. Pertambangan dan Penggalian,2020,3932941.95,2967699.88
-Kota Delta,B. Pertambangan dan Penggalian,2021,4085274.06,3039079.37
-Kota Delta,B. Pertambangan dan Penggalian,2022,4219293.28,3094417.89
-Kota Delta,C. Industri Pengolahan,2018,6138638.63,4849249.08
-Kota Delta,C. Industri Pengolahan,2019,6693216.33,5181206.32
-Kota Delta,C. Industri Pengolahan,2020,7055761.79,5352214.8
-Kota Delta,C. Industri Pengolahan,2021,7592420.41,5643694.2
-Kota Delta,C. Industri Pengolahan,2022,8106838.0,5905114.47
-Kota Delta,F. Konstruksi,2018,11813903.8,9571503.63
-Kota Delta,F. Konstruksi,2019,12992713.26,10275762.75
-Kota Delta,F. Konstruksi,2020,14459090.4,11163044.7
-Kota Delta,F. Konstruksi,2021,15737954.23,11860894.56
-Kota Delta,F. Konstruksi,2022,16990484.96,12499781.43
-Kota Delta,G. Perdagangan Besar dan Eceran,2018,19866895.24,14998947.61
-Kota Delta,G. Perdagangan Besar dan Eceran,2019,20975255.79,15607998.72
-Kota Delta,G. Perdagangan Besar dan Eceran,2020,21727689.1,15935388.73
-Kota Delta,G. Perdagangan Besar dan Eceran,2021,22910319.13,16561109.6
-Kota Delta,G. Perdagangan Besar dan Eceran,2022,24207162.53,17246912.0
-Kota Delta,"R,S,T,U. Jasa Lainnya",2018,17545269.1,16549511.61
-Kota Delta,"R,S,T,U. Jasa Lainnya",2019,18349184.83,17030630.21
-Kota Delta,"R,S,T,U. Jasa Lainnya",2020,19354929.54,17676420.89
-Kota Delta,"R,S,T,U. Jasa Lainnya",2021,20054088.61,18021646.4
-Kota Delta,"R,S,T,U. Jasa Lainnya",2022,21056620.46,18619542.22
-Kota Epsilon,"A. Pertanian, Kehutanan, dan Perikanan",2018,5612940.24,5183818.56
-Kota Epsilon,"A. Pertanian, Kehutanan, dan Perikanan",2019,5836270.08,5319381.9
-Kota Epsilon,"A. Pertanian, Kehutanan, dan Perikanan",2020,6036607.86,5429816.72
-Kota Epsilon,"A. Pertanian, Kehutanan, dan Perikanan",2021,6318095.48,5608475.23
-Kota Epsilon,"A. Pertanian, Kehutanan, dan Perikanan",2022,6447475.03,5648260.35
-Kota Epsilon,B. Pertambangan dan Penggalian,2018,1097614.42,922851.57
-Kota Epsilon,B. Pertambangan dan Penggalian,2019,1171625.04,962207.28
-Kota Epsilon,B. Pertambangan dan Penggalian,2020,1254272.75,1006166.67
-Kota Epsilon,B. Pertambangan dan Penggalian,2021,1402827.28,1099208.52
-Kota Epsilon,B. Pertambangan dan Penggalian,2022,1593440.95,1219578.63
-Kota Epsilon,C. Industri Pengolahan,2018,3066823.73,2340942.65
-Kota Epsilon,C. Industri Pengolahan,2019,3349550.78,2498518.55
-Kota Epsilon,C. Industri Pengolahan,2020,3734073.73,2721904.94
-Kota Epsilon,C. Industri Pengolahan,2021,3997462.79,2847531.56
-Kota Epsilon,C. Industri Pengolahan,2022,4327748.73,3012591.22
-Kota Epsilon,F. Konstruksi,2018,3625583.92,3386999.09
-Kota Epsilon,F. Konstruksi,2019,3803509.65,3500265.46
-Kota Epsilon,F. Konstruksi,2020,4004753.64,3630543.19
-Kota Epsilon,F. Konstruksi,2021,4137990.11,3695426.72
-Kota Epsilon,F. Konstruksi,2022,4350098.03,3826956.56
-Kota Epsilon,G. Perdagangan Besar dan Eceran,2018,2116987.38,1611194.81
-Kota Epsilon,G. Perdagangan Besar dan Eceran,2019,2249925.18,1679628.91
-Kota Epsilon,G. Perdagangan Besar dan Eceran,2020,2428352.07,1778166.39
-Kota Epsilon,G. Perdagangan Besar dan Eceran,2021,2642055.21,1897658.73
-Kota Epsilon,G. Perdagangan Besar dan Eceran,2022,2838153.19,1999528.21
-Kota Epsilon,"R,S,T,U. Jasa Lainnya",2018,817809.1,665368.03
-Kota Epsilon,"R,S,T,U. Jasa Lainnya",2019,879912.09,701458.9
-Kota Epsilon,"R,S,T,U. Jasa Lainnya",2020,936483.07,731502.52
-Kota Epsilon,"R,S,T,U. Jasa Lainnya",2021,1012380.15,774840.79
-Kota Epsilon,"R,S,T,U. Jasa Lainnya",2022,1087667.6,815676.59
-Provinsi X,"A. Pertanian, Kehutanan, dan Perikanan",2018,57320128.47,50147078.87
-Provinsi X,"A. Pertanian, Kehutanan, dan Perikanan",2019,60956038.37,52378409.91
-Provinsi X,"A. Pertanian, Kehutanan, dan Perikanan",2020,65013792.26000001,54860400.95
-Provinsi X,"A. Pertanian, Kehutanan, dan Perikanan",2021,69437595.14,57524746.41
-Provinsi X,"A. Pertanian, Kehutanan, dan Perikanan",2022,74020351.08,60209633.14
-Provinsi X,B. Pertambangan dan Penggalian,2018,39899643.06,32662972.55
-Provinsi X,B. Pertambangan dan Penggalian,2019,42832389.42,34447407.02
-Provinsi X,B. Pertambangan dan Penggalian,2020,45525414.27,36018978.36
-Provinsi X,B. Pertambangan dan Penggalian,2021,48668115.91,37839587.57
-Provinsi X,B. Pertambangan dan Penggalian,2022,51848955.48999999,39651452.93
-Provinsi X,C. Industri Pengolahan,2018,33475919.52,27684509.47
-Provinsi X,C. Industri Pengolahan,2019,36030979.3,29237243.08
-Provinsi X,C. Industri Pengolahan,2020,38160446.61,30395090.83
-Provinsi X,C. Industri Pengolahan,2021,40665105.47,31777568.07
-Provinsi X,C. Industri Pengolahan,2022,43292461.86,33212443.76
-Provinsi X,F. Konstruksi,2018,45465567.57,36847123.17
-Provinsi X,F. Konstruksi,2019,47968101.01,38273024.37
-Provinsi X,F. Konstruksi,2020,51242663.82,40220525.71
-Provinsi X,F. Konstruksi,2021,54606114.43,42122102.25
-Provinsi X,F. Konstruksi,2022,57651129.88,43731013.23
-Provinsi X,G. Perdagangan Besar dan Eceran,2018,57059616.66,48206083.91
-Provinsi X,G. Perdagangan Besar dan Eceran,2019,60904188.89,50625071.66
-Provinsi X,G. Perdagangan Besar dan Eceran,2020,64626725.97,52879225.67
-Provinsi X,G. Perdagangan Besar dan Eceran,2021,68535934.33,55129850.19
-Provinsi X,G. Perdagangan Besar dan Eceran,2022,73143075.15,57853293.58
-Provinsi X,"R,S,T,U. Jasa Lainnya",2018,35444219.38,31576412.71
-Provinsi X,"R,S,T,U. Jasa Lainnya",2019,37463560.78,32826191.08
-Provinsi X,"R,S,T,U. Jasa Lainnya",2020,39406774.96,33984913.91
-Provinsi X,"R,S,T,U. Jasa Lainnya",2021,41243296.16,34991125.05
-Provinsi X,"R,S,T,U. Jasa Lainnya",2022,43528027.68,36305411.64
+kab_kota,kode,lapangan_usaha,tahun,adhk,adhb
+Kabupaten Karimun,A,"A. Pertanian, Kehutanan dan Perikanan",2021,1473.45,
+Kabupaten Karimun,A,"A. Pertanian, Kehutanan dan Perikanan",2022,1503.41,
+Kabupaten Karimun,A,"A. Pertanian, Kehutanan dan Perikanan",2023,1552.78,
+Kabupaten Karimun,A,"A. Pertanian, Kehutanan dan Perikanan",2024,1586.94,
+Kabupaten Karimun,A,"A. Pertanian, Kehutanan dan Perikanan",2025,1640.89,
+Kabupaten Karimun,B,B. Pertambangan dan Penggalian,2021,1010.73,
+Kabupaten Karimun,B,B. Pertambangan dan Penggalian,2022,975.93,
+Kabupaten Karimun,B,B. Pertambangan dan Penggalian,2023,955.9,
+Kabupaten Karimun,B,B. Pertambangan dan Penggalian,2024,936.78,
+Kabupaten Karimun,B,B. Pertambangan dan Penggalian,2025,974.25,
+Kabupaten Karimun,C,C. Industri Pengolahan,2021,1235.09,
+Kabupaten Karimun,C,C. Industri Pengolahan,2022,1269.55,
+Kabupaten Karimun,C,C. Industri Pengolahan,2023,1366.48,
+Kabupaten Karimun,C,C. Industri Pengolahan,2024,1724.91,
+Kabupaten Karimun,C,C. Industri Pengolahan,2025,1931.9,
+Kabupaten Karimun,D,D. Pengadaan Listrik dan Gas,2021,28.53,
+Kabupaten Karimun,D,D. Pengadaan Listrik dan Gas,2022,31.52,
+Kabupaten Karimun,D,D. Pengadaan Listrik dan Gas,2023,35.0,
+Kabupaten Karimun,D,D. Pengadaan Listrik dan Gas,2024,38.37,
+Kabupaten Karimun,D,D. Pengadaan Listrik dan Gas,2025,42.2,
+Kabupaten Karimun,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2021,4.15,
+Kabupaten Karimun,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2022,4.37,
+Kabupaten Karimun,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2023,4.4,
+Kabupaten Karimun,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2024,4.53,
+Kabupaten Karimun,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2025,4.8,
+Kabupaten Karimun,F,F. Konstruksi,2021,1852.57,
+Kabupaten Karimun,F,F. Konstruksi,2022,1923.17,
+Kabupaten Karimun,F,F. Konstruksi,2023,1958.48,
+Kabupaten Karimun,F,F. Konstruksi,2024,2062.28,
+Kabupaten Karimun,F,F. Konstruksi,2025,2175.7,
+Kabupaten Karimun,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2021,1542.52,
+Kabupaten Karimun,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2022,1676.09,
+Kabupaten Karimun,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2023,1800.8,
+Kabupaten Karimun,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2024,1919.65,
+Kabupaten Karimun,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2025,2063.62,
+Kabupaten Karimun,H,H. Transportasi dan Pergudangan,2021,232.22,
+Kabupaten Karimun,H,H. Transportasi dan Pergudangan,2022,283.17,
+Kabupaten Karimun,H,H. Transportasi dan Pergudangan,2023,341.0,
+Kabupaten Karimun,H,H. Transportasi dan Pergudangan,2024,361.46,
+Kabupaten Karimun,H,H. Transportasi dan Pergudangan,2025,388.57,
+Kabupaten Karimun,I,I. Penyediaan Akomodasi dan Makan Minum,2021,171.54,
+Kabupaten Karimun,I,I. Penyediaan Akomodasi dan Makan Minum,2022,219.8,
+Kabupaten Karimun,I,I. Penyediaan Akomodasi dan Makan Minum,2023,258.85,
+Kabupaten Karimun,I,I. Penyediaan Akomodasi dan Makan Minum,2024,284.14,
+Kabupaten Karimun,I,I. Penyediaan Akomodasi dan Makan Minum,2025,301.19,
+Kabupaten Karimun,J,J. Informasi dan Komunikasi,2021,371.11,
+Kabupaten Karimun,J,J. Informasi dan Komunikasi,2022,390.39,
+Kabupaten Karimun,J,J. Informasi dan Komunikasi,2023,486.26,
+Kabupaten Karimun,J,J. Informasi dan Komunikasi,2024,508.14,
+Kabupaten Karimun,J,J. Informasi dan Komunikasi,2025,520.84,
+Kabupaten Karimun,K,K. Jasa Keuangan dan Asuransi,2021,161.22,
+Kabupaten Karimun,K,K. Jasa Keuangan dan Asuransi,2022,165.06,
+Kabupaten Karimun,K,K. Jasa Keuangan dan Asuransi,2023,177.49,
+Kabupaten Karimun,K,K. Jasa Keuangan dan Asuransi,2024,187.61,
+Kabupaten Karimun,K,K. Jasa Keuangan dan Asuransi,2025,195.3,
+Kabupaten Karimun,L,L. Real Estat,2021,296.37,
+Kabupaten Karimun,L,L. Real Estat,2022,306.63,
+Kabupaten Karimun,L,L. Real Estat,2023,318.8,
+Kabupaten Karimun,L,L. Real Estat,2024,332.51,
+Kabupaten Karimun,L,L. Real Estat,2025,349.14,
+Kabupaten Karimun,"M,N","M,N. Jasa Perusahaan",2021,1.71,
+Kabupaten Karimun,"M,N","M,N. Jasa Perusahaan",2022,1.84,
+Kabupaten Karimun,"M,N","M,N. Jasa Perusahaan",2023,2.1,
+Kabupaten Karimun,"M,N","M,N. Jasa Perusahaan",2024,2.23,
+Kabupaten Karimun,"M,N","M,N. Jasa Perusahaan",2025,2.45,
+Kabupaten Karimun,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2021,342.16,
+Kabupaten Karimun,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2022,349.05,
+Kabupaten Karimun,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2023,363.41,
+Kabupaten Karimun,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2024,425.3,
+Kabupaten Karimun,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2025,421.05,
+Kabupaten Karimun,P,P. Jasa Pendidikan,2021,305.36,
+Kabupaten Karimun,P,P. Jasa Pendidikan,2022,313.14,
+Kabupaten Karimun,P,P. Jasa Pendidikan,2023,325.46,
+Kabupaten Karimun,P,P. Jasa Pendidikan,2024,338.48,
+Kabupaten Karimun,P,P. Jasa Pendidikan,2025,355.4,
+Kabupaten Karimun,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2021,199.9,
+Kabupaten Karimun,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2022,204.88,
+Kabupaten Karimun,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2023,186.56,
+Kabupaten Karimun,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2024,198.5,
+Kabupaten Karimun,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2025,203.46,
+Kabupaten Karimun,"R,S,T,U","R,S,T,U. Jasa Lainnya",2021,104.14,
+Kabupaten Karimun,"R,S,T,U","R,S,T,U. Jasa Lainnya",2022,123.86,
+Kabupaten Karimun,"R,S,T,U","R,S,T,U. Jasa Lainnya",2023,143.83,
+Kabupaten Karimun,"R,S,T,U","R,S,T,U. Jasa Lainnya",2024,161.75,
+Kabupaten Karimun,"R,S,T,U","R,S,T,U. Jasa Lainnya",2025,168.22,
+Kabupaten Bintan,A,"A. Pertanian, Kehutanan dan Perikanan",2021,933.66,
+Kabupaten Bintan,A,"A. Pertanian, Kehutanan dan Perikanan",2022,969.93,
+Kabupaten Bintan,A,"A. Pertanian, Kehutanan dan Perikanan",2023,1005.07,
+Kabupaten Bintan,A,"A. Pertanian, Kehutanan dan Perikanan",2024,1038.24,
+Kabupaten Bintan,A,"A. Pertanian, Kehutanan dan Perikanan",2025,1074.58,
+Kabupaten Bintan,B,B. Pertambangan dan Penggalian,2021,667.28,
+Kabupaten Bintan,B,B. Pertambangan dan Penggalian,2022,527.15,
+Kabupaten Bintan,B,B. Pertambangan dan Penggalian,2023,433.89,
+Kabupaten Bintan,B,B. Pertambangan dan Penggalian,2024,381.82,
+Kabupaten Bintan,B,B. Pertambangan dan Penggalian,2025,400.91,
+Kabupaten Bintan,C,C. Industri Pengolahan,2021,5587.47,
+Kabupaten Bintan,C,C. Industri Pengolahan,2022,5939.18,
+Kabupaten Bintan,C,C. Industri Pengolahan,2023,6151.09,
+Kabupaten Bintan,C,C. Industri Pengolahan,2024,7061.45,
+Kabupaten Bintan,C,C. Industri Pengolahan,2025,7838.21,
+Kabupaten Bintan,D,D. Pengadaan Listrik dan Gas,2021,21.15,
+Kabupaten Bintan,D,D. Pengadaan Listrik dan Gas,2022,21.84,
+Kabupaten Bintan,D,D. Pengadaan Listrik dan Gas,2023,23.79,
+Kabupaten Bintan,D,D. Pengadaan Listrik dan Gas,2024,25.46,
+Kabupaten Bintan,D,D. Pengadaan Listrik dan Gas,2025,27.88,
+Kabupaten Bintan,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2021,8.77,
+Kabupaten Bintan,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2022,9.09,
+Kabupaten Bintan,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2023,9.41,
+Kabupaten Bintan,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2024,9.79,
+Kabupaten Bintan,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2025,10.52,
+Kabupaten Bintan,F,F. Konstruksi,2021,3050.92,
+Kabupaten Bintan,F,F. Konstruksi,2022,3075.02,
+Kabupaten Bintan,F,F. Konstruksi,2023,3256.45,
+Kabupaten Bintan,F,F. Konstruksi,2024,3500.73,
+Kabupaten Bintan,F,F. Konstruksi,2025,3710.77,
+Kabupaten Bintan,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2021,1360.79,
+Kabupaten Bintan,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2022,1411.65,
+Kabupaten Bintan,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2023,1562.75,
+Kabupaten Bintan,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2024,1675.27,
+Kabupaten Bintan,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2025,1809.3,
+Kabupaten Bintan,H,H. Transportasi dan Pergudangan,2021,314.92,
+Kabupaten Bintan,H,H. Transportasi dan Pergudangan,2022,335.24,
+Kabupaten Bintan,H,H. Transportasi dan Pergudangan,2023,423.08,
+Kabupaten Bintan,H,H. Transportasi dan Pergudangan,2024,452.7,
+Kabupaten Bintan,H,H. Transportasi dan Pergudangan,2025,484.39,
+Kabupaten Bintan,I,I. Penyediaan Akomodasi dan Makan Minum,2021,527.9,
+Kabupaten Bintan,I,I. Penyediaan Akomodasi dan Makan Minum,2022,746.48,
+Kabupaten Bintan,I,I. Penyediaan Akomodasi dan Makan Minum,2023,989.78,
+Kabupaten Bintan,I,I. Penyediaan Akomodasi dan Makan Minum,2024,1073.91,
+Kabupaten Bintan,I,I. Penyediaan Akomodasi dan Makan Minum,2025,1138.34,
+Kabupaten Bintan,J,J. Informasi dan Komunikasi,2021,222.59,
+Kabupaten Bintan,J,J. Informasi dan Komunikasi,2022,233.7,
+Kabupaten Bintan,J,J. Informasi dan Komunikasi,2023,285.55,
+Kabupaten Bintan,J,J. Informasi dan Komunikasi,2024,308.39,
+Kabupaten Bintan,J,J. Informasi dan Komunikasi,2025,316.1,
+Kabupaten Bintan,K,K. Jasa Keuangan dan Asuransi,2021,258.96,
+Kabupaten Bintan,K,K. Jasa Keuangan dan Asuransi,2022,262.94,
+Kabupaten Bintan,K,K. Jasa Keuangan dan Asuransi,2023,275.81,
+Kabupaten Bintan,K,K. Jasa Keuangan dan Asuransi,2024,289.6,
+Kabupaten Bintan,K,K. Jasa Keuangan dan Asuransi,2025,301.18,
+Kabupaten Bintan,L,L. Real Estat,2021,180.99,
+Kabupaten Bintan,L,L. Real Estat,2022,185.88,
+Kabupaten Bintan,L,L. Real Estat,2023,188.95,
+Kabupaten Bintan,L,L. Real Estat,2024,198.4,
+Kabupaten Bintan,L,L. Real Estat,2025,208.32,
+Kabupaten Bintan,"M,N","M,N. Jasa Perusahaan",2021,0.12,
+Kabupaten Bintan,"M,N","M,N. Jasa Perusahaan",2022,0.13,
+Kabupaten Bintan,"M,N","M,N. Jasa Perusahaan",2023,0.15,
+Kabupaten Bintan,"M,N","M,N. Jasa Perusahaan",2024,0.16,
+Kabupaten Bintan,"M,N","M,N. Jasa Perusahaan",2025,0.18,
+Kabupaten Bintan,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2021,347.55,
+Kabupaten Bintan,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2022,363.09,
+Kabupaten Bintan,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2023,368.38,
+Kabupaten Bintan,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2024,434.32,
+Kabupaten Bintan,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2025,427.8,
+Kabupaten Bintan,P,P. Jasa Pendidikan,2021,268.98,
+Kabupaten Bintan,P,P. Jasa Pendidikan,2022,278.27,
+Kabupaten Bintan,P,P. Jasa Pendidikan,2023,292.64,
+Kabupaten Bintan,P,P. Jasa Pendidikan,2024,304.35,
+Kabupaten Bintan,P,P. Jasa Pendidikan,2025,319.57,
+Kabupaten Bintan,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2021,158.56,
+Kabupaten Bintan,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2022,166.42,
+Kabupaten Bintan,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2023,146.25,
+Kabupaten Bintan,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2024,175.5,
+Kabupaten Bintan,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2025,180.76,
+Kabupaten Bintan,"R,S,T,U","R,S,T,U. Jasa Lainnya",2021,22.86,
+Kabupaten Bintan,"R,S,T,U","R,S,T,U. Jasa Lainnya",2022,25.76,
+Kabupaten Bintan,"R,S,T,U","R,S,T,U. Jasa Lainnya",2023,32.25,
+Kabupaten Bintan,"R,S,T,U","R,S,T,U. Jasa Lainnya",2024,37.5,
+Kabupaten Bintan,"R,S,T,U","R,S,T,U. Jasa Lainnya",2025,39.0,
+Kabupaten Natuna,A,"A. Pertanian, Kehutanan dan Perikanan",2021,4232.74,
+Kabupaten Natuna,A,"A. Pertanian, Kehutanan dan Perikanan",2022,4443.32,
+Kabupaten Natuna,A,"A. Pertanian, Kehutanan dan Perikanan",2023,4511.31,
+Kabupaten Natuna,A,"A. Pertanian, Kehutanan dan Perikanan",2024,4536.87,
+Kabupaten Natuna,A,"A. Pertanian, Kehutanan dan Perikanan",2025,4695.66,
+Kabupaten Natuna,B,B. Pertambangan dan Penggalian,2021,653.88,
+Kabupaten Natuna,B,B. Pertambangan dan Penggalian,2022,662.38,
+Kabupaten Natuna,B,B. Pertambangan dan Penggalian,2023,644.83,
+Kabupaten Natuna,B,B. Pertambangan dan Penggalian,2024,594.34,
+Kabupaten Natuna,B,B. Pertambangan dan Penggalian,2025,689.43,
+Kabupaten Natuna,C,C. Industri Pengolahan,2021,373.8,
+Kabupaten Natuna,C,C. Industri Pengolahan,2022,376.12,
+Kabupaten Natuna,C,C. Industri Pengolahan,2023,385.37,
+Kabupaten Natuna,C,C. Industri Pengolahan,2024,415.31,
+Kabupaten Natuna,C,C. Industri Pengolahan,2025,446.46,
+Kabupaten Natuna,D,D. Pengadaan Listrik dan Gas,2021,41.85,
+Kabupaten Natuna,D,D. Pengadaan Listrik dan Gas,2022,42.96,
+Kabupaten Natuna,D,D. Pengadaan Listrik dan Gas,2023,46.41,
+Kabupaten Natuna,D,D. Pengadaan Listrik dan Gas,2024,49.75,
+Kabupaten Natuna,D,D. Pengadaan Listrik dan Gas,2025,54.91,
+Kabupaten Natuna,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2021,3.05,
+Kabupaten Natuna,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2022,3.2,
+Kabupaten Natuna,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2023,3.34,
+Kabupaten Natuna,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2024,3.41,
+Kabupaten Natuna,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2025,3.81,
+Kabupaten Natuna,F,F. Konstruksi,2021,3277.67,
+Kabupaten Natuna,F,F. Konstruksi,2022,3310.87,
+Kabupaten Natuna,F,F. Konstruksi,2023,3658.18,
+Kabupaten Natuna,F,F. Konstruksi,2024,3868.53,
+Kabupaten Natuna,F,F. Konstruksi,2025,4073.56,
+Kabupaten Natuna,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2021,1359.88,
+Kabupaten Natuna,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2022,1515.22,
+Kabupaten Natuna,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2023,1604.16,
+Kabupaten Natuna,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2024,1693.83,
+Kabupaten Natuna,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2025,1821.72,
+Kabupaten Natuna,H,H. Transportasi dan Pergudangan,2021,656.09,
+Kabupaten Natuna,H,H. Transportasi dan Pergudangan,2022,710.05,
+Kabupaten Natuna,H,H. Transportasi dan Pergudangan,2023,815.99,
+Kabupaten Natuna,H,H. Transportasi dan Pergudangan,2024,836.47,
+Kabupaten Natuna,H,H. Transportasi dan Pergudangan,2025,896.53,
+Kabupaten Natuna,I,I. Penyediaan Akomodasi dan Makan Minum,2021,228.48,
+Kabupaten Natuna,I,I. Penyediaan Akomodasi dan Makan Minum,2022,257.34,
+Kabupaten Natuna,I,I. Penyediaan Akomodasi dan Makan Minum,2023,327.62,
+Kabupaten Natuna,I,I. Penyediaan Akomodasi dan Makan Minum,2024,341.41,
+Kabupaten Natuna,I,I. Penyediaan Akomodasi dan Makan Minum,2025,351.21,
+Kabupaten Natuna,J,J. Informasi dan Komunikasi,2021,464.83,
+Kabupaten Natuna,J,J. Informasi dan Komunikasi,2022,499.27,
+Kabupaten Natuna,J,J. Informasi dan Komunikasi,2023,598.92,
+Kabupaten Natuna,J,J. Informasi dan Komunikasi,2024,598.56,
+Kabupaten Natuna,J,J. Informasi dan Komunikasi,2025,582.7,
+Kabupaten Natuna,K,K. Jasa Keuangan dan Asuransi,2021,66.44,
+Kabupaten Natuna,K,K. Jasa Keuangan dan Asuransi,2022,71.37,
+Kabupaten Natuna,K,K. Jasa Keuangan dan Asuransi,2023,77.54,
+Kabupaten Natuna,K,K. Jasa Keuangan dan Asuransi,2024,83.29,
+Kabupaten Natuna,K,K. Jasa Keuangan dan Asuransi,2025,86.71,
+Kabupaten Natuna,L,L. Real Estat,2021,305.89,
+Kabupaten Natuna,L,L. Real Estat,2022,316.03,
+Kabupaten Natuna,L,L. Real Estat,2023,332.62,
+Kabupaten Natuna,L,L. Real Estat,2024,351.21,
+Kabupaten Natuna,L,L. Real Estat,2025,371.26,
+Kabupaten Natuna,"M,N","M,N. Jasa Perusahaan",2021,0.08,
+Kabupaten Natuna,"M,N","M,N. Jasa Perusahaan",2022,0.09,
+Kabupaten Natuna,"M,N","M,N. Jasa Perusahaan",2023,0.11,
+Kabupaten Natuna,"M,N","M,N. Jasa Perusahaan",2024,0.12,
+Kabupaten Natuna,"M,N","M,N. Jasa Perusahaan",2025,0.14,
+Kabupaten Natuna,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2021,862.62,
+Kabupaten Natuna,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2022,884.97,
+Kabupaten Natuna,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2023,930.37,
+Kabupaten Natuna,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2024,1096.53,
+Kabupaten Natuna,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2025,1080.52,
+Kabupaten Natuna,P,P. Jasa Pendidikan,2021,75.2,
+Kabupaten Natuna,P,P. Jasa Pendidikan,2022,76.65,
+Kabupaten Natuna,P,P. Jasa Pendidikan,2023,79.62,
+Kabupaten Natuna,P,P. Jasa Pendidikan,2024,82.76,
+Kabupaten Natuna,P,P. Jasa Pendidikan,2025,87.3,
+Kabupaten Natuna,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2021,134.5,
+Kabupaten Natuna,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2022,141.28,
+Kabupaten Natuna,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2023,134.47,
+Kabupaten Natuna,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2024,160.83,
+Kabupaten Natuna,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2025,165.12,
+Kabupaten Natuna,"R,S,T,U","R,S,T,U. Jasa Lainnya",2021,18.57,
+Kabupaten Natuna,"R,S,T,U","R,S,T,U. Jasa Lainnya",2022,27.81,
+Kabupaten Natuna,"R,S,T,U","R,S,T,U. Jasa Lainnya",2023,33.79,
+Kabupaten Natuna,"R,S,T,U","R,S,T,U. Jasa Lainnya",2024,39.18,
+Kabupaten Natuna,"R,S,T,U","R,S,T,U. Jasa Lainnya",2025,39.95,
+Kabupaten Lingga,A,"A. Pertanian, Kehutanan dan Perikanan",2021,685.75,
+Kabupaten Lingga,A,"A. Pertanian, Kehutanan dan Perikanan",2022,696.17,
+Kabupaten Lingga,A,"A. Pertanian, Kehutanan dan Perikanan",2023,710.88,
+Kabupaten Lingga,A,"A. Pertanian, Kehutanan dan Perikanan",2024,712.31,
+Kabupaten Lingga,A,"A. Pertanian, Kehutanan dan Perikanan",2025,735.83,
+Kabupaten Lingga,B,B. Pertambangan dan Penggalian,2021,144.91,
+Kabupaten Lingga,B,B. Pertambangan dan Penggalian,2022,146.56,
+Kabupaten Lingga,B,B. Pertambangan dan Penggalian,2023,148.18,
+Kabupaten Lingga,B,B. Pertambangan dan Penggalian,2024,159.03,
+Kabupaten Lingga,B,B. Pertambangan dan Penggalian,2025,172.55,
+Kabupaten Lingga,C,C. Industri Pengolahan,2021,22.48,
+Kabupaten Lingga,C,C. Industri Pengolahan,2022,23.14,
+Kabupaten Lingga,C,C. Industri Pengolahan,2023,23.95,
+Kabupaten Lingga,C,C. Industri Pengolahan,2024,24.06,
+Kabupaten Lingga,C,C. Industri Pengolahan,2025,25.5,
+Kabupaten Lingga,D,D. Pengadaan Listrik dan Gas,2021,8.41,
+Kabupaten Lingga,D,D. Pengadaan Listrik dan Gas,2022,8.73,
+Kabupaten Lingga,D,D. Pengadaan Listrik dan Gas,2023,9.52,
+Kabupaten Lingga,D,D. Pengadaan Listrik dan Gas,2024,10.05,
+Kabupaten Lingga,D,D. Pengadaan Listrik dan Gas,2025,10.95,
+Kabupaten Lingga,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2021,0.91,
+Kabupaten Lingga,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2022,0.96,
+Kabupaten Lingga,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2023,0.98,
+Kabupaten Lingga,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2024,0.99,
+Kabupaten Lingga,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2025,1.08,
+Kabupaten Lingga,F,F. Konstruksi,2021,598.33,
+Kabupaten Lingga,F,F. Konstruksi,2022,628.85,
+Kabupaten Lingga,F,F. Konstruksi,2023,648.59,
+Kabupaten Lingga,F,F. Konstruksi,2024,684.06,
+Kabupaten Lingga,F,F. Konstruksi,2025,725.1,
+Kabupaten Lingga,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2021,630.43,
+Kabupaten Lingga,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2022,661.57,
+Kabupaten Lingga,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2023,692.33,
+Kabupaten Lingga,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2024,743.67,
+Kabupaten Lingga,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2025,803.16,
+Kabupaten Lingga,H,H. Transportasi dan Pergudangan,2021,38.32,
+Kabupaten Lingga,H,H. Transportasi dan Pergudangan,2022,42.63,
+Kabupaten Lingga,H,H. Transportasi dan Pergudangan,2023,50.67,
+Kabupaten Lingga,H,H. Transportasi dan Pergudangan,2024,53.64,
+Kabupaten Lingga,H,H. Transportasi dan Pergudangan,2025,57.93,
+Kabupaten Lingga,I,I. Penyediaan Akomodasi dan Makan Minum,2021,67.96,
+Kabupaten Lingga,I,I. Penyediaan Akomodasi dan Makan Minum,2022,73.78,
+Kabupaten Lingga,I,I. Penyediaan Akomodasi dan Makan Minum,2023,88.75,
+Kabupaten Lingga,I,I. Penyediaan Akomodasi dan Makan Minum,2024,99.25,
+Kabupaten Lingga,I,I. Penyediaan Akomodasi dan Makan Minum,2025,105.21,
+Kabupaten Lingga,J,J. Informasi dan Komunikasi,2021,123.17,
+Kabupaten Lingga,J,J. Informasi dan Komunikasi,2022,128.65,
+Kabupaten Lingga,J,J. Informasi dan Komunikasi,2023,153.45,
+Kabupaten Lingga,J,J. Informasi dan Komunikasi,2024,155.25,
+Kabupaten Lingga,J,J. Informasi dan Komunikasi,2025,158.36,
+Kabupaten Lingga,K,K. Jasa Keuangan dan Asuransi,2021,26.42,
+Kabupaten Lingga,K,K. Jasa Keuangan dan Asuransi,2022,27.01,
+Kabupaten Lingga,K,K. Jasa Keuangan dan Asuransi,2023,28.71,
+Kabupaten Lingga,K,K. Jasa Keuangan dan Asuransi,2024,29.37,
+Kabupaten Lingga,K,K. Jasa Keuangan dan Asuransi,2025,30.54,
+Kabupaten Lingga,L,L. Real Estat,2021,77.49,
+Kabupaten Lingga,L,L. Real Estat,2022,80.8,
+Kabupaten Lingga,L,L. Real Estat,2023,80.82,
+Kabupaten Lingga,L,L. Real Estat,2024,84.29,
+Kabupaten Lingga,L,L. Real Estat,2025,88.5,
+Kabupaten Lingga,"M,N","M,N. Jasa Perusahaan",2021,0.03,
+Kabupaten Lingga,"M,N","M,N. Jasa Perusahaan",2022,0.03,
+Kabupaten Lingga,"M,N","M,N. Jasa Perusahaan",2023,0.03,
+Kabupaten Lingga,"M,N","M,N. Jasa Perusahaan",2024,0.03,
+Kabupaten Lingga,"M,N","M,N. Jasa Perusahaan",2025,0.04,
+Kabupaten Lingga,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2021,225.72,
+Kabupaten Lingga,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2022,232.99,
+Kabupaten Lingga,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2023,240.05,
+Kabupaten Lingga,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2024,257.95,
+Kabupaten Lingga,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2025,256.66,
+Kabupaten Lingga,P,P. Jasa Pendidikan,2021,203.08,
+Kabupaten Lingga,P,P. Jasa Pendidikan,2022,208.01,
+Kabupaten Lingga,P,P. Jasa Pendidikan,2023,215.93,
+Kabupaten Lingga,P,P. Jasa Pendidikan,2024,218.3,
+Kabupaten Lingga,P,P. Jasa Pendidikan,2025,227.03,
+Kabupaten Lingga,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2021,97.09,
+Kabupaten Lingga,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2022,100.75,
+Kabupaten Lingga,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2023,100.24,
+Kabupaten Lingga,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2024,101.75,
+Kabupaten Lingga,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2025,104.8,
+Kabupaten Lingga,"R,S,T,U","R,S,T,U. Jasa Lainnya",2021,21.09,
+Kabupaten Lingga,"R,S,T,U","R,S,T,U. Jasa Lainnya",2022,22.18,
+Kabupaten Lingga,"R,S,T,U","R,S,T,U. Jasa Lainnya",2023,22.31,
+Kabupaten Lingga,"R,S,T,U","R,S,T,U. Jasa Lainnya",2024,23.6,
+Kabupaten Lingga,"R,S,T,U","R,S,T,U. Jasa Lainnya",2025,24.54,
+Kabupaten Kepulauan Anambas,A,"A. Pertanian, Kehutanan dan Perikanan",2021,634.7,
+Kabupaten Kepulauan Anambas,A,"A. Pertanian, Kehutanan dan Perikanan",2022,645.37,
+Kabupaten Kepulauan Anambas,A,"A. Pertanian, Kehutanan dan Perikanan",2023,655.25,
+Kabupaten Kepulauan Anambas,A,"A. Pertanian, Kehutanan dan Perikanan",2024,658.98,
+Kabupaten Kepulauan Anambas,A,"A. Pertanian, Kehutanan dan Perikanan",2025,681.98,
+Kabupaten Kepulauan Anambas,B,B. Pertambangan dan Penggalian,2021,9056.28,
+Kabupaten Kepulauan Anambas,B,B. Pertambangan dan Penggalian,2022,8991.52,
+Kabupaten Kepulauan Anambas,B,B. Pertambangan dan Penggalian,2023,8950.0,
+Kabupaten Kepulauan Anambas,B,B. Pertambangan dan Penggalian,2024,8900.0,
+Kabupaten Kepulauan Anambas,B,B. Pertambangan dan Penggalian,2025,8950.0,
+Kabupaten Kepulauan Anambas,C,C. Industri Pengolahan,2021,16.08,
+Kabupaten Kepulauan Anambas,C,C. Industri Pengolahan,2022,16.58,
+Kabupaten Kepulauan Anambas,C,C. Industri Pengolahan,2023,16.99,
+Kabupaten Kepulauan Anambas,C,C. Industri Pengolahan,2024,18.31,
+Kabupaten Kepulauan Anambas,C,C. Industri Pengolahan,2025,19.68,
+Kabupaten Kepulauan Anambas,D,D. Pengadaan Listrik dan Gas,2021,6.7,
+Kabupaten Kepulauan Anambas,D,D. Pengadaan Listrik dan Gas,2022,6.89,
+Kabupaten Kepulauan Anambas,D,D. Pengadaan Listrik dan Gas,2023,7.44,
+Kabupaten Kepulauan Anambas,D,D. Pengadaan Listrik dan Gas,2024,7.98,
+Kabupaten Kepulauan Anambas,D,D. Pengadaan Listrik dan Gas,2025,8.81,
+Kabupaten Kepulauan Anambas,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2021,0.32,
+Kabupaten Kepulauan Anambas,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2022,0.34,
+Kabupaten Kepulauan Anambas,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2023,0.35,
+Kabupaten Kepulauan Anambas,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2024,0.36,
+Kabupaten Kepulauan Anambas,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2025,0.4,
+Kabupaten Kepulauan Anambas,F,F. Konstruksi,2021,667.75,
+Kabupaten Kepulauan Anambas,F,F. Konstruksi,2022,686.89,
+Kabupaten Kepulauan Anambas,F,F. Konstruksi,2023,758.94,
+Kabupaten Kepulauan Anambas,F,F. Konstruksi,2024,802.58,
+Kabupaten Kepulauan Anambas,F,F. Konstruksi,2025,845.12,
+Kabupaten Kepulauan Anambas,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2021,262.87,
+Kabupaten Kepulauan Anambas,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2022,289.56,
+Kabupaten Kepulauan Anambas,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2023,306.56,
+Kabupaten Kepulauan Anambas,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2024,323.69,
+Kabupaten Kepulauan Anambas,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2025,348.13,
+Kabupaten Kepulauan Anambas,H,H. Transportasi dan Pergudangan,2021,14.27,
+Kabupaten Kepulauan Anambas,H,H. Transportasi dan Pergudangan,2022,15.76,
+Kabupaten Kepulauan Anambas,H,H. Transportasi dan Pergudangan,2023,18.11,
+Kabupaten Kepulauan Anambas,H,H. Transportasi dan Pergudangan,2024,18.57,
+Kabupaten Kepulauan Anambas,H,H. Transportasi dan Pergudangan,2025,19.9,
+Kabupaten Kepulauan Anambas,I,I. Penyediaan Akomodasi dan Makan Minum,2021,11.64,
+Kabupaten Kepulauan Anambas,I,I. Penyediaan Akomodasi dan Makan Minum,2022,12.91,
+Kabupaten Kepulauan Anambas,I,I. Penyediaan Akomodasi dan Makan Minum,2023,16.44,
+Kabupaten Kepulauan Anambas,I,I. Penyediaan Akomodasi dan Makan Minum,2024,17.13,
+Kabupaten Kepulauan Anambas,I,I. Penyediaan Akomodasi dan Makan Minum,2025,17.62,
+Kabupaten Kepulauan Anambas,J,J. Informasi dan Komunikasi,2021,66.7,
+Kabupaten Kepulauan Anambas,J,J. Informasi dan Komunikasi,2022,68.81,
+Kabupaten Kepulauan Anambas,J,J. Informasi dan Komunikasi,2023,82.54,
+Kabupaten Kepulauan Anambas,J,J. Informasi dan Komunikasi,2024,82.49,
+Kabupaten Kepulauan Anambas,J,J. Informasi dan Komunikasi,2025,80.3,
+Kabupaten Kepulauan Anambas,K,K. Jasa Keuangan dan Asuransi,2021,16.65,
+Kabupaten Kepulauan Anambas,K,K. Jasa Keuangan dan Asuransi,2022,16.86,
+Kabupaten Kepulauan Anambas,K,K. Jasa Keuangan dan Asuransi,2023,18.32,
+Kabupaten Kepulauan Anambas,K,K. Jasa Keuangan dan Asuransi,2024,19.68,
+Kabupaten Kepulauan Anambas,K,K. Jasa Keuangan dan Asuransi,2025,20.49,
+Kabupaten Kepulauan Anambas,L,L. Real Estat,2021,73.99,
+Kabupaten Kepulauan Anambas,L,L. Real Estat,2022,76.35,
+Kabupaten Kepulauan Anambas,L,L. Real Estat,2023,80.36,
+Kabupaten Kepulauan Anambas,L,L. Real Estat,2024,84.85,
+Kabupaten Kepulauan Anambas,L,L. Real Estat,2025,89.7,
+Kabupaten Kepulauan Anambas,"M,N","M,N. Jasa Perusahaan",2021,0.02,
+Kabupaten Kepulauan Anambas,"M,N","M,N. Jasa Perusahaan",2022,0.02,
+Kabupaten Kepulauan Anambas,"M,N","M,N. Jasa Perusahaan",2023,0.02,
+Kabupaten Kepulauan Anambas,"M,N","M,N. Jasa Perusahaan",2024,0.02,
+Kabupaten Kepulauan Anambas,"M,N","M,N. Jasa Perusahaan",2025,0.03,
+Kabupaten Kepulauan Anambas,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2021,223.73,
+Kabupaten Kepulauan Anambas,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2022,230.61,
+Kabupaten Kepulauan Anambas,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2023,242.44,
+Kabupaten Kepulauan Anambas,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2024,285.74,
+Kabupaten Kepulauan Anambas,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2025,281.57,
+Kabupaten Kepulauan Anambas,P,P. Jasa Pendidikan,2021,23.29,
+Kabupaten Kepulauan Anambas,P,P. Jasa Pendidikan,2022,24.19,
+Kabupaten Kepulauan Anambas,P,P. Jasa Pendidikan,2023,25.13,
+Kabupaten Kepulauan Anambas,P,P. Jasa Pendidikan,2024,26.12,
+Kabupaten Kepulauan Anambas,P,P. Jasa Pendidikan,2025,27.55,
+Kabupaten Kepulauan Anambas,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2021,26.41,
+Kabupaten Kepulauan Anambas,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2022,27.85,
+Kabupaten Kepulauan Anambas,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2023,26.51,
+Kabupaten Kepulauan Anambas,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2024,31.71,
+Kabupaten Kepulauan Anambas,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2025,32.55,
+Kabupaten Kepulauan Anambas,"R,S,T,U","R,S,T,U. Jasa Lainnya",2021,7.09,
+Kabupaten Kepulauan Anambas,"R,S,T,U","R,S,T,U. Jasa Lainnya",2022,7.7,
+Kabupaten Kepulauan Anambas,"R,S,T,U","R,S,T,U. Jasa Lainnya",2023,9.36,
+Kabupaten Kepulauan Anambas,"R,S,T,U","R,S,T,U. Jasa Lainnya",2024,10.85,
+Kabupaten Kepulauan Anambas,"R,S,T,U","R,S,T,U. Jasa Lainnya",2025,11.06,
+Kota Batam,A,"A. Pertanian, Kehutanan dan Perikanan",2021,1107.09,
+Kota Batam,A,"A. Pertanian, Kehutanan dan Perikanan",2022,1156.74,
+Kota Batam,A,"A. Pertanian, Kehutanan dan Perikanan",2023,1174.44,
+Kota Batam,A,"A. Pertanian, Kehutanan dan Perikanan",2024,1181.13,
+Kota Batam,A,"A. Pertanian, Kehutanan dan Perikanan",2025,1222.35,
+Kota Batam,B,B. Pertambangan dan Penggalian,2021,73.2,
+Kota Batam,B,B. Pertambangan dan Penggalian,2022,77.86,
+Kota Batam,B,B. Pertambangan dan Penggalian,2023,75.8,
+Kota Batam,B,B. Pertambangan dan Penggalian,2024,69.86,
+Kota Batam,B,B. Pertambangan dan Penggalian,2025,81.05,
+Kota Batam,C,C. Industri Pengolahan,2021,64672.84,
+Kota Batam,C,C. Industri Pengolahan,2022,68824.75,
+Kota Batam,C,C. Industri Pengolahan,2023,71613.45,
+Kota Batam,C,C. Industri Pengolahan,2024,77014.21,
+Kota Batam,C,C. Industri Pengolahan,2025,82805.68,
+Kota Batam,D,D. Pengadaan Listrik dan Gas,2021,1506.71,
+Kota Batam,D,D. Pengadaan Listrik dan Gas,2022,1745.97,
+Kota Batam,D,D. Pengadaan Listrik dan Gas,2023,1886.17,
+Kota Batam,D,D. Pengadaan Listrik dan Gas,2024,2021.97,
+Kota Batam,D,D. Pengadaan Listrik dan Gas,2025,2231.65,
+Kota Batam,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2021,210.75,
+Kota Batam,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2022,219.33,
+Kota Batam,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2023,229.09,
+Kota Batam,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2024,233.63,
+Kota Batam,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2025,260.96,
+Kota Batam,F,F. Konstruksi,2021,21880.62,
+Kota Batam,F,F. Konstruksi,2022,22840.39,
+Kota Batam,F,F. Konstruksi,2023,25236.35,
+Kota Batam,F,F. Konstruksi,2024,27659.0,
+Kota Batam,F,F. Konstruksi,2025,29124.93,
+Kota Batam,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2021,6219.69,
+Kota Batam,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2022,6657.45,
+Kota Batam,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2023,7520.12,
+Kota Batam,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2024,8578.2,
+Kota Batam,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2025,9225.89,
+Kota Batam,H,H. Transportasi dan Pergudangan,2021,1276.5,
+Kota Batam,H,H. Transportasi dan Pergudangan,2022,1871.81,
+Kota Batam,H,H. Transportasi dan Pergudangan,2023,2151.08,
+Kota Batam,H,H. Transportasi dan Pergudangan,2024,2205.07,
+Kota Batam,H,H. Transportasi dan Pergudangan,2025,2363.39,
+Kota Batam,I,I. Penyediaan Akomodasi dan Makan Minum,2021,1423.41,
+Kota Batam,I,I. Penyediaan Akomodasi dan Makan Minum,2022,2117.71,
+Kota Batam,I,I. Penyediaan Akomodasi dan Makan Minum,2023,2696.06,
+Kota Batam,I,I. Penyediaan Akomodasi dan Makan Minum,2024,2809.56,
+Kota Batam,I,I. Penyediaan Akomodasi dan Makan Minum,2025,2890.19,
+Kota Batam,J,J. Informasi dan Komunikasi,2021,4306.47,
+Kota Batam,J,J. Informasi dan Komunikasi,2022,4407.71,
+Kota Batam,J,J. Informasi dan Komunikasi,2023,5287.49,
+Kota Batam,J,J. Informasi dan Komunikasi,2024,5284.32,
+Kota Batam,J,J. Informasi dan Komunikasi,2025,5144.38,
+Kota Batam,K,K. Jasa Keuangan dan Asuransi,2021,3860.47,
+Kota Batam,K,K. Jasa Keuangan dan Asuransi,2022,4042.36,
+Kota Batam,K,K. Jasa Keuangan dan Asuransi,2023,4392.07,
+Kota Batam,K,K. Jasa Keuangan dan Asuransi,2024,4717.52,
+Kota Batam,K,K. Jasa Keuangan dan Asuransi,2025,4911.41,
+Kota Batam,L,L. Real Estat,2021,1282.12,
+Kota Batam,L,L. Real Estat,2022,1342.55,
+Kota Batam,L,L. Real Estat,2023,1413.03,
+Kota Batam,L,L. Real Estat,2024,1492.02,
+Kota Batam,L,L. Real Estat,2025,1577.21,
+Kota Batam,"M,N","M,N. Jasa Perusahaan",2021,3.08,
+Kota Batam,"M,N","M,N. Jasa Perusahaan",2022,3.48,
+Kota Batam,"M,N","M,N. Jasa Perusahaan",2023,4.12,
+Kota Batam,"M,N","M,N. Jasa Perusahaan",2024,4.33,
+Kota Batam,"M,N","M,N. Jasa Perusahaan",2025,5.05,
+Kota Batam,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2021,1306.76,
+Kota Batam,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2022,1320.65,
+Kota Batam,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2023,1388.4,
+Kota Batam,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2024,1636.37,
+Kota Batam,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2025,1612.46,
+Kota Batam,P,P. Jasa Pendidikan,2021,915.56,
+Kota Batam,P,P. Jasa Pendidikan,2022,920.66,
+Kota Batam,P,P. Jasa Pendidikan,2023,956.29,
+Kota Batam,P,P. Jasa Pendidikan,2024,993.97,
+Kota Batam,P,P. Jasa Pendidikan,2025,1048.44,
+Kota Batam,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2021,881.29,
+Kota Batam,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2022,939.46,
+Kota Batam,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2023,894.18,
+Kota Batam,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2024,1069.44,
+Kota Batam,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2025,1097.99,
+Kota Batam,"R,S,T,U","R,S,T,U. Jasa Lainnya",2021,142.37,
+Kota Batam,"R,S,T,U","R,S,T,U. Jasa Lainnya",2022,176.31,
+Kota Batam,"R,S,T,U","R,S,T,U. Jasa Lainnya",2023,214.24,
+Kota Batam,"R,S,T,U","R,S,T,U. Jasa Lainnya",2024,248.41,
+Kota Batam,"R,S,T,U","R,S,T,U. Jasa Lainnya",2025,253.28,
+Kota Tanjungpinang,A,"A. Pertanian, Kehutanan dan Perikanan",2021,109.04,
+Kota Tanjungpinang,A,"A. Pertanian, Kehutanan dan Perikanan",2022,111.98,
+Kota Tanjungpinang,A,"A. Pertanian, Kehutanan dan Perikanan",2023,114.56,
+Kota Tanjungpinang,A,"A. Pertanian, Kehutanan dan Perikanan",2024,116.74,
+Kota Tanjungpinang,A,"A. Pertanian, Kehutanan dan Perikanan",2025,120.81,
+Kota Tanjungpinang,B,B. Pertambangan dan Penggalian,2021,0.99,
+Kota Tanjungpinang,B,B. Pertambangan dan Penggalian,2022,1.01,
+Kota Tanjungpinang,B,B. Pertambangan dan Penggalian,2023,0.9,
+Kota Tanjungpinang,B,B. Pertambangan dan Penggalian,2024,0.86,
+Kota Tanjungpinang,B,B. Pertambangan dan Penggalian,2025,1.0,
+Kota Tanjungpinang,C,C. Industri Pengolahan,2021,964.33,
+Kota Tanjungpinang,C,C. Industri Pengolahan,2022,986.17,
+Kota Tanjungpinang,C,C. Industri Pengolahan,2023,1013.04,
+Kota Tanjungpinang,C,C. Industri Pengolahan,2024,1019.59,
+Kota Tanjungpinang,C,C. Industri Pengolahan,2025,1096.26,
+Kota Tanjungpinang,D,D. Pengadaan Listrik dan Gas,2021,36.99,
+Kota Tanjungpinang,D,D. Pengadaan Listrik dan Gas,2022,38.33,
+Kota Tanjungpinang,D,D. Pengadaan Listrik dan Gas,2023,41.01,
+Kota Tanjungpinang,D,D. Pengadaan Listrik dan Gas,2024,43.21,
+Kota Tanjungpinang,D,D. Pengadaan Listrik dan Gas,2025,47.69,
+Kota Tanjungpinang,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2021,11.15,
+Kota Tanjungpinang,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2022,11.45,
+Kota Tanjungpinang,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2023,11.92,
+Kota Tanjungpinang,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2024,11.78,
+Kota Tanjungpinang,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2025,13.16,
+Kota Tanjungpinang,F,F. Konstruksi,2021,4401.93,
+Kota Tanjungpinang,F,F. Konstruksi,2022,4424.67,
+Kota Tanjungpinang,F,F. Konstruksi,2023,4449.95,
+Kota Tanjungpinang,F,F. Konstruksi,2024,4426.05,
+Kota Tanjungpinang,F,F. Konstruksi,2025,4660.63,
+Kota Tanjungpinang,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2021,3617.34,
+Kota Tanjungpinang,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2022,3789.91,
+Kota Tanjungpinang,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2023,4013.63,
+Kota Tanjungpinang,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2024,4329.7,
+Kota Tanjungpinang,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2025,4656.59,
+Kota Tanjungpinang,H,H. Transportasi dan Pergudangan,2021,583.19,
+Kota Tanjungpinang,H,H. Transportasi dan Pergudangan,2022,752.33,
+Kota Tanjungpinang,H,H. Transportasi dan Pergudangan,2023,836.72,
+Kota Tanjungpinang,H,H. Transportasi dan Pergudangan,2024,903.8,
+Kota Tanjungpinang,H,H. Transportasi dan Pergudangan,2025,968.7,
+Kota Tanjungpinang,I,I. Penyediaan Akomodasi dan Makan Minum,2021,149.34,
+Kota Tanjungpinang,I,I. Penyediaan Akomodasi dan Makan Minum,2022,199.94,
+Kota Tanjungpinang,I,I. Penyediaan Akomodasi dan Makan Minum,2023,241.25,
+Kota Tanjungpinang,I,I. Penyediaan Akomodasi dan Makan Minum,2024,254.32,
+Kota Tanjungpinang,I,I. Penyediaan Akomodasi dan Makan Minum,2025,261.62,
+Kota Tanjungpinang,J,J. Informasi dan Komunikasi,2021,585.18,
+Kota Tanjungpinang,J,J. Informasi dan Komunikasi,2022,609.85,
+Kota Tanjungpinang,J,J. Informasi dan Komunikasi,2023,663.75,
+Kota Tanjungpinang,J,J. Informasi dan Komunikasi,2024,704.76,
+Kota Tanjungpinang,J,J. Informasi dan Komunikasi,2025,686.08,
+Kota Tanjungpinang,K,K. Jasa Keuangan dan Asuransi,2021,490.43,
+Kota Tanjungpinang,K,K. Jasa Keuangan dan Asuransi,2022,500.14,
+Kota Tanjungpinang,K,K. Jasa Keuangan dan Asuransi,2023,533.33,
+Kota Tanjungpinang,K,K. Jasa Keuangan dan Asuransi,2024,556.74,
+Kota Tanjungpinang,K,K. Jasa Keuangan dan Asuransi,2025,579.62,
+Kota Tanjungpinang,L,L. Real Estat,2021,493.6,
+Kota Tanjungpinang,L,L. Real Estat,2022,507.22,
+Kota Tanjungpinang,L,L. Real Estat,2023,546.92,
+Kota Tanjungpinang,L,L. Real Estat,2024,572.86,
+Kota Tanjungpinang,L,L. Real Estat,2025,605.57,
+Kota Tanjungpinang,"M,N","M,N. Jasa Perusahaan",2021,2.05,
+Kota Tanjungpinang,"M,N","M,N. Jasa Perusahaan",2022,2.17,
+Kota Tanjungpinang,"M,N","M,N. Jasa Perusahaan",2023,2.38,
+Kota Tanjungpinang,"M,N","M,N. Jasa Perusahaan",2024,2.43,
+Kota Tanjungpinang,"M,N","M,N. Jasa Perusahaan",2025,2.84,
+Kota Tanjungpinang,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2021,1436.3,
+Kota Tanjungpinang,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2022,1484.59,
+Kota Tanjungpinang,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2023,1614.44,
+Kota Tanjungpinang,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2024,1668.82,
+Kota Tanjungpinang,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2025,1644.45,
+Kota Tanjungpinang,P,P. Jasa Pendidikan,2021,605.48,
+Kota Tanjungpinang,P,P. Jasa Pendidikan,2022,619.24,
+Kota Tanjungpinang,P,P. Jasa Pendidikan,2023,639.39,
+Kota Tanjungpinang,P,P. Jasa Pendidikan,2024,643.04,
+Kota Tanjungpinang,P,P. Jasa Pendidikan,2025,678.28,
+Kota Tanjungpinang,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2021,394.81,
+Kota Tanjungpinang,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2022,401.01,
+Kota Tanjungpinang,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2023,420.09,
+Kota Tanjungpinang,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2024,448.27,
+Kota Tanjungpinang,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2025,460.24,
+Kota Tanjungpinang,"R,S,T,U","R,S,T,U. Jasa Lainnya",2021,138.06,
+Kota Tanjungpinang,"R,S,T,U","R,S,T,U. Jasa Lainnya",2022,157.57,
+Kota Tanjungpinang,"R,S,T,U","R,S,T,U. Jasa Lainnya",2023,172.72,
+Kota Tanjungpinang,"R,S,T,U","R,S,T,U. Jasa Lainnya",2024,191.77,
+Kota Tanjungpinang,"R,S,T,U","R,S,T,U. Jasa Lainnya",2025,195.53,
+Provinsi Kepulauan Riau,A,"A. Pertanian, Kehutanan dan Perikanan",2021,5322.1,8461.8
+Provinsi Kepulauan Riau,A,"A. Pertanian, Kehutanan dan Perikanan",2022,5601.9,9371.3
+Provinsi Kepulauan Riau,A,"A. Pertanian, Kehutanan dan Perikanan",2023,5687.6,9898.7
+Provinsi Kepulauan Riau,A,"A. Pertanian, Kehutanan dan Perikanan",2024,5720.2,10355.5
+Provinsi Kepulauan Riau,A,"A. Pertanian, Kehutanan dan Perikanan",2025,5919.9,11388.1
+Provinsi Kepulauan Riau,B,B. Pertambangan dan Penggalian,2021,24748.82,34696.1
+Provinsi Kepulauan Riau,B,B. Pertambangan dan Penggalian,2022,23015.61,38839.3
+Provinsi Kepulauan Riau,B,B. Pertambangan dan Penggalian,2023,22406.26,37035.1
+Provinsi Kepulauan Riau,B,B. Pertambangan dan Penggalian,2024,20650.99,34242.4
+Provinsi Kepulauan Riau,B,B. Pertambangan dan Penggalian,2025,23956.26,38396.7
+Provinsi Kepulauan Riau,C,C. Industri Pengolahan,2021,75925.35,115852.5
+Provinsi Kepulauan Riau,C,C. Industri Pengolahan,2022,79348.16,125989.7
+Provinsi Kepulauan Riau,C,C. Industri Pengolahan,2023,81302.96,132924.9
+Provinsi Kepulauan Riau,C,C. Industri Pengolahan,2024,87616.69,144629.0
+Provinsi Kepulauan Riau,C,C. Industri Pengolahan,2025,94202.86,158685.9
+Provinsi Kepulauan Riau,D,D. Pengadaan Listrik dan Gas,2021,1648.93,2733.3
+Provinsi Kepulauan Riau,D,D. Pengadaan Listrik dan Gas,2022,1919.01,3263.3
+Provinsi Kepulauan Riau,D,D. Pengadaan Listrik dan Gas,2023,2073.12,3557.1
+Provinsi Kepulauan Riau,D,D. Pengadaan Listrik dan Gas,2024,2222.43,3865.2
+Provinsi Kepulauan Riau,D,D. Pengadaan Listrik dan Gas,2025,2452.86,4356.6
+Provinsi Kepulauan Riau,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2021,218.68,279.6
+Provinsi Kepulauan Riau,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2022,237.96,306.2
+Provinsi Kepulauan Riau,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2023,248.56,322.4
+Provinsi Kepulauan Riau,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2024,253.49,343.5
+Provinsi Kepulauan Riau,E,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",2025,283.14,388.9
+Provinsi Kepulauan Riau,F,F. Konstruksi,2021,33256.03,53159.2
+Provinsi Kepulauan Riau,F,F. Konstruksi,2022,34917.26,59057.2
+Provinsi Kepulauan Riau,F,F. Konstruksi,2023,38580.25,66985.1
+Provinsi Kepulauan Riau,F,F. Konstruksi,2024,40799.5,71355.8
+Provinsi Kepulauan Riau,F,F. Konstruksi,2025,42962.22,75858.3
+Provinsi Kepulauan Riau,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2021,13592.98,22474.9
+Provinsi Kepulauan Riau,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2022,15477.62,27343.4
+Provinsi Kepulauan Riau,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2023,16385.52,30166.0
+Provinsi Kepulauan Riau,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2024,17301.86,32602.6
+Provinsi Kepulauan Riau,G,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",2025,18607.41,35965.8
+Provinsi Kepulauan Riau,H,H. Transportasi dan Pergudangan,2021,2514.94,3826.6
+Provinsi Kepulauan Riau,H,H. Transportasi dan Pergudangan,2022,3479.88,5887.7
+Provinsi Kepulauan Riau,H,H. Transportasi dan Pergudangan,2023,3999.01,6768.9
+Provinsi Kepulauan Riau,H,H. Transportasi dan Pergudangan,2024,4099.38,7207.3
+Provinsi Kepulauan Riau,H,H. Transportasi dan Pergudangan,2025,4393.91,7722.6
+Provinsi Kepulauan Riau,I,I. Penyediaan Akomodasi dan Makan Minum,2021,2357.95,3167.6
+Provinsi Kepulauan Riau,I,I. Penyediaan Akomodasi dan Makan Minum,2022,3530.11,4874.9
+Provinsi Kepulauan Riau,I,I. Penyediaan Akomodasi dan Makan Minum,2023,4494.33,6301.9
+Provinsi Kepulauan Riau,I,I. Penyediaan Akomodasi dan Makan Minum,2024,4683.68,6681.4
+Provinsi Kepulauan Riau,I,I. Penyediaan Akomodasi dan Makan Minum,2025,4818.29,6980.0
+Provinsi Kepulauan Riau,J,J. Informasi dan Komunikasi,2021,5909.45,7078.1
+Provinsi Kepulauan Riau,J,J. Informasi dan Komunikasi,2022,6421.12,7719.9
+Provinsi Kepulauan Riau,J,J. Informasi dan Komunikasi,2023,7702.88,9334.2
+Provinsi Kepulauan Riau,J,J. Informasi dan Komunikasi,2024,7698.4,9388.8
+Provinsi Kepulauan Riau,J,J. Informasi dan Komunikasi,2025,7494.68,9113.7
+Provinsi Kepulauan Riau,K,K. Jasa Keuangan dan Asuransi,2021,4833.25,7191.8
+Provinsi Kepulauan Riau,K,K. Jasa Keuangan dan Asuransi,2022,5035.02,7906.3
+Provinsi Kepulauan Riau,K,K. Jasa Keuangan dan Asuransi,2023,5470.38,8823.3
+Provinsi Kepulauan Riau,K,K. Jasa Keuangan dan Asuransi,2024,5875.9,9644.3
+Provinsi Kepulauan Riau,K,K. Jasa Keuangan dan Asuransi,2025,6117.41,10228.5
+Provinsi Kepulauan Riau,L,L. Real Estat,2021,2247.92,3116.6
+Provinsi Kepulauan Riau,L,L. Real Estat,2022,2352.27,3353.5
+Provinsi Kepulauan Riau,L,L. Real Estat,2023,2475.66,3640.0
+Provinsi Kepulauan Riau,L,L. Real Estat,2024,2614.14,3882.7
+Provinsi Kepulauan Riau,L,L. Real Estat,2025,2763.51,4159.7
+Provinsi Kepulauan Riau,"M,N","M,N. Jasa Perusahaan",2021,5.74,6.6
+Provinsi Kepulauan Riau,"M,N","M,N. Jasa Perusahaan",2022,6.61,8.8
+Provinsi Kepulauan Riau,"M,N","M,N. Jasa Perusahaan",2023,7.82,11.1
+Provinsi Kepulauan Riau,"M,N","M,N. Jasa Perusahaan",2024,8.21,12.0
+Provinsi Kepulauan Riau,"M,N","M,N. Jasa Perusahaan",2025,9.59,14.2
+Provinsi Kepulauan Riau,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2021,4028.29,6698.0
+Provinsi Kepulauan Riau,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2022,4163.45,7202.8
+Provinsi Kepulauan Riau,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2023,4376.99,7886.5
+Provinsi Kepulauan Riau,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2024,5158.77,9223.4
+Provinsi Kepulauan Riau,O,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",2025,5083.69,8873.9
+Provinsi Kepulauan Riau,P,P. Jasa Pendidikan,2021,2183.17,3878.5
+Provinsi Kepulauan Riau,P,P. Jasa Pendidikan,2022,2255.62,4182.9
+Provinsi Kepulauan Riau,P,P. Jasa Pendidikan,2023,2342.98,4416.3
+Provinsi Kepulauan Riau,P,P. Jasa Pendidikan,2024,2435.31,4702.6
+Provinsi Kepulauan Riau,P,P. Jasa Pendidikan,2025,2568.83,5092.4
+Provinsi Kepulauan Riau,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2021,1886.04,2571.8
+Provinsi Kepulauan Riau,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2022,1885.75,2646.3
+Provinsi Kepulauan Riau,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2023,1794.92,2578.7
+Provinsi Kepulauan Riau,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2024,2146.71,3124.1
+Provinsi Kepulauan Riau,Q,Q. Jasa Kesehatan dan Kegiatan Sosial,2025,2203.96,3273.1
+Provinsi Kepulauan Riau,"R,S,T,U","R,S,T,U. Jasa Lainnya",2021,272.86,430.0
+Provinsi Kepulauan Riau,"R,S,T,U","R,S,T,U. Jasa Lainnya",2022,463.78,786.5
+Provinsi Kepulauan Riau,"R,S,T,U","R,S,T,U. Jasa Lainnya",2023,563.56,994.4
+Provinsi Kepulauan Riau,"R,S,T,U","R,S,T,U. Jasa Lainnya",2024,653.43,1175.9
+Provinsi Kepulauan Riau,"R,S,T,U","R,S,T,U. Jasa Lainnya",2025,666.25,1231.6

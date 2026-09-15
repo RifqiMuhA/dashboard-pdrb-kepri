@@ -1,0 +1,126 @@
+kategori,uraian,kode,tahun,pertumbuhan_q_to_q,pertumbuhan_y_on_y,sog_q_to_q,sog_y_on_y
+lapangan_usaha,"A. Pertanian, Kehutanan dan Perikanan",A,2021,-5.58,-15.46,-0.16,-0.51
+lapangan_usaha,"A. Pertanian, Kehutanan dan Perikanan",A,2022,-5.41,3.0,-0.16,0.08
+lapangan_usaha,"A. Pertanian, Kehutanan dan Perikanan",A,2023,-5.88,4.67,-0.17,0.13
+lapangan_usaha,"A. Pertanian, Kehutanan dan Perikanan",A,2024,-6.99,4.86,-0.2,0.14
+lapangan_usaha,"A. Pertanian, Kehutanan dan Perikanan",A,2025,-7.41,-2.75,-0.21,-0.08
+lapangan_usaha,B. Pertambangan dan Penggalian,B,2021,1.9,-6.98,0.27,-1.09
+lapangan_usaha,B. Pertambangan dan Penggalian,B,2022,-8.77,-7.07,-1.23,-1.04
+lapangan_usaha,B. Pertambangan dan Penggalian,B,2023,0.73,-14.87,0.07,-1.97
+lapangan_usaha,B. Pertambangan dan Penggalian,B,2024,-6.61,-4.69,-0.66,-0.5
+lapangan_usaha,B. Pertambangan dan Penggalian,B,2025,-12.21,0.99,-1.25,0.1
+lapangan_usaha,C. Industri Pengolahan,C,2021,-0.03,7.33,-0.01,2.82
+lapangan_usaha,C. Industri Pengolahan,C,2022,-2.81,4.16,-1.18,1.74
+lapangan_usaha,C. Industri Pengolahan,C,2023,-1.86,7.77,-0.79,3.28
+lapangan_usaha,C. Industri Pengolahan,C,2024,0.1,3.87,0.04,1.65
+lapangan_usaha,C. Industri Pengolahan,C,2025,0.72,7.3,0.3,3.09
+lapangan_usaha,D. Pengadaan Listrik dan Gas,D,2021,1.77,0.61,0.02,0.01
+lapangan_usaha,D. Pengadaan Listrik dan Gas,D,2022,3.94,10.93,0.04,0.1
+lapangan_usaha,D. Pengadaan Listrik dan Gas,D,2023,-1.56,12.08,-0.02,0.12
+lapangan_usaha,D. Pengadaan Listrik dan Gas,D,2024,0.8,5.13,0.01,0.05
+lapangan_usaha,D. Pengadaan Listrik dan Gas,D,2025,-5.03,2.7,-0.05,0.03
+lapangan_usaha,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",E,2021,2.22,0.68,0.0,0.0
+lapangan_usaha,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",E,2022,-0.19,-0.71,0.0,0.0
+lapangan_usaha,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",E,2023,1.84,11.53,0.0,0.01
+lapangan_usaha,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",E,2024,0.11,8.55,0.0,0.01
+lapangan_usaha,"E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",E,2025,9.25,7.33,0.01,0.01
+lapangan_usaha,F. Konstruksi,F,2021,-1.5,0.05,-0.28,0.01
+lapangan_usaha,F. Konstruksi,F,2022,-2.19,0.69,-0.39,0.13
+lapangan_usaha,F. Konstruksi,F,2023,-10.82,7.53,-2.13,1.36
+lapangan_usaha,F. Konstruksi,F,2024,-8.55,13.89,-1.79,2.53
+lapangan_usaha,F. Konstruksi,F,2025,-6.07,3.84,-1.22,0.7
+lapangan_usaha,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",G,2021,0.57,-17.16,0.04,-1.42
+lapangan_usaha,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",G,2022,3.69,19.19,0.28,1.34
+lapangan_usaha,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",G,2023,1.88,5.11,0.14,0.41
+lapangan_usaha,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",G,2024,0.65,4.8,0.05,0.38
+lapangan_usaha,"G. Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor",G,2025,0.31,10.29,0.03,0.82
+lapangan_usaha,H. Transportasi dan Pergudangan,H,2021,-4.43,-30.67,-0.06,-0.61
+lapangan_usaha,H. Transportasi dan Pergudangan,H,2022,-0.79,19.06,-0.01,0.27
+lapangan_usaha,H. Transportasi dan Pergudangan,H,2023,0.7,33.07,0.01,0.54
+lapangan_usaha,H. Transportasi dan Pergudangan,H,2024,1.79,0.86,0.03,0.02
+lapangan_usaha,H. Transportasi dan Pergudangan,H,2025,-0.5,3.57,-0.01,0.07
+lapangan_usaha,I. Penyediaan Akomodasi dan Makan Minum,I,2021,-10.79,-18.27,-0.16,-0.3
+lapangan_usaha,I. Penyediaan Akomodasi dan Makan Minum,I,2022,-11.41,5.18,-0.17,0.07
+lapangan_usaha,I. Penyediaan Akomodasi dan Makan Minum,I,2023,0.82,82.7,0.02,1.16
+lapangan_usaha,I. Penyediaan Akomodasi dan Makan Minum,I,2024,-0.66,-5.98,-0.01,-0.14
+lapangan_usaha,I. Penyediaan Akomodasi dan Makan Minum,I,2025,-6.02,2.47,-0.13,0.05
+lapangan_usaha,J. Informasi dan Komunikasi,J,2021,0.43,19.46,0.01,0.52
+lapangan_usaha,J. Informasi dan Komunikasi,J,2022,0.27,6.04,0.01,0.2
+lapangan_usaha,J. Informasi dan Komunikasi,J,2023,1.04,24.53,0.04,0.82
+lapangan_usaha,J. Informasi dan Komunikasi,J,2024,2.92,2.3,0.1,0.09
+lapangan_usaha,J. Informasi dan Komunikasi,J,2025,5.81,-5.98,0.18,-0.23
+lapangan_usaha,K. Jasa Keuangan dan Asuransi,K,2021,-1.69,-0.21,-0.05,-0.01
+lapangan_usaha,K. Jasa Keuangan dan Asuransi,K,2022,6.09,4.96,0.15,0.13
+lapangan_usaha,K. Jasa Keuangan dan Asuransi,K,2023,0.76,4.94,0.02,0.14
+lapangan_usaha,K. Jasa Keuangan dan Asuransi,K,2024,-0.05,8.22,0.0,0.22
+lapangan_usaha,K. Jasa Keuangan dan Asuransi,K,2025,3.26,5.05,0.09,0.14
+lapangan_usaha,L. Real Estat,L,2021,-0.71,-14.66,-0.01,-0.21
+lapangan_usaha,L. Real Estat,L,2022,-1.63,1.01,-0.02,0.01
+lapangan_usaha,L. Real Estat,L,2023,0.26,11.35,0.0,0.14
+lapangan_usaha,L. Real Estat,L,2024,3.0,2.85,0.04,0.04
+lapangan_usaha,L. Real Estat,L,2025,-3.49,-0.13,-0.04,0.0
+lapangan_usaha,"M,N. Jasa Perusahaan","M,N",2021,-4.74,-11.6,0.0,0.0
+lapangan_usaha,"M,N. Jasa Perusahaan","M,N",2022,-11.02,0.73,0.0,0.0
+lapangan_usaha,"M,N. Jasa Perusahaan","M,N",2023,0.42,34.0,0.0,0.0
+lapangan_usaha,"M,N. Jasa Perusahaan","M,N",2024,-6.97,-6.63,0.0,0.0
+lapangan_usaha,"M,N. Jasa Perusahaan","M,N",2025,0.34,26.89,0.0,0.0
+lapangan_usaha,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",O,2021,-26.18,-9.24,-0.69,-0.2
+lapangan_usaha,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",O,2022,-28.58,-9.65,-0.67,-0.19
+lapangan_usaha,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",O,2023,-22.03,8.03,-0.48,0.14
+lapangan_usaha,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",O,2024,-12.79,25.5,-0.3,0.45
+lapangan_usaha,"O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",O,2025,-9.29,8.1,-0.22,0.17
+lapangan_usaha,P. Jasa Pendidikan,P,2021,-1.59,-11.43,-0.02,-0.16
+lapangan_usaha,P. Jasa Pendidikan,P,2022,-1.86,-1.0,-0.02,-0.01
+lapangan_usaha,P. Jasa Pendidikan,P,2023,0.89,8.82,0.01,0.1
+lapangan_usaha,P. Jasa Pendidikan,P,2024,-1.01,-1.74,-0.01,-0.02
+lapangan_usaha,P. Jasa Pendidikan,P,2025,-8.68,9.01,-0.11,0.1
+lapangan_usaha,Q. Jasa Kesehatan dan Kegiatan Sosial,Q,2021,-0.94,12.45,-0.01,0.11
+lapangan_usaha,Q. Jasa Kesehatan dan Kegiatan Sosial,Q,2022,-4.84,0.39,-0.05,0.0
+lapangan_usaha,Q. Jasa Kesehatan dan Kegiatan Sosial,Q,2023,-4.78,6.21,-0.05,0.06
+lapangan_usaha,Q. Jasa Kesehatan dan Kegiatan Sosial,Q,2024,-4.77,7.07,-0.05,0.07
+lapangan_usaha,Q. Jasa Kesehatan dan Kegiatan Sosial,Q,2025,-8.81,9.04,-0.1,0.09
+lapangan_usaha,"R,S,T,U. Jasa Lainnya","R,S,T,U",2021,-1.05,-45.07,0.0,-0.15
+lapangan_usaha,"R,S,T,U. Jasa Lainnya","R,S,T,U",2022,15.84,6.73,0.02,0.01
+lapangan_usaha,"R,S,T,U. Jasa Lainnya","R,S,T,U",2023,0.12,37.38,0.0,0.07
+lapangan_usaha,"R,S,T,U. Jasa Lainnya","R,S,T,U",2024,-9.06,9.99,-0.02,0.02
+lapangan_usaha,"R,S,T,U. Jasa Lainnya","R,S,T,U",2025,-16.57,16.41,-0.05,0.04
+lapangan_usaha,Produk Domestik Regional Bruto (PDRB),PDRB,2021,-1.12,-1.19,-1.12,-1.19
+lapangan_usaha,Produk Domestik Regional Bruto (PDRB),PDRB,2022,-3.41,2.83,-3.41,2.83
+lapangan_usaha,Produk Domestik Regional Bruto (PDRB),PDRB,2023,-3.31,6.51,-3.31,6.51
+lapangan_usaha,Produk Domestik Regional Bruto (PDRB),PDRB,2024,-2.79,5.01,-2.79,5.01
+lapangan_usaha,Produk Domestik Regional Bruto (PDRB),PDRB,2025,-2.78,5.16,-2.78,5.16
+pengeluaran,Pengeluaran Konsumsi Rumah Tangga,PENG_1,2021,0.92,-0.66,0.37,-0.27
+pengeluaran,Pengeluaran Konsumsi Rumah Tangga,PENG_1,2022,1.53,1.25,0.59,0.51
+pengeluaran,Pengeluaran Konsumsi Rumah Tangga,PENG_1,2023,0.63,5.52,0.24,2.22
+pengeluaran,Pengeluaran Konsumsi Rumah Tangga,PENG_1,2024,0.49,4.83,0.19,1.92
+pengeluaran,Pengeluaran Konsumsi Rumah Tangga,PENG_1,2025,0.68,3.15,0.26,1.25
+pengeluaran,Pengeluaran Konsumsi LNPRT,PENG_2,2021,-1.3,8.85,0.0,0.02
+pengeluaran,Pengeluaran Konsumsi LNPRT,PENG_2,2022,0.02,3.09,0.0,0.01
+pengeluaran,Pengeluaran Konsumsi LNPRT,PENG_2,2023,2.84,0.65,0.01,0.0
+pengeluaran,Pengeluaran Konsumsi LNPRT,PENG_2,2024,4.57,17.76,0.01,0.04
+pengeluaran,Pengeluaran Konsumsi LNPRT,PENG_2,2025,1.46,-0.99,0.0,0.0
+pengeluaran,Pengeluaran Konsumsi Pemerintah,PENG_3,2021,-68.9,-6.86,-5.67,-0.19
+pengeluaran,Pengeluaran Konsumsi Pemerintah,PENG_3,2022,-69.83,-1.88,-5.52,-0.05
+pengeluaran,Pengeluaran Konsumsi Pemerintah,PENG_3,2023,-62.75,5.29,-4.07,0.13
+pengeluaran,Pengeluaran Konsumsi Pemerintah,PENG_3,2024,-62.92,8.09,-4.25,0.2
+pengeluaran,Pengeluaran Konsumsi Pemerintah,PENG_3,2025,-50.39,4.17,-3.01,0.13
+pengeluaran,Pembentukan Modal Tetap Bruto,PENG_4,2021,0.69,0.09,0.27,0.03
+pengeluaran,Pembentukan Modal Tetap Bruto,PENG_4,2022,-0.36,1.18,-0.14,0.48
+pengeluaran,Pembentukan Modal Tetap Bruto,PENG_4,2023,-0.13,7.71,-0.05,3.05
+pengeluaran,Pembentukan Modal Tetap Bruto,PENG_4,2024,-2.21,8.36,-0.91,3.35
+pengeluaran,Pembentukan Modal Tetap Bruto,PENG_4,2025,-4.97,3.27,-2.05,1.34
+pengeluaran,Ekspor Barang dan Jasa,PENG_5,2021,0.63,0.67,0.96,1.03
+pengeluaran,Ekspor Barang dan Jasa,PENG_5,2022,-0.32,9.9,-0.51,15.47
+pengeluaran,Ekspor Barang dan Jasa,PENG_5,2023,-0.6,3.15,-0.95,5.26
+pengeluaran,Ekspor Barang dan Jasa,PENG_5,2024,-2.19,-3.06,-3.26,-4.97
+pengeluaran,Ekspor Barang dan Jasa,PENG_5,2025,4.77,22.8,7.76,34.23
+pengeluaran,Dikurangi Impor Barang dan Jasa,PENG_6,2021,-1.44,1.79,-2.03,2.45
+pengeluaran,Dikurangi Impor Barang dan Jasa,PENG_6,2022,-1.24,9.5,-1.82,13.37
+pengeluaran,Dikurangi Impor Barang dan Jasa,PENG_6,2023,-1.68,3.17,-2.4,4.76
+pengeluaran,Dikurangi Impor Barang dan Jasa,PENG_6,2024,-6.18,-4.11,-8.53,-5.99
+pengeluaran,Dikurangi Impor Barang dan Jasa,PENG_6,2025,2.54,23.83,3.79,31.84
+pengeluaran,Produk Domestik Regional Bruto (PDRB),PDRB,2021,-1.12,-1.19,-1.12,-1.19
+pengeluaran,Produk Domestik Regional Bruto (PDRB),PDRB,2022,-3.41,2.83,-3.41,2.83
+pengeluaran,Produk Domestik Regional Bruto (PDRB),PDRB,2023,-3.31,6.51,-3.31,6.51
+pengeluaran,Produk Domestik Regional Bruto (PDRB),PDRB,2024,-2.79,5.01,-2.79,5.01
+pengeluaran,Produk Domestik Regional Bruto (PDRB),PDRB,2025,-2.78,5.16,-2.78,5.16

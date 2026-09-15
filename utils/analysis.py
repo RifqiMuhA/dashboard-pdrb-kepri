@@ -240,12 +240,16 @@ def hitung_rpi(df_pengeluaran: pd.DataFrame) -> pd.DataFrame:
 
 def hitung_icor(df_pdrb: pd.DataFrame, df_pengeluaran: pd.DataFrame, provinsi_label: str) -> pd.DataFrame:
     """ICOR = delta_PMTB / delta_PDRB(ADHK), dari tahun sebelumnya ke tahun berjalan."""
+    if df_pdrb.empty or df_pengeluaran.empty:
+        return pd.DataFrame(columns=["tahun", "icor"])
     pdrb_prov = (
         df_pdrb[df_pdrb["kab_kota"] == provinsi_label]
         .groupby("tahun", as_index=False)["adhk"].sum()
         .sort_values("tahun")
     )
     pmtb = df_pengeluaran[df_pengeluaran["uraian"] == "PMTB"][["tahun", "adhk"]].sort_values("tahun")
+    if pmtb.empty:
+        return pd.DataFrame(columns=["tahun", "icor"])
     merged = pdrb_prov.merge(pmtb, on="tahun", suffixes=("_pdrb", "_pmtb"))
     merged["delta_pdrb"] = merged["adhk_pdrb"].diff()
     merged["icor"] = merged["adhk_pmtb"] / merged["delta_pdrb"]
@@ -257,12 +261,17 @@ def hitung_ilor_elastisitas(df_tenaga_kerja: pd.DataFrame, df_pdrb: pd.DataFrame
     ILOR = delta_TK / delta_Y ; E_TK = (%delta_TK) / (%delta_Y), per lapangan usaha,
     dihitung antar dua tahun terjauh yang tersedia (awal vs akhir).
     """
+    if df_tenaga_kerja.empty or df_pdrb.empty or "tahun" not in df_tenaga_kerja.columns:
+        return pd.DataFrame(columns=["lapangan_usaha", "ilor", "elastisitas_tk"])
     tahun_awal = df_tenaga_kerja["tahun"].min()
     tahun_akhir = df_tenaga_kerja["tahun"].max()
 
     tk = df_tenaga_kerja.pivot(index="lapangan_usaha", columns="tahun", values="jumlah_tenaga_kerja")
     pdrb_prov = df_pdrb[df_pdrb["kab_kota"] == provinsi_label]
     y = pdrb_prov.pivot(index="lapangan_usaha", columns="tahun", values="adhk")
+
+    if tahun_awal not in tk.columns or tahun_akhir not in tk.columns or tahun_awal not in y.columns or tahun_akhir not in y.columns:
+        return pd.DataFrame(columns=["lapangan_usaha", "ilor", "elastisitas_tk"])
 
     delta_tk = tk[tahun_akhir] - tk[tahun_awal]
     delta_y = y[tahun_akhir] - y[tahun_awal]
@@ -276,10 +285,15 @@ def hitung_ilor_elastisitas(df_tenaga_kerja: pd.DataFrame, df_pdrb: pd.DataFrame
 
 def hitung_tax_ratio(df_pajak: pd.DataFrame, df_pdrb: pd.DataFrame, provinsi_label: str) -> pd.DataFrame:
     """Tax Ratio = (Pajak + SDA) / PDRB ADHB x 100%"""
+    if df_pajak.empty or df_pdrb.empty or "tahun" not in df_pajak.columns:
+        return pd.DataFrame(columns=["tahun", "tax_ratio"])
     pdrb_prov = (
         df_pdrb[df_pdrb["kab_kota"] == provinsi_label]
         .groupby("tahun", as_index=False)["adhb"].sum()
     )
     merged = df_pajak.merge(pdrb_prov, on="tahun")
+    if merged.empty:
+        return pd.DataFrame(columns=["tahun", "tax_ratio"])
     merged["tax_ratio"] = (merged["penerimaan_pajak"] + merged["penerimaan_sda"]) / merged["adhb"] * 100
     return merged[["tahun", "tax_ratio"]]
+

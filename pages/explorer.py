@@ -9,10 +9,11 @@ dash.register_page(__name__, path="/explorer", name="Data Explorer")
 
 DATASET_OPTIONS = [
     {"label": "PDRB (ADHB & ADHK)", "value": "pdrb"},
-    {"label": "Penduduk", "value": "penduduk"},
+    {"label": "PDRB Perkapita (2021–2025)", "value": "perkapita"},
+    {"label": "Sumber Pertumbuhan Ekonomi (SOG)", "value": "sumber_pertumbuhan"},
+    {"label": "Indeks & Laju Implisit", "value": "implisit"},
+    {"label": "Jumlah Penduduk", "value": "penduduk"},
     {"label": "Pengeluaran (Provinsi)", "value": "pengeluaran_provinsi"},
-    {"label": "Pajak (Provinsi)", "value": "pajak_provinsi"},
-    {"label": "Tenaga Kerja (Provinsi)", "value": "tenaga_kerja_provinsi"},
 ]
 
 layout = html.Div(

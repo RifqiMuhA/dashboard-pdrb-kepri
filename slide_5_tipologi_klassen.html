@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Slide 5: Tipologi Klassen Kepulauan Riau (2021 vs 2025)</title>
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0F172A;
+            color: #1E293B;
+            margin: 0;
+            padding: 30px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .slide-container {
+            background: #FFFFFF;
+            width: 100%;
+            max-width: 1240px;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .slide-header {
+            background: linear-gradient(135deg, #0C203A 0%, #173A66 100%);
+            color: white;
+            padding: 22px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .slide-tag {
+            background: rgba(242, 183, 5, 0.2);
+            color: #F2B705;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        .slide-title {
+            font-size: 21px;
+            font-weight: 800;
+            margin: 0;
+        }
+        .slide-body {
+            padding: 24px 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .narration-box {
+            background: #F8FAFC;
+            border-left: 4px solid #F2B705;
+            border-radius: 8px;
+            padding: 18px 22px;
+            font-size: 13.5px;
+            line-height: 1.7;
+            color: #334155;
+        }
+        .narration-box p {
+            margin: 0 0 10px 0;
+        }
+        .narration-box p:last-child {
+            margin-bottom: 0;
+        }
+        .highlight-badge {
+            font-weight: 700;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        .badge-green {
+            background: #DCFCE7;
+            color: #15803D;
+        }
+        .badge-blue {
+            background: #DBEAFE;
+            color: #1E40AF;
+        }
+        .badge-amber {
+            background: #FEF3C7;
+            color: #B45309;
+        }
+        .badge-red {
+            background: #FEE2E2;
+            color: #B91C1C;
+        }
+        .chart-box {
+            background: #FFFFFF;
+            border: 1px solid #E2E8F0;
+            border-radius: 12px;
+            padding: 14px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+        }
+        .bintan-callout {
+            background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%);
+            border: 1.5px solid #10B981;
+            border-radius: 10px;
+            padding: 14px 18px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            color: #065F46;
+            font-size: 13.5px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="slide-header">
+            <div>
+                <span class="slide-tag">SLIDE 5</span>
+                <h1 class="slide-title">Tipologi Klassen: Pergeseran Posisi Ekonomi Daerah</h1>
+            </div>
+            <div style="text-align: right; font-size: 12px; color: #CBD5E1;">
+                Provinsi Kepulauan Riau<br><b>2021 vs 2025</b>
+            </div>
+        </div>
+        <div class="slide-body">
+            <!-- Narasi Presentasi yang sudah lengkap -->
+            <div class="narration-box">
+                <p>
+                    <em>"Indeks Williamson memberi kita gambaran mengenai ketimpangan secara keseluruhan. Tetapi indeks tersebut belum menunjukkan posisi masing-masing kabupaten/kota.</em>
+                </p>
+                <p>
+                    <em>Sebagai gambaran awal, data BPS 2025 mencatat pertumbuhan tiap kabupaten/kota cukup bervariasi. Batam tercatat sebagai daerah dengan pertumbuhan ekonomi tanpa migas tertinggi (<span class="highlight-badge badge-blue">6,76%</span>), tetapi <strong>Bintan justru tumbuh sangat cepat menempel Batam — <span class="highlight-badge badge-green">6,43%</span></strong>, dibandingkan Karimun (<span class="highlight-badge badge-blue">5,44%</span>), Lingga (<span class="highlight-badge badge-blue">3,53%</span>), Tanjungpinang (<span class="highlight-badge badge-blue">3,31%</span>), dan Kepulauan Anambas (<span class="highlight-badge badge-blue">2,87%</span>). Sementara itu, Natuna justru mengalami kontraksi sebesar <span class="highlight-badge badge-red">minus 1,61%</span>. Meski begitu, Batam tetap kontributor terbesar terhadap ekonomi Kepri, dengan kontribusi mencapai <span class="highlight-badge badge-blue">66,44%</span> pada 2025.</em>
+                </p>
+                <p>
+                    <em>Angka-angka ini menarik, tapi belum cukup untuk menyimpulkan posisi struktural tiap wilayah. Karena itu, kita lanjutkan dengan Tipologi Klassen untuk melihat posisi setiap wilayah berdasarkan dua hal, yaitu pertumbuhan ekonomi dan PDRB per kapita. Dari sini wilayah dikelompokkan menjadi empat kuadran: <strong>cepat maju dan cepat tumbuh, berkembang cepat, maju tapi tertekan, dan relatif tertinggal</strong>.</em>
+                </p>
+                <p>
+                    <em>Pada 2021, Batam berada di <strong><span class="highlight-badge badge-blue">Kuadran I (Cepat Maju dan Cepat Tumbuh)</span></strong>. Pada 2025, posisi Batam <strong><span class="highlight-badge badge-blue">TETAP di Kuadran I</span></strong>. Sementara itu, <strong>Bintan bergerak melompat dari <span class="highlight-badge badge-amber">Kuadran III (Maju tapi Tertekan) pada 2021</span> menjadi <span class="highlight-badge badge-green">Kuadran I (Cepat Maju dan Cepat Tumbuh) pada 2025</span></strong>.</em>
+                </p>
+                <p>
+                    <em>Ini menarik, tapi saya belum mau bilang Bintan sudah jadi pusat pertumbuhan baru. Yang bisa kita katakan sejauh ini: Bintan mulai menunjukkan pergeseran posisi yang layak diperhatikan lebih lanjut — dan pertumbuhan tercepatnya di 2025 sejalan dengan sinyal ini. Kita akan lihat apakah pergeseran ini didukung juga oleh struktur sektoralnya di slide berikutnya."</em>
+                </p>
+            </div>
+
+            <!-- Callout Bintan Highlight -->
+            <div class="bintan-callout">
+                <div style="font-size: 26px;">🚀</div>
+                <div>
+                    <strong>Sinyal Pergeseran Struktur Bintan (2021 ➔ 2025):</strong><br>
+                    Pada 2021, laju Bintan hanya <strong>0,23%</strong> (tertekan di bawah rata-rata provinsi 3,24%). Di 2025, laju ekonomi Bintan melonjak ke <strong>6,43% - 7,78%</strong> dengan PDRB per kapita Rp 107,29 Juta, resmi menembus <strong>Kuadran I (Maju & Cepat Tumbuh)</strong> mendampingi Batam.
+                </div>
+            </div>
+
+            <!-- Chart 1: Bar Chart Pertumbuhan 2025 -->
+            <div class="chart-box">
+                <div id="chart-bar"></div>
+            </div>
+
+            <!-- Grid 2 Kolom: Scatter Klassen (Kiri) + Bukti Peta Spasial (Kanan) -->
+            <div style="display: flex; gap: 20px; align-items: stretch; flex-wrap: wrap;">
+                <!-- Kiri: Scatter Plot 2021 vs 2025 -->
+                <div class="chart-box" style="flex: 1.4; min-width: 580px;">
+                    <div id="chart-scatter"></div>
+                </div>
+
+                <!-- Kanan: Bukti Peta Spasial Batam - Bintan -->
+                <div class="chart-box" style="flex: 1; min-width: 360px; display: flex; flex-direction: column;">
+                    <div style="font-size: 13.5px; font-weight: 700; color: #0C203A; margin-bottom: 8px;">
+                        Bukti Spasial: Koridor Kembar Batam–Bintan (2025)
+                    </div>
+                    <div style="position: relative; border-radius: 8px; overflow: hidden; border: 1px solid #CBD5E1; margin-bottom: 12px; background: #0F172A;">
+                        <img src="assets/peta_batam_bintan_klassen.png" alt="Peta Batam Bintan Klassen" style="width: 100%; height: 230px; object-fit: cover; display: block;">
+                        <div style="position: absolute; bottom: 6px; left: 8px; background: rgba(12, 32, 58, 0.85); color: white; padding: 3px 8px; border-radius: 4px; font-size: 10px;">
+                            Peta Citra Satelit Dashboard Tipologi Klassen
+                        </div>
+                    </div>
+                    <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 12px; font-size: 12px; line-height: 1.6; color: #334155; flex-grow: 1;">
+                        <div style="margin-bottom: 5px;">
+                            <span class="highlight-badge badge-green">Kuadran I (Hijau)</span>: <b>Kota Batam & Kab. Bintan</b>
+                        </div>
+                        <div style="margin-bottom: 8px;">
+                            <span class="highlight-badge badge-red" style="background:#FEE2E2; color:#B91C1C;">Kuadran IV (Coral)</span>: <b>Kota Tanjungpinang</b>
+                        </div>
+                        <p style="margin: 0;">
+                            <b>Analisis Spasial:</b> Batam dan Bintan secara geografis berdampingan di Selat Riau dan kini <b>sama-sama berwarna hijau (Kuadran I — Cepat Maju & Tumbuh Cepat)</b>, membentuk koridor aglomerasi ekonomi utama (*twin-engine*). Sementara Kota Tanjungpinang di selatan Bintan masih berada di Kuadran IV (warna coral), menunjukkan adanya kontras kantong wilayah yang memerlukan percepatan <i>spillover</i> ekonomi dari Batam dan Bintan Utara.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var barData = {"data":[{"cliponaxis":false,"marker":{"color":["#EF4444","#94A3B8","#64748B","#64748B","#34659D","#F2B705","#173A66"]},"orientation":"h","text":["-1.61%","+2.87%","+3.31%","+3.53%","+5.44%","+6.43%","+6.76%"],"textfont":{"color":"#0C203A","family":"Inter, sans-serif","size":12},"textposition":"outside","x":[-1.61,2.87,3.31,3.53,5.44,6.43,6.76],"y":["Kabupaten Natuna","Kab. Kepulauan Anambas","Kota Tanjungpinang","Kabupaten Lingga","Kabupaten Karimun","Kabupaten Bintan","Kota Batam"],"type":"bar"}],"layout":{"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05}}},"title":{"font":{"size":14,"color":"#0C203A"},"text":"\u003cb\u003eLaju Pertumbuhan Ekonomi 2025 per Kabupaten\u002fKota di Kepri\u003c\u002fb\u003e (Rilis Resmi BPS)"},"xaxis":{"title":{"text":"Laju Pertumbuhan (%)"},"zeroline":true,"zerolinecolor":"#64748B","zerolinewidth":1.5,"range":[-3,8.5]},"yaxis":{"tickfont":{"size":12,"family":"Inter, sans-serif"}},"margin":{"l":170,"r":40,"t":40,"b":35},"height":250,"plot_bgcolor":"#F8FAFC","paper_bgcolor":"#FFFFFF"}};
+        Plotly.newPlot('chart-bar', barData.data, barData.layout, {responsive: true});
+
+        var scatterData = {"data":[{"marker":{"color":"#173A66","line":{"color":"#FFFFFF","width":1.5},"size":14},"mode":"markers+text","showlegend":false,"text":["\u003cb\u003eBatam\u003c\u002fb\u003e"],"textposition":"top center","x":[4.75],"y":[91.4],"type":"scatter","xaxis":"x","yaxis":"y"},{"marker":{"color":"#F2B705","line":{"color":"#FFFFFF","width":1.5},"size":15},"mode":"markers+text","showlegend":false,"text":["\u003cb\u003eBintan\u003c\u002fb\u003e"],"textposition":"top center","x":[0.23],"y":[86.45],"type":"scatter","xaxis":"x","yaxis":"y"},{"marker":{"color":"#94A3B8","line":{"color":"#FFFFFF","width":1.5},"size":8},"mode":"markers+text","showlegend":false,"text":["Natuna"],"textposition":"top center","x":[0.48],"y":[155.03],"type":"scatter","xaxis":"x","yaxis":"y"},{"marker":{"color":"#94A3B8","line":{"color":"#FFFFFF","width":1.5},"size":8},"mode":"markers+text","showlegend":false,"text":["Karimun"],"textposition":"top center","x":[2.37],"y":[36.6],"type":"scatter","xaxis":"x","yaxis":"y"},{"marker":{"color":"#94A3B8","line":{"color":"#FFFFFF","width":1.5},"size":8},"mode":"markers+text","showlegend":false,"text":["Lingga"],"textposition":"top center","x":[2.03],"y":[30.01],"type":"scatter","xaxis":"x","yaxis":"y"},{"marker":{"color":"#94A3B8","line":{"color":"#FFFFFF","width":1.5},"size":8},"mode":"markers+text","showlegend":false,"text":["Anambas"],"textposition":"top center","x":[0.04],"y":[232.49],"type":"scatter","xaxis":"x","yaxis":"y"},{"marker":{"color":"#94A3B8","line":{"color":"#FFFFFF","width":1.5},"size":8},"mode":"markers+text","showlegend":false,"text":["Tanjungpinang"],"textposition":"top center","x":[0.59],"y":[61.08],"type":"scatter","xaxis":"x","yaxis":"y"},{"marker":{"color":"#173A66","line":{"color":"#FFFFFF","width":1.5},"size":14},"mode":"markers+text","showlegend":false,"text":["\u003cb\u003eBatam\u003c\u002fb\u003e"],"textposition":"top center","x":[6.29],"y":[112.46],"type":"scatter","xaxis":"x2","yaxis":"y2"},{"marker":{"color":"#10B981","line":{"color":"#FFFFFF","width":1.5},"size":16},"mode":"markers+text","showlegend":false,"text":["\u003cb\u003eBintan (\u2605)\u003c\u002fb\u003e"],"textposition":"top center","x":[7.78],"y":[107.29],"type":"scatter","xaxis":"x2","yaxis":"y2"},{"marker":{"color":"#94A3B8","line":{"color":"#FFFFFF","width":1.5},"size":8},"mode":"markers+text","showlegend":false,"text":["Natuna"],"textposition":"top center","x":[4.71],"y":[178.04],"type":"scatter","xaxis":"x2","yaxis":"y2"},{"marker":{"color":"#94A3B8","line":{"color":"#FFFFFF","width":1.5},"size":8},"mode":"markers+text","showlegend":false,"text":["Karimun"],"textposition":"top center","x":[6.01],"y":[44.13],"type":"scatter","xaxis":"x2","yaxis":"y2"},{"marker":{"color":"#94A3B8","line":{"color":"#FFFFFF","width":1.5},"size":8},"mode":"markers+text","showlegend":false,"text":["Lingga"],"textposition":"top center","x":[5.07],"y":[34.27],"type":"scatter","xaxis":"x2","yaxis":"y2"},{"marker":{"color":"#94A3B8","line":{"color":"#FFFFFF","width":1.5},"size":8},"mode":"markers+text","showlegend":false,"text":["Anambas"],"textposition":"top center","x":[1.29],"y":[227.06],"type":"scatter","xaxis":"x2","yaxis":"y2"},{"marker":{"color":"#94A3B8","line":{"color":"#FFFFFF","width":1.5},"size":8},"mode":"markers+text","showlegend":false,"text":["Tanjungpinang"],"textposition":"top center","x":[4.93],"y":[69.51],"type":"scatter","xaxis":"x2","yaxis":"y2"}],"layout":{"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05}}},"xaxis":{"anchor":"y","domain":[0.0,0.45],"title":{"text":"Pertumbuhan (%)"},"range":[-0.5,9.5]},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"PDRB\u002fKapita (Jt Rp)"},"range":[10,265]},"xaxis2":{"anchor":"y2","domain":[0.55,1.0],"title":{"text":"Pertumbuhan (%)"},"range":[-0.5,9.5]},"yaxis2":{"anchor":"x2","domain":[0.0,1.0],"title":{"text":"PDRB\u002fKapita (Jt Rp)"},"range":[10,265]},"annotations":[{"font":{"size":16},"showarrow":false,"text":"\u003cb\u003eTipologi Klassen 2021\u003c\u002fb\u003e\u003cbr\u003e\u003cspan style='font-size:11px;color:#64748B'\u003eBatam di Kuadran I, Bintan di Kuadran III\u003c\u002fspan\u003e","x":0.225,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"},{"font":{"size":16},"showarrow":false,"text":"\u003cb\u003eTipologi Klassen 2025\u003c\u002fb\u003e\u003cbr\u003e\u003cspan style='font-size:11px;color:#10B981'\u003eBintan Melesat Menembus Kuadran I\u003c\u002fspan\u003e","x":0.775,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"},{"font":{"color":"#173A66","size":10},"showarrow":false,"text":"\u003cb\u003eKUADRAN I\u003c\u002fb\u003e\u003cbr\u003e\u003cspan style='font-size:9px'\u003eMaju & Cepat Tumbuh\u003c\u002fspan\u003e","x":4.8,"xref":"x","y":240,"yref":"y"},{"font":{"color":"#C99204","size":10},"showarrow":false,"text":"\u003cb\u003eKUADRAN III\u003c\u002fb\u003e\u003cbr\u003e\u003cspan style='font-size:9px'\u003eMaju Tapi Tertekan\u003c\u002fspan\u003e","x":0.5,"xref":"x","y":240,"yref":"y"},{"font":{"color":"#10B981","size":10},"showarrow":false,"text":"\u003cb\u003eKUADRAN I\u003c\u002fb\u003e\u003cbr\u003e\u003cspan style='font-size:9px'\u003eBatam & Bintan (Melesat!)\u003c\u002fspan\u003e","x":7.5,"xref":"x2","y":240,"yref":"y2"},{"font":{"color":"#94A3B8","size":10},"showarrow":false,"text":"\u003cb\u003eKUADRAN III\u003c\u002fb\u003e\u003cbr\u003e\u003cspan style='font-size:9px'\u003eMaju Tapi Tertekan\u003c\u002fspan\u003e","x":2.0,"xref":"x2","y":240,"yref":"y2"}],"shapes":[{"line":{"color":"#C99204","dash":"dash","width":1.5},"type":"line","x0":3.24,"x1":3.24,"xref":"x","y0":0,"y1":1,"yref":"y domain"},{"line":{"color":"#C99204","dash":"dash","width":1.5},"type":"line","x0":0,"x1":1,"xref":"x domain","y0":83.83,"y1":83.83,"yref":"y"},{"line":{"color":"#C99204","dash":"dash","width":1.5},"type":"line","x0":5.9,"x1":5.9,"xref":"x2","y0":0,"y1":1,"yref":"y2 domain"},{"line":{"color":"#C99204","dash":"dash","width":1.5},"type":"line","x0":0,"x1":1,"xref":"x2 domain","y0":100.73,"y1":100.73,"yref":"y2"}],"margin":{"l":55,"r":25,"t":55,"b":45},"height":440,"plot_bgcolor":"#F8FAFC","paper_bgcolor":"#FFFFFF"}};
+        Plotly.newPlot('chart-scatter', scatterData.data, scatterData.layout, {responsive: true});
+    </script>
+</body>
+</html>
