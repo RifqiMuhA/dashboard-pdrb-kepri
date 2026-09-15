@@ -12,24 +12,27 @@ from tabs.wilayah import (
 
 dash.register_page(__name__, path="/wilayah", name="Analisis Antar Wilayah")
 
-layout = html.Div(
-    [
-        page_heading("Analisis Antar Wilayah", "Indeks Williamson, Indeks Bonet, Shift Share, LQ, dan Tipologi Klassen"),
-        dcc.Tabs(
-            id="wilayah-tabs",
-            className="custom-tabs",
-            value="williamson",
-            children=[
-                dcc.Tab(label="Indeks Williamson", value="williamson", className="tab", selected_className="tab--selected"),
-                dcc.Tab(label="Indeks Bonet", value="bonet", className="tab", selected_className="tab--selected"),
-                dcc.Tab(label="Shift Share", value="shiftshare", className="tab", selected_className="tab--selected"),
-                dcc.Tab(label="LQ", value="lq", className="tab", selected_className="tab--selected"),
-                dcc.Tab(label="Tipologi Klassen", value="klassen", className="tab", selected_className="tab--selected"),
-            ],
-        ),
-        html.Div(id="wilayah-content", style={"marginTop": "20px"}),
-    ]
-)
+def layout(tab="williamson", **kwargs):
+    valid_tabs = ["williamson", "bonet", "shiftshare", "lq", "klassen"]
+    selected_tab = tab if tab in valid_tabs else "williamson"
+    return html.Div(
+        [
+            page_heading("Analisis Antar Wilayah", "Indeks Williamson, Indeks Bonet, Shift Share, LQ, dan Tipologi Klassen"),
+            dcc.Tabs(
+                id="wilayah-tabs",
+                className="custom-tabs",
+                value=selected_tab,
+                children=[
+                    dcc.Tab(label="Indeks Williamson", value="williamson", className="tab", selected_className="tab--selected"),
+                    dcc.Tab(label="Indeks Bonet", value="bonet", className="tab", selected_className="tab--selected"),
+                    dcc.Tab(label="Shift Share", value="shiftshare", className="tab", selected_className="tab--selected"),
+                    dcc.Tab(label="LQ", value="lq", className="tab", selected_className="tab--selected"),
+                    dcc.Tab(label="Tipologi Klassen", value="klassen", className="tab", selected_className="tab--selected"),
+                ],
+            ),
+            html.Div(id="wilayah-content", style={"marginTop": "20px"}),
+        ]
+    )
 
 @callback(Output("wilayah-content", "children"), Input("wilayah-tabs", "value"))
 def render_tab(tab):

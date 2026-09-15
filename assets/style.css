@@ -165,6 +165,13 @@ body {
 }
 
 /* ---------- KPI Card ---------- */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
 .kpi-card {
   background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
   border-radius: 12px;

@@ -35,23 +35,27 @@ KAB_KOTA_ORDER = [
 
 
 def load_all_data(data_dir: Path = DATA_DIR) -> dict:
-    tables = [
-        "pdrb",
-        "penduduk",
-        "perkapita",
-        "sumber_pertumbuhan",
-        "implisit",
-        "pengeluaran_provinsi",
-        "pajak_provinsi",
-        "tenaga_kerja_provinsi",
-    ]
+    table_files = {
+        "pdrb": "pdrb.csv",
+        "penduduk": "penduduk.csv",
+        "perkapita": "perkapita.csv",
+        "sumber_pertumbuhan": "sumber_pertumbuhan.csv",
+        "implisit": "implisit.csv",
+        "pengeluaran_provinsi": "pengeluaran_provinsi.csv",
+        "shift_share_kk": "shift_share_kabupaten_kota_2021_2025.csv",
+        "shift_share_prov": "shift_share_provinsi_kepri_2021_2025.csv",
+        "lq_kk": "lq_kabupaten_kota_2021_2025.csv",
+        "lq_prov": "lq_provinsi_kepri_2021_2025.csv",
+        "williamson_bonet_kepri": "williamson_bonet_kepri.csv",
+        "williamson_bonet_sumatera": "williamson_bonet_sumatera.csv",
+    }
     data = {}
-    for table in tables:
-        csv_path = data_dir / f"{table}.csv"
+    for key, filename in table_files.items():
+        csv_path = data_dir / filename
         if csv_path.exists():
-            data[table] = pd.read_csv(csv_path)
+            data[key] = pd.read_csv(csv_path)
         else:
-            data[table] = pd.DataFrame()
+            data[key] = pd.DataFrame()
     return data
 
 

@@ -1,0 +1,120 @@
+Kabupaten_Kota,No,Kode,Lapangan_Usaha,2021,2022,2023,2024*,2025**,Rata_rata,Keterangan
+Kabupaten Karimun,1,A,"Pertanian, Kehutanan, dan Perikanan",5.37,5.24,5.31,5.26,5.3,5.3,Basis
+Kabupaten Karimun,2,B,Pertambangan dan Penggalian,0.79,0.83,0.83,0.86,0.78,0.82,Non Basis
+Kabupaten Karimun,3,C,Industri Pengolahan,0.32,0.31,0.33,0.37,0.39,0.34,Non Basis
+Kabupaten Karimun,4,D,Pengadaan Listrik dan Gas,0.34,0.32,0.33,0.33,0.33,0.33,Non Basis
+Kabupaten Karimun,5,E,"Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",0.37,0.36,0.34,0.34,0.32,0.35,Non Basis
+Kabupaten Karimun,6,F,Konstruksi,1.08,1.07,0.99,0.96,0.97,1.01,Basis
+Kabupaten Karimun,7,G,Perdagangan Besar dan Eceran dan Reparasi Mobil dan Sepeda Motor,2.2,2.11,2.14,2.1,2.12,2.14,Basis
+Kabupaten Karimun,8,H,Transportasi dan Pergudangan,1.79,1.59,1.66,1.67,1.69,1.68,Basis
+Kabupaten Karimun,9,I,Penyediaan Akomodasi dan Makan Minum,1.41,1.22,1.12,1.15,1.2,1.22,Basis
+Kabupaten Karimun,10,J,Informasi dan Komunikasi,1.22,1.19,1.23,1.25,1.33,1.24,Basis
+Kabupaten Karimun,11,K,Jasa Keuangan dan Asuransi,0.65,0.64,0.63,0.61,0.61,0.63,Non Basis
+Kabupaten Karimun,12,L,Real Estat,2.56,2.54,2.5,2.41,2.42,2.49,Basis
+Kabupaten Karimun,13,"M,N",Jasa Perusahaan,5.78,5.43,5.22,5.15,4.89,5.29,Basis
+Kabupaten Karimun,14,O,"Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",1.65,1.64,1.61,1.56,1.58,1.61,Basis
+Kabupaten Karimun,15,P,Jasa Pendidikan,2.71,2.71,2.7,2.64,2.65,2.68,Basis
+Kabupaten Karimun,16,Q,Jasa Kesehatan dan Kegiatan Sosial,2.06,2.12,2.02,1.75,1.77,1.94,Basis
+Kabupaten Karimun,17,"R,S,T,U",Jasa Lainnya,7.4,5.21,4.96,4.69,4.83,5.42,Basis
+Kabupaten Bintan,1,A,"Pertanian, Kehutanan, dan Perikanan",2.28,2.26,2.29,2.25,2.23,2.26,Basis
+Kabupaten Bintan,2,B,Pertambangan dan Penggalian,0.35,0.3,0.25,0.23,0.21,0.27,Non Basis
+Kabupaten Bintan,3,C,Industri Pengolahan,0.96,0.98,0.98,1.0,1.02,0.99,Non Basis
+Kabupaten Bintan,4,D,Pengadaan Listrik dan Gas,0.17,0.15,0.15,0.14,0.14,0.15,Non Basis
+Kabupaten Bintan,5,E,"Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",0.52,0.5,0.49,0.48,0.46,0.49,Non Basis
+Kabupaten Bintan,6,F,Konstruksi,1.19,1.15,1.09,1.06,1.06,1.11,Basis
+Kabupaten Bintan,7,G,Perdagangan Besar dan Eceran dan Reparasi Mobil dan Sepeda Motor,1.3,1.19,1.23,1.2,1.19,1.22,Basis
+Kabupaten Bintan,8,H,Transportasi dan Pergudangan,1.63,1.26,1.37,1.37,1.35,1.39,Basis
+Kabupaten Bintan,9,I,Penyediaan Akomodasi dan Makan Minum,2.91,2.76,2.85,2.84,2.9,2.85,Basis
+Kabupaten Bintan,10,J,Informasi dan Komunikasi,0.49,0.48,0.48,0.5,0.52,0.49,Non Basis
+Kabupaten Bintan,11,K,Jasa Keuangan dan Asuransi,0.7,0.68,0.65,0.61,0.6,0.65,Non Basis
+Kabupaten Bintan,12,L,Real Estat,1.05,1.03,0.99,0.94,0.93,0.99,Non Basis
+Kabupaten Bintan,13,"M,N",Jasa Perusahaan,0.27,0.26,0.25,0.24,0.23,0.25,Non Basis
+Kabupaten Bintan,14,O,"Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",1.12,1.14,1.09,1.04,1.03,1.08,Basis
+Kabupaten Bintan,15,P,Jasa Pendidikan,1.6,1.61,1.62,1.55,1.53,1.58,Basis
+Kabupaten Bintan,16,Q,Jasa Kesehatan dan Kegiatan Sosial,1.09,1.15,1.05,1.01,1.01,1.06,Basis
+Kabupaten Bintan,17,"R,S,T,U",Jasa Lainnya,1.09,0.73,0.74,0.71,0.72,0.8,Non Basis
+Kabupaten Natuna,1,A,"Pertanian, Kehutanan, dan Perikanan",11.28,11.3,11.18,11.29,11.53,11.32,Basis
+Kabupaten Natuna,2,B,Pertambangan dan Penggalian,0.37,0.41,0.41,0.41,0.42,0.4,Non Basis
+Kabupaten Natuna,3,C,Industri Pengolahan,0.07,0.07,0.07,0.07,0.07,0.07,Non Basis
+Kabupaten Natuna,4,D,Pengadaan Listrik dan Gas,0.36,0.32,0.32,0.32,0.33,0.33,Non Basis
+Kabupaten Natuna,5,E,"Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",0.2,0.19,0.19,0.19,0.2,0.19,Non Basis
+Kabupaten Natuna,6,F,Konstruksi,1.4,1.35,1.34,1.35,1.38,1.36,Basis
+Kabupaten Natuna,7,G,Perdagangan Besar dan Eceran dan Reparasi Mobil dan Sepeda Motor,1.42,1.4,1.38,1.39,1.42,1.4,Basis
+Kabupaten Natuna,8,H,Transportasi dan Pergudangan,3.7,2.91,2.88,2.9,2.97,3.07,Basis
+Kabupaten Natuna,9,I,Penyediaan Akomodasi dan Makan Minum,1.37,1.04,1.03,1.04,1.06,1.11,Basis
+Kabupaten Natuna,10,J,Informasi dan Komunikasi,1.12,1.11,1.1,1.11,1.13,1.11,Basis
+Kabupaten Natuna,11,K,Jasa Keuangan dan Asuransi,0.2,0.2,0.2,0.2,0.21,0.2,Non Basis
+Kabupaten Natuna,12,L,Real Estat,1.93,1.91,1.89,1.91,1.95,1.92,Basis
+Kabupaten Natuna,13,"M,N",Jasa Perusahaan,0.2,0.19,0.2,0.21,0.21,0.2,Non Basis
+Kabupaten Natuna,14,O,"Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",3.04,3.03,3.0,3.02,3.09,3.04,Basis
+Kabupaten Natuna,15,P,Jasa Pendidikan,0.49,0.48,0.48,0.48,0.49,0.49,Non Basis
+Kabupaten Natuna,16,Q,Jasa Kesehatan dan Kegiatan Sosial,1.01,1.07,1.06,1.07,1.09,1.06,Basis
+Kabupaten Natuna,17,"R,S,T,U",Jasa Lainnya,0.97,0.85,0.85,0.85,0.87,0.88,Non Basis
+Kabupaten Lingga,1,A,"Pertanian, Kehutanan, dan Perikanan",7.85,7.66,7.77,7.79,7.91,7.8,Basis
+Kabupaten Lingga,2,B,Pertambangan dan Penggalian,0.36,0.39,0.41,0.48,0.46,0.42,Non Basis
+Kabupaten Lingga,3,C,Industri Pengolahan,0.02,0.02,0.02,0.02,0.02,0.02,Non Basis
+Kabupaten Lingga,4,D,Pengadaan Listrik dan Gas,0.31,0.28,0.29,0.28,0.28,0.29,Non Basis
+Kabupaten Lingga,5,E,"Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",0.25,0.25,0.25,0.24,0.24,0.25,Non Basis
+Kabupaten Lingga,6,F,Konstruksi,1.1,1.11,1.05,1.05,1.07,1.07,Basis
+Kabupaten Lingga,7,G,Perdagangan Besar dan Eceran dan Reparasi Mobil dan Sepeda Motor,2.82,2.64,2.63,2.69,2.75,2.7,Basis
+Kabupaten Lingga,8,H,Transportasi dan Pergudangan,0.93,0.76,0.79,0.82,0.84,0.83,Non Basis
+Kabupaten Lingga,9,I,Penyediaan Akomodasi dan Makan Minum,1.76,1.29,1.23,1.32,1.39,1.4,Basis
+Kabupaten Lingga,10,J,Informasi dan Komunikasi,1.27,1.24,1.24,1.26,1.34,1.27,Basis
+Kabupaten Lingga,11,K,Jasa Keuangan dan Asuransi,0.33,0.33,0.33,0.31,0.32,0.32,Non Basis
+Kabupaten Lingga,12,L,Real Estat,2.1,2.12,2.03,2.02,2.04,2.06,Basis
+Kabupaten Lingga,13,"M,N",Jasa Perusahaan,0.32,0.28,0.24,0.23,0.27,0.27,Non Basis
+Kabupaten Lingga,14,O,"Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",3.41,3.45,3.41,3.13,3.21,3.32,Basis
+Kabupaten Lingga,15,P,Jasa Pendidikan,5.66,5.69,5.73,5.6,5.62,5.66,Basis
+Kabupaten Lingga,16,Q,Jasa Kesehatan dan Kegiatan Sosial,3.13,3.29,3.47,2.96,3.03,3.18,Basis
+Kabupaten Lingga,17,"R,S,T,U",Jasa Lainnya,4.71,2.95,2.46,2.26,2.34,2.94,Basis
+Kabupaten Kepulauan Anambas,1,A,"Pertanian, Kehutanan, dan Perikanan",1.94,1.97,2.05,2.14,2.26,2.07,Basis
+Kabupaten Kepulauan Anambas,2,B,Pertambangan dan Penggalian,5.96,6.68,7.12,8.01,7.33,7.02,Basis
+Kabupaten Kepulauan Anambas,3,C,Industri Pengolahan,0.0,0.0,0.0,0.0,0.0,0.0,Non Basis
+Kabupaten Kepulauan Anambas,4,D,Pengadaan Listrik dan Gas,0.07,0.06,0.06,0.07,0.07,0.07,Non Basis
+Kabupaten Kepulauan Anambas,5,E,"Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",0.02,0.02,0.03,0.03,0.03,0.03,Non Basis
+Kabupaten Kepulauan Anambas,6,F,Konstruksi,0.33,0.34,0.35,0.37,0.39,0.35,Non Basis
+Kabupaten Kepulauan Anambas,7,G,Perdagangan Besar dan Eceran dan Reparasi Mobil dan Sepeda Motor,0.32,0.32,0.33,0.35,0.37,0.34,Non Basis
+Kabupaten Kepulauan Anambas,8,H,Transportasi dan Pergudangan,0.09,0.08,0.08,0.08,0.09,0.08,Non Basis
+Kabupaten Kepulauan Anambas,9,I,Penyediaan Akomodasi dan Makan Minum,0.08,0.06,0.07,0.07,0.07,0.07,Non Basis
+Kabupaten Kepulauan Anambas,10,J,Informasi dan Komunikasi,0.18,0.18,0.19,0.2,0.21,0.19,Non Basis
+Kabupaten Kepulauan Anambas,11,K,Jasa Keuangan dan Asuransi,0.06,0.06,0.06,0.06,0.07,0.06,Non Basis
+Kabupaten Kepulauan Anambas,12,L,Real Estat,0.54,0.56,0.58,0.6,0.64,0.58,Non Basis
+Kabupaten Kepulauan Anambas,13,"M,N",Jasa Perusahaan,0.06,0.05,0.05,0.05,0.06,0.05,Non Basis
+Kabupaten Kepulauan Anambas,14,O,"Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",0.9,0.95,0.99,1.03,1.09,0.99,Non Basis
+Kabupaten Kepulauan Anambas,15,P,Jasa Pendidikan,0.17,0.18,0.19,0.2,0.21,0.19,Non Basis
+Kabupaten Kepulauan Anambas,16,Q,Jasa Kesehatan dan Kegiatan Sosial,0.23,0.25,0.26,0.27,0.29,0.26,Non Basis
+Kabupaten Kepulauan Anambas,17,"R,S,T,U",Jasa Lainnya,0.42,0.28,0.3,0.31,0.33,0.33,Non Basis
+Kota Batam,1,A,"Pertanian, Kehutanan, dan Perikanan",0.34,0.33,0.32,0.32,0.32,0.33,Non Basis
+Kota Batam,2,B,Pertambangan dan Penggalian,0.0,0.01,0.01,0.01,0.01,0.01,Non Basis
+Kota Batam,3,C,Industri Pengolahan,1.39,1.39,1.39,1.34,1.35,1.37,Basis
+Kota Batam,4,D,Pengadaan Listrik dan Gas,1.49,1.46,1.43,1.39,1.4,1.43,Basis
+Kota Batam,5,E,"Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",1.57,1.48,1.45,1.41,1.42,1.46,Basis
+Kota Batam,6,F,Konstruksi,1.07,1.05,1.03,1.04,1.04,1.05,Basis
+Kota Batam,7,G,Perdagangan Besar dan Eceran dan Reparasi Mobil dan Sepeda Motor,0.75,0.69,0.72,0.76,0.76,0.74,Non Basis
+Kota Batam,8,H,Transportasi dan Pergudangan,0.83,0.86,0.85,0.82,0.83,0.84,Non Basis
+Kota Batam,9,I,Penyediaan Akomodasi dan Makan Minum,0.98,0.96,0.94,0.92,0.92,0.95,Non Basis
+Kota Batam,10,J,Informasi dan Komunikasi,1.19,1.1,1.08,1.05,1.06,1.09,Basis
+Kota Batam,11,K,Jasa Keuangan dan Asuransi,1.3,1.29,1.26,1.23,1.24,1.26,Basis
+Kota Batam,12,L,Real Estat,0.93,0.91,0.9,0.87,0.88,0.9,Non Basis
+Kota Batam,13,"M,N",Jasa Perusahaan,0.87,0.84,0.83,0.81,0.81,0.83,Non Basis
+Kota Batam,14,O,"Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",0.53,0.51,0.5,0.49,0.49,0.5,Non Basis
+Kota Batam,15,P,Jasa Pendidikan,0.68,0.65,0.64,0.62,0.63,0.65,Non Basis
+Kota Batam,16,Q,Jasa Kesehatan dan Kegiatan Sosial,0.76,0.8,0.78,0.76,0.77,0.77,Non Basis
+Kota Batam,17,"R,S,T,U",Jasa Lainnya,0.85,0.61,0.6,0.58,0.59,0.64,Non Basis
+Kota Tanjungpinang,1,A,"Pertanian, Kehutanan, dan Perikanan",0.26,0.26,0.26,0.27,0.27,0.27,Non Basis
+Kota Tanjungpinang,2,B,Pertambangan dan Penggalian,0.0,0.0,0.0,0.0,0.0,0.0,Non Basis
+Kota Tanjungpinang,3,C,Industri Pengolahan,0.16,0.16,0.16,0.15,0.16,0.16,Non Basis
+Kota Tanjungpinang,4,D,Pengadaan Listrik dan Gas,0.29,0.26,0.26,0.26,0.26,0.27,Non Basis
+Kota Tanjungpinang,5,E,"Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",0.66,0.63,0.63,0.61,0.63,0.63,Non Basis
+Kota Tanjungpinang,6,F,Konstruksi,1.71,1.65,1.51,1.43,1.46,1.55,Basis
+Kota Tanjungpinang,7,G,Perdagangan Besar dan Eceran dan Reparasi Mobil dan Sepeda Motor,3.43,3.19,3.2,3.31,3.37,3.3,Basis
+Kota Tanjungpinang,8,H,Transportasi dan Pergudangan,2.99,2.82,2.73,2.91,2.97,2.88,Basis
+Kota Tanjungpinang,9,I,Penyediaan Akomodasi dan Makan Minum,0.82,0.74,0.7,0.72,0.73,0.74,Non Basis
+Kota Tanjungpinang,10,J,Informasi dan Komunikasi,1.28,1.24,1.12,1.21,1.23,1.22,Basis
+Kota Tanjungpinang,11,K,Jasa Keuangan dan Asuransi,1.31,1.29,1.27,1.25,1.28,1.28,Basis
+Kota Tanjungpinang,12,L,Real Estat,2.83,2.81,2.88,2.89,2.95,2.87,Basis
+Kota Tanjungpinang,13,"M,N",Jasa Perusahaan,4.61,4.28,3.97,3.91,3.99,4.15,Basis
+Kota Tanjungpinang,14,O,"Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",4.6,4.64,4.81,4.27,4.35,4.54,Basis
+Kota Tanjungpinang,15,P,Jasa Pendidikan,3.58,3.58,3.56,3.49,3.55,3.55,Basis
+Kota Tanjungpinang,16,Q,Jasa Kesehatan dan Kegiatan Sosial,2.7,2.77,3.05,2.76,2.81,2.82,Basis
+Kota Tanjungpinang,17,"R,S,T,U",Jasa Lainnya,6.53,4.42,4.0,3.88,3.95,4.56,Basis
