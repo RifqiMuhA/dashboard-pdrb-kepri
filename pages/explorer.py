@@ -210,6 +210,107 @@ DATASET_METADATA = {
             "rpi": "Rasio Perdagangan (RPI)",
         },
     },
+    "williamson_bonet_kepri": {
+        "title": "Indeks Ketimpangan Regional (Williamson & Bonet Kepri)",
+        "category": "Disparitas Antar Wilayah",
+        "source": "BPS Provinsi Kepulauan Riau, diolah",
+        "period": "2021 – 2025",
+        "units": "Koefisien Indeks (0 s.d. 1) & Persen",
+        "scope": "7 Kabupaten/Kota & Provinsi Kepulauan Riau",
+        "desc": (
+            "Indikator disparitas pembangunan ekonomi antar kabupaten/kota di Kepri dengan pembobot jumlah penduduk "
+            "(Indeks Williamson) dan indeks Bonet untuk mengukur ketimpangan riil per kapita."
+        ),
+        "column_labels": {
+            "kab_kota": "Kabupaten / Kota",
+            "tahun": "Tahun",
+            "pdrb_perkapita_ribu": "PDRB Per Kapita (Ribu Rp)",
+            "pdrb_perkapita_juta": "PDRB Per Kapita (Juta Rp)",
+            "jumlah_penduduk": "Jumlah Penduduk (Jiwa)",
+            "bobot_penduduk": "Bobot Penduduk (fi/f)",
+            "yn_provinsi_ribu": "Per Kapita Kepri (Ribu Rp)",
+            "yn_provinsi_juta": "Per Kapita Kepri (Juta Rp)",
+            "williamson_provinsi": "Indeks Williamson",
+            "indeks_bonet": "Indeks Bonet",
+            "deviasi_persen": "Deviasi thd Rata-rata (%)",
+            "kontribusi_disparitas_pct": "Kontribusi Disparitas (%)",
+        },
+    },
+    "williamson_bonet_sumatera": {
+        "title": "Ketimpangan Regional Komparasi 10 Provinsi Se-Sumatera",
+        "category": "Disparitas Antar Wilayah",
+        "source": "BPS (Kompilasi PDRB Se-Sumatera), diolah",
+        "period": "2021 – 2025",
+        "units": "Koefisien Indeks (0 s.d. 1)",
+        "scope": "10 Provinsi di Wilayah Sumatera",
+        "desc": (
+            "Perbandingan derajat ketimpangan pembangunan ekonomi antar daerah di Provinsi Kepulauan Riau "
+            "terhadap 9 provinsi lainnya di Pulau Sumatera."
+        ),
+        "column_labels": {
+            "kode_prov": "Kode Provinsi",
+            "provinsi": "Nama Provinsi",
+            "tahun": "Tahun",
+            "williamson": "Indeks Williamson",
+            "bonet_mean": "Indeks Bonet (Mean)",
+            "bonet_weighted": "Indeks Bonet (Weighted)",
+            "yn_ribu": "PDRB Per Kapita (Ribu Rp)",
+            "yn_juta": "PDRB Per Kapita (Juta Rp)",
+            "total_penduduk": "Total Penduduk (Jiwa)",
+        },
+    },
+    "shift_share_kk": {
+        "title": "Analisis Shift-Share Kabupaten / Kota (Komponen N, P, D)",
+        "category": "Keunggulan Kompetitif Wilayah",
+        "source": "BPS Provinsi Kepulauan Riau, diolah",
+        "period": "2021 – 2025",
+        "units": "Miliar Rupiah & Laju Perubahan",
+        "scope": "7 Kabupaten/Kota (17 Sektor Lapangan Usaha)",
+        "desc": (
+            "Dekomposisi pertumbuhan nilai tambah sektoral menjadi Komponen Pertumbuhan Acuan (N), "
+            "Komponen Pergeseran Proporsional/Struktural (P), dan Komponen Pangsa Diferensial/Kompetitif (D)."
+        ),
+        "column_labels": {
+            "Kabupaten_Kota": "Kabupaten / Kota",
+            "No": "No",
+            "Kode": "Kode Sektor",
+            "Lapangan_Usaha": "Lapangan Usaha",
+            "2021": "2021",
+            "2022": "2022",
+            "2023": "2023",
+            "2024*": "2024*",
+            "2025**": "2025**",
+            "Rerata": "Rerata Laju (%)",
+            "N_Rerata": "Komponen N (Provinsi)",
+            "P_Rerata": "Komponen P (Proporsional)",
+            "D_Rerata": "Komponen D (Diferensial)",
+        },
+    },
+    "lq_kk": {
+        "title": "Location Quotient (LQ) Kabupaten / Kota",
+        "category": "Spesialisasi Sektor Basis",
+        "source": "BPS Provinsi Kepulauan Riau, diolah",
+        "period": "2021 – 2025",
+        "units": "Koefisien Rasio LQ",
+        "scope": "7 Kabupaten/Kota (17 Sektor Lapangan Usaha)",
+        "desc": (
+            "Identifikasi sektor basis (LQ > 1) vs sektor non-basis (LQ <= 1) pada 7 kabupaten/kota "
+            "dengan acuan struktur ekonomi Provinsi Kepulauan Riau."
+        ),
+        "column_labels": {
+            "Kabupaten_Kota": "Kabupaten / Kota",
+            "No": "No",
+            "Kode": "Kode Sektor",
+            "Lapangan_Usaha": "Lapangan Usaha",
+            "2021": "2021",
+            "2022": "2022",
+            "2023": "2023",
+            "2024*": "2024*",
+            "2025**": "2025**",
+            "Rata_rata": "Rata-rata Nilai LQ",
+            "Keterangan": "Klasifikasi Basis / Non Basis",
+        },
+    },
 }
 
 DATASET_OPTIONS = [
@@ -218,11 +319,15 @@ DATASET_OPTIONS = [
     {"label": "3. Sumber Pertumbuhan Ekonomi (SOG y-on-y & q-to-q)", "value": "sumber_pertumbuhan"},
     {"label": "4. Indeks & Laju Deflator Implisit Sektoral", "value": "implisit"},
     {"label": "5. Proyeksi Jumlah Penduduk Daerah (2020–2025)", "value": "penduduk"},
-    {"label": "6. Makro: Konsumsi Rumah Tangga (APC & MPC)", "value": "konsumsi_apc_mpc"},
-    {"label": "7. Makro: ICOR & Investasi Modal (PMTB)", "value": "icor"},
-    {"label": "8. Makro: ILOR & Elastisitas Tenaga Kerja (ETK)", "value": "ilor_etk"},
-    {"label": "9. Makro: Tax Ratio & Penerimaan Daerah", "value": "tax_ratio"},
-    {"label": "10. Makro: Neraca Perdagangan & RPI (Ekspor-Impor)", "value": "perdagangan_internasional"},
+    {"label": "6. Wilayah: Ketimpangan Williamson & Bonet Kepri", "value": "williamson_bonet_kepri"},
+    {"label": "7. Wilayah: Komparasi Ketimpangan Se-Sumatera", "value": "williamson_bonet_sumatera"},
+    {"label": "8. Wilayah: Shift-Share Kab/Kota (N, P, D)", "value": "shift_share_kk"},
+    {"label": "9. Wilayah: Location Quotient (LQ) Sektoral Daerah", "value": "lq_kk"},
+    {"label": "10. Makro: Konsumsi Rumah Tangga (APC & MPC)", "value": "konsumsi_apc_mpc"},
+    {"label": "11. Makro: ICOR & Investasi Modal (PMTB)", "value": "icor"},
+    {"label": "12. Makro: ILOR & Elastisitas Tenaga Kerja (ETK)", "value": "ilor_etk"},
+    {"label": "13. Makro: Tax Ratio & Penerimaan Daerah", "value": "tax_ratio"},
+    {"label": "14. Makro: Neraca Perdagangan & RPI (Ekspor-Impor)", "value": "perdagangan_internasional"},
 ]
 
 
