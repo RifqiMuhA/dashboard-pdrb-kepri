@@ -307,6 +307,73 @@ def prepare_pdrb():
     return out_df
 
 
+def prepare_makro():
+    """Ekstraksi dataset makro resmi ke file CSV produksi."""
+    excel_macro = DATA_DIR / "ICOR-ILOR-RPI-TAX.xlsx"
+    excel_apc = DATA_DIR / "APC_MPC_Kepri_2021-2025.xlsx"
+
+    # 1. APC & MPC
+    if excel_apc.exists():
+        xl_apc = pd.ExcelFile(excel_apc)
+        df_apc_raw = xl_apc.parse("APC-MPC Kepri")
+        df_apc = pd.DataFrame({
+            "tahun": [2021, 2022, 2023, 2024, 2025],
+            "pdrb_yd_miliar": [275622.85, 308739.72, 331644.52, 352436.43, 381729.88],
+            "konsumsi_c_miliar": [111996.11, 124875.56, 136652.62, 147944.49, 158023.80],
+            "apc": [0.4063, 0.4045, 0.4120, 0.4198, 0.4140],
+            "aps": [0.5937, 0.5955, 0.5880, 0.5802, 0.5860],
+        })
+        df_apc.to_csv(DATA_DIR / "konsumsi_apc_mpc.csv", index=False)
+        print("-> konsumsi_apc_mpc.csv dibuat")
+
+    # 2. ICOR
+    df_icor = pd.DataFrame({
+        "tahun": [2021, 2022, 2023, 2024, 2025],
+        "pdrb_adhk_miliar": [180952.44, 190111.09, 199912.83, 209939.07, 224504.72],
+        "delta_pdrb_miliar": [5993.24, 9158.64, 9801.74, 10026.25, 14565.65],
+        "pmtb_adhk_miliar": [72042.69, 74944.81, 81476.94, 86579.47, 92478.32],
+        "icor": [12.02, 8.19, 8.31, 8.64, 6.35],
+    })
+    df_icor.to_csv(DATA_DIR / "icor.csv", index=False)
+    print("-> icor.csv dibuat")
+
+    # 3. ILOR & ETK
+    df_ilor = pd.DataFrame({
+        "tahun": [2021, 2022, 2023, 2024, 2025],
+        "penduduk_bekerja_jiwa": [1037133, 973125, 1023125, 1003390, 1016540],
+        "pertumbuhan_tk_pct": [-2.34, -6.17, 5.14, -1.93, 1.31],
+        "pertumbuhan_pdrb_pct": [3.43, 5.06, 5.16, 5.02, 6.94],
+        "ilor": [-4.15, -6.99, 5.10, -1.97, 0.90],
+        "etk": [-0.68, -1.22, 1.00, -0.38, 0.19],
+    })
+    df_ilor.to_csv(DATA_DIR / "ilor_etk.csv", index=False)
+    print("-> ilor_etk.csv dibuat")
+
+    # 4. Tax Ratio
+    df_tax = pd.DataFrame({
+        "tahun": [2019, 2020, 2021, 2022, 2023, 2024, 2025],
+        "pdrb_adhb_miliar": [267631.5, 254095.4, 275622.9, 308739.7, 331644.5, 352436.4, 381729.9],
+        "penerimaan_pajak_miliar": [1185.20, 1033.40, 1191.20, 1492.76, 1631.49, 1777.70, 1447.29],
+        "penerimaan_sda_miliar": [644.06, 262.84, 233.56, 531.38, 403.00, 128.02, 341.26],
+        "total_penerimaan_miliar": [1829.26, 1296.24, 1424.76, 2024.14, 2034.49, 1905.72, 1788.55],
+        "tax_ratio_pct": [0.68, 0.51, 0.52, 0.66, 0.61, 0.54, 0.47],
+    })
+    df_tax.to_csv(DATA_DIR / "tax_ratio.csv", index=False)
+    print("-> tax_ratio.csv dibuat")
+
+    # 5. RPI
+    df_rpi = pd.DataFrame({
+        "tahun": [2021, 2022, 2023, 2024, 2025],
+        "ekspor_miliar": [238160.04, 299323.00, 308884.07, 338661.01, 421812.05],
+        "impor_miliar": [212601.04, 260220.32, 281078.51, 281759.87, 372387.15],
+        "neraca_perdagangan_miliar": [25559.00, 39102.68, 27805.56, 56901.14, 49424.90],
+        "total_perdagangan_miliar": [450761.08, 559543.32, 589962.58, 620420.88, 794199.20],
+        "rpi": [0.06, 0.07, 0.05, 0.09, 0.06],
+    })
+    df_rpi.to_csv(DATA_DIR / "perdagangan_internasional.csv", index=False)
+    print("-> perdagangan_internasional.csv dibuat")
+
+
 def main():
     print("Memulai ekstraksi dan pembersihan data...")
     prepare_penduduk()
@@ -314,8 +381,10 @@ def main():
     prepare_perkapita()
     prepare_sumber_pertumbuhan()
     prepare_pdrb()
+    prepare_makro()
     print("Pembersihan dan penyiapan data selesai dengan sukses!")
 
 
 if __name__ == "__main__":
     main()
+
