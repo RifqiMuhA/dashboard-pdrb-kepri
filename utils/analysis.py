@@ -77,12 +77,29 @@ def hitung_williamson(df_perkapita: pd.DataFrame, df_penduduk: pd.DataFrame, tah
     """
     sub = df_perkapita[df_perkapita["tahun"] == tahun].copy()
     sub = sub.merge(df_penduduk, on=["kab_kota", "tahun"], suffixes=("", "_pop"))
+    if sub.empty:
+        return 0.0
+    col_pk = "pdrb_perkapita"
+    if col_pk not in sub.columns:
+        for c in ["perkapita_adhk_juta", "perkapita_adhk_ribu", "perkapita_adhb_juta", "perkapita_adhb_ribu"]:
+            if c in sub.columns:
+                col_pk = c
+                break
+    if col_pk not in sub.columns:
+        return 0.0
     total_pop = sub["jumlah_penduduk"].sum()
-    yn = (sub["pdrb_perkapita"] * sub["jumlah_penduduk"]).sum() / total_pop  # rata-rata tertimbang
+    if total_pop <= 0:
+        return 0.0
+    yn = (sub[col_pk] * sub["jumlah_penduduk"]).sum() / total_pop  # rata-rata tertimbang
+    if yn <= 0 or pd.isna(yn):
+        return 0.0
     sub["weight"] = sub["jumlah_penduduk"] / total_pop
-    sub["sq_dev"] = (sub["pdrb_perkapita"] - yn) ** 2 * sub["weight"]
-    iw = (sub["sq_dev"].sum()) ** 0.5 / yn
-    return iw
+    sub["sq_dev"] = (sub[col_pk] - yn) ** 2 * sub["weight"]
+    sq_sum = sub["sq_dev"].sum()
+    if sq_sum <= 0 or pd.isna(sq_sum):
+        return 0.0
+    iw = (sq_sum ** 0.5) / yn
+    return float(iw)
 
 
 def hitung_williamson_series(df_perkapita: pd.DataFrame, df_penduduk: pd.DataFrame) -> pd.DataFrame:

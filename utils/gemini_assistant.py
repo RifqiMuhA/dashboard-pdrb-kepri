@@ -1,21 +1,47 @@
 """
 Modul Integrasi AI Gemini untuk Asisten Analisis PDRB Kepulauan Riau.
-Menggunakan SDK resmi google-genai dan model gemini-3.6-flash.
+Menggunakan Google Generative Language REST API bawaan Python (urllib).
+Bebas dependensi eksternal untuk menjamin kompatibilitas 100% di PythonAnywhere.
 Data grounded berbasis dataset resmi BPS Kepulauan Riau (2021-2025).
 """
 
+import json
 import os
 from pathlib import Path
-from dotenv import load_dotenv
+import urllib.error
+import urllib.request
 import pandas as pd
-from google import genai
-from google.genai import types
 
-# 1. Muat Environment Variable dari .env
+# 1. Muat Environment Variable dari .env secara aman
 _BASE_DIR = Path(__file__).resolve().parent.parent
 _ENV_PATH = _BASE_DIR / ".env"
-if _ENV_PATH.exists():
-    load_dotenv(_ENV_PATH)
+
+
+def _load_env_safely():
+    try:
+        from dotenv import load_dotenv
+
+        if _ENV_PATH.exists():
+            load_dotenv(_ENV_PATH)
+    except ImportError:
+        # Fallback manual parser tanpa butuh paket python-dotenv
+        if _ENV_PATH.exists():
+            try:
+                with open(_ENV_PATH, "r", encoding="utf-8") as f:
+                    for line in f:
+                        line = line.strip()
+                        if line and not line.startswith("#") and "=" in line:
+                            k, v = line.split("=", 1)
+                            k = k.strip()
+                            v = v.strip().strip("'\"")
+                            if k and k not in os.environ:
+                                os.environ[k] = v
+            except Exception:
+                pass
+
+
+_load_env_safely()
+
 CANDIDATE_MODELS = ["gemini-3.5-flash", "gemini-3.6-flash", "gemini-3.5-flash-lite"]
 
 
@@ -54,46 +80,59 @@ def build_system_knowledge() -> str:
             pk_2025 = df_pk[df_pk["tahun"] == 2025].sort_values("perkapita_adhk_juta", ascending=False)
             facts.append("\n[PDRB Per Kapita Riil ADHK Tahun 2025 (Juta Rp/jiwa)]:")
             for _, r in pk_2025.iterrows():
-                facts.append(f"- {r['kab_kota']}: Rp {r['perkapita_adhk_juta']:.2f} Juta/jiwa (Nominal ADHB: Rp {r['perkapita_adhb_juta']:.2f} Juta)")
+                facts.append(
+                    f"- {r['kab_kota']}: Rp {r['perkapita_adhk_juta']:.2f} Juta/jiwa (Nominal ADHB: Rp {r['perkapita_adhb_juta']:.2f} Juta)"
+                )
 
         # 3. Struktur Sektor Utama (Share terbesar di Kepri)
         facts.append("\n[Struktur 3 Sektor Ekonomi Terbesar Kepri]:")
-        facts.append("1. Industri Pengolahan: Kontribusi ~39.4% (Didominasi industri manufaktur di Kota Batam dan Bintan).")
+        facts.append(
+            "1. Industri Pengolahan: Kontribusi ~39.4% (Didominasi industri manufaktur di Kota Batam dan Bintan)."
+        )
         facts.append("2. Konstruksi: Kontribusi ~19.2% (Pembangunan infrastruktur dan properti kawasan industri).")
         facts.append("3. Perdagangan Besar & Eceran: Kontribusi ~8.9% (Distribusi logistik kepulauan).")
 
         # 4. Indikator Makroekonomi
         facts.append("\n[Indikator Makro & Efisiensi Ekonomi Kepri]:")
-        facts.append("- ICOR (Incremental Capital Output Ratio): Mengalami perbaikan efisiensi signifikan dari 12.02 (2021) menjadi 6.35 (2025). Semakin rendah ICOR, semakin efisien investasi modal fisik (PMTB) menghasilkan tambahan output ekonomi.")
-        facts.append("- APC (Average Propensity to Consume): Rata-rata ~41.1% dari pendapatan disposabel dibelanjakan untuk konsumsi rumah tangga, sisanya (~58.9%) berupa tabungan/investasi (APS).")
-        facts.append("- Tax Ratio: Rasio penerimaan pajak daerah dan DBH SDA terhadap PDRB berkisar 0.47% - 0.68%.")
-        facts.append("- Rasio Perdagangan Internasional (RPI): Kepri konsisten surplus perdagangan luar negeri (RPI positif ~0.06 - 0.09) dengan nilai ekspor mencapai Rp 421,8 T di 2025.")
-        facts.append("- Ketimpangan Regional (Indeks Williamson): Berkisar ~0.56, mencerminkan konsentrasi volume ekonomi yang sangat tinggi di Kota Batam (~75% total ekonomi Kepri) dibandingkan daerah kepulauan lainnya.")
+        facts.append(
+            "- ICOR (Incremental Capital Output Ratio): Mengalami perbaikan efisiensi signifikan dari 12.02 (2021) menjadi 6.35 (2025). Semakin rendah ICOR, semakin efisien investasi modal fisik (PMTB) menghasilkan tambahan output ekonomi."
+        )
+        facts.append(
+            "- APC (Average Propensity to Consume): Rata-rata ~41.1% dari pendapatan disposabel dibelanjakan untuk konsumsi rumah tangga, sisanya (~58.9%) berupa tabungan/investasi (APS)."
+        )
+        facts.append(
+            "- Tax Ratio: Rasio penerimaan pajak daerah dan DBH SDA terhadap PDRB berkisar 0.47% - 0.68%."
+        )
+        facts.append(
+            "- Rasio Perdagangan Internasional (RPI): Kepri konsisten surplus perdagangan luar negeri (RPI positif ~0.06 - 0.09) dengan nilai ekspor mencapai Rp 421,8 T di 2025."
+        )
+        facts.append(
+            "- Ketimpangan Regional (Indeks Williamson): Berkisar ~0.56, mencerminkan konsentrasi volume ekonomi yang sangat tinggi di Kota Batam (~75% total ekonomi Kepri) dibandingkan daerah kepulauan lainnya."
+        )
 
         return "\n".join(facts)
-    except Exception as e:
+    except Exception:
         return "Gunakan data resmi Provinsi Kepulauan Riau (2021-2025) untuk menjawab pertanyaan."
 
 
 def tanya_gemini(pertanyaan: str, riwayat_chat: list = None) -> str:
     """
-    Mengirim pertanyaan pengguna ke model Gemini 3.6 Flash dengan System Instruction dan data grounding.
+    Mengirim pertanyaan pengguna ke endpoint REST Gemini dengan System Instruction dan data grounding.
+    Menggunakan urllib bawaan tanpa butuh paket google-genai eksternal.
     riwayat_chat: list of dict [{"role": "user"|"model", "text": "..."}]
     """
     api_key = get_api_key()
     if not api_key or api_key == "your_gemini_api_key_here":
         return (
-            "⚠️ **API Key Gemini belum terkonfigurasi.**\n\n"
-            "Silakan masukkan kunci API Anda di file `.env` pada variabel `GEMINI_API_KEY`.\n"
-            "Anda dapat memperoleh API Key gratis di [Google AI Studio](https://aistudio.google.com/)."
+            "API Key Gemini belum terkonfigurasi.\n\n"
+            "Silakan masukkan kunci API Anda di file `.env` pada variabel `GEMINI_API_KEY`."
         )
 
     try:
-        client = genai.Client(api_key=api_key)
         knowledge = build_system_knowledge()
 
         system_instruction = (
-            "Anda adalah Asisten Cerdas dan Analis Ekonomi PDRB Provinsi Kepulauan Riau dari BPS. "
+            "Anda adalah Asisten Analis Ekonomi PDRB Provinsi Kepulauan Riau dari BPS. "
             "Tugas Anda adalah membantu pengguna memahami data PDRB, disparitas wilayah, pertumbuhan ekonomi, "
             "dan indikator makro 7 Kabupaten/Kota di Kepulauan Riau (Karimun, Bintan, Natuna, Lingga, Anambas, Batam, Tanjungpinang) periode 2021–2025.\n\n"
             "PEDOMAN MENJAWAB:\n"
@@ -104,53 +143,75 @@ def tanya_gemini(pertanyaan: str, riwayat_chat: list = None) -> str:
             f"{knowledge}"
         )
 
-        config = types.GenerateContentConfig(
-            system_instruction=system_instruction,
-            temperature=0.3,
-            max_output_tokens=1000,
-        )
-
-        # Siapkan payload pesan
+        # Siapkan payload percakapan
         contents = []
         if riwayat_chat:
-            # Ambil maksimal 6 percakapan terakhir agar konteks terjaga tanpa melebihi batas
             for chat in riwayat_chat[-6:]:
                 role = "user" if chat.get("role") == "user" else "model"
-                contents.append(types.Content(
-                    role=role,
-                    parts=[types.Part.from_text(text=chat.get("text", ""))]
-                ))
+                text = chat.get("text", "")
+                if text:
+                    contents.append({
+                        "role": role,
+                        "parts": [{"text": text}],
+                    })
 
-        contents.append(types.Content(
-            role="user",
-            parts=[types.Part.from_text(text=pertanyaan)]
-        ))
+        contents.append({
+            "role": "user",
+            "parts": [{"text": pertanyaan}],
+        })
+
+        payload = {
+            "system_instruction": {
+                "parts": [{"text": system_instruction}]
+            },
+            "contents": contents,
+            "generationConfig": {
+                "temperature": 0.2,
+                "maxOutputTokens": 800,
+            },
+        }
+
+        data_bytes = json.dumps(payload).encode("utf-8")
 
         last_error = None
         for model_name in CANDIDATE_MODELS:
+            url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent?key={api_key}"
+            req = urllib.request.Request(
+                url,
+                data=data_bytes,
+                headers={"Content-Type": "application/json"},
+                method="POST",
+            )
             try:
-                response = client.models.generate_content(
-                    model=model_name,
-                    contents=contents,
-                    config=config,
-                )
-                if response and response.text:
-                    return response.text.strip()
-            except Exception as model_err:
-                last_error = model_err
-                # Jika error karena key invalid, tidak perlu dicoba ke model lain
-                err_text = str(model_err)
-                if "API_KEY_INVALID" in err_text or "400" in err_text:
+                with urllib.request.urlopen(req, timeout=20) as resp:
+                    resp_data = json.loads(resp.read().decode("utf-8"))
+                    candidates = resp_data.get("candidates", [])
+                    if candidates:
+                        parts = candidates[0].get("content", {}).get("parts", [])
+                        if parts and "text" in parts[0]:
+                            return parts[0]["text"].strip()
+            except urllib.error.HTTPError as http_err:
+                last_error = http_err
+                err_code = http_err.code
+                try:
+                    err_body = http_err.read().decode("utf-8")
+                except Exception:
+                    err_body = ""
+                if err_code == 400 or "API_KEY_INVALID" in err_body:
                     return "Kunci API Gemini tidak valid. Mohon periksa kembali nilai `GEMINI_API_KEY` di file `.env`."
+                if err_code == 429 or "RESOURCE_EXHAUSTED" in err_body:
+                    return "Batas kuota API Gemini telah tercapai. Mohon tunggu beberapa saat sebelum mencoba kembali."
+                # 503 / 404 -> coba model kandidat berikutnya
+                continue
+            except Exception as conn_err:
+                last_error = conn_err
                 continue
 
         if last_error:
-            error_str = str(last_error)
-            if "429" in error_str or "RESOURCE_EXHAUSTED" in error_str:
-                return "Batas kuota harian/menit API Gemini telah tercapai (Rate Limit). Mohon tunggu beberapa saat sebelum mencoba kembali."
-            return f"Terjadi kendala saat menghubungi Asisten AI: {error_str}"
+            return f"Terjadi kendala saat menghubungi Asisten AI: {last_error}"
 
         return "Maaf, tidak ada respon yang berhasil diperoleh. Silakan coba kembali."
 
     except Exception as e:
         return f"Terjadi kendala saat memproses permintaan: {e}"
+
