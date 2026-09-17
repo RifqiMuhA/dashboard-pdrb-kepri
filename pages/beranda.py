@@ -8,14 +8,7 @@ dash.register_page(__name__, path="/", name="Beranda")
 
 INITIAL_GREETING = {
     "role": "model",
-    "text": (
-        "Halo! Saya **Asisten Analis PDRB Kepulauan Riau** berbasis AI.\n\n"
-        "Saya telah dibekali basis data resmi BPS mengenai **PDRB Riil (ADHK 2010)**, "
-        "**PDRB Per Kapita**, **Sumber Pertumbuhan (SOG)**, serta indikator makroekonomi "
-        "(**ICOR, ILOR, Tax Ratio, dan Neraca Perdagangan**) 7 Kabupaten/Kota "
-        "periode **2021–2025**.\n\n"
-        "Silakan ketik pertanyaan Anda atau gunakan tombol pertanyaan cepat di atas untuk memulai analisis."
-    ),
+    "text": "Halo! Ada yang bisa saya bantu terkait data dan indikator PDRB Kepulauan Riau?",
 }
 
 QUICK_PROMPTS = {
@@ -35,17 +28,27 @@ def render_chat_bubbles(history):
         if role == "user":
             bubbles.append(
                 html.Div(
-                    className="chat-bubble-user",
-                    children=html.P(text, style={"margin": 0}),
+                    className="chat-msg-row-user",
+                    children=html.Div(
+                        className="chat-bubble-user",
+                        children=html.P(text, style={"margin": 0}),
+                    ),
                 )
             )
         else:
             bubbles.append(
                 html.Div(
-                    className="chat-bubble-ai",
+                    className="chat-msg-row-ai",
                     children=[
-                        html.Div("Asisten Analis PDRB (BPS Kepri)", className="chat-ai-label"),
-                        dcc.Markdown(text, className="chat-ai-markdown"),
+                        html.Img(
+                            src="/assets/maskot_1.webp",
+                            className="chat-avatar-ai",
+                            alt="Maskot PDRB",
+                        ),
+                        html.Div(
+                            className="chat-bubble-ai",
+                            children=dcc.Markdown(text, className="chat-ai-markdown"),
+                        ),
                     ],
                 )
             )
@@ -69,7 +72,7 @@ layout = html.Div(
                                     className="hero-title",
                                 ),
                                 html.P(
-                                    "Pemantauan indikator ekonomi 7 Kabupaten/Kota dan Asisten Analis Cerdas AI terintegrasi (2021–2025).",
+                                    "Pemantauan indikator ekonomi 7 Kabupaten/Kota Provinsi Kepulauan Riau (2021–2025).",
                                     className="hero-subtitle",
                                 ),
                                 html.Div(
@@ -103,14 +106,8 @@ layout = html.Div(
                 html.Div(
                     className="ai-chat-header",
                     children=[
-                        html.Div([
-                            html.H3("Tanya Jawab Analis PDRB Kepri", className="card-title", style={"margin": 0}),
-                            html.Span(
-                                "Konsultasi cerdas data PDRB, disparitas wilayah, dan indikator makro berbasis data resmi BPS.",
-                                style={"fontSize": "12px", "color": COLORS["gray_mid"]},
-                            ),
-                        ]),
-                        html.Div("Gemini AI Active", className="ai-status-badge"),
+                        html.H3("Tanya Data PDRB", className="card-title", style={"margin": 0}),
+                        html.Div("Online", className="ai-status-badge"),
                     ],
                 ),
 
@@ -119,11 +116,11 @@ layout = html.Div(
                     className="ai-quick-prompts",
                     children=[
                         html.Span("Topik Cepat:", className="quick-prompt-label"),
-                        html.Button("Ringkasan Ekonomi 2025", id="btn-qp-1", className="quick-prompt-pill"),
+                        html.Button("Ringkasan 2025", id="btn-qp-1", className="quick-prompt-pill"),
                         html.Button("Batam vs Bintan", id="btn-qp-2", className="quick-prompt-pill"),
                         html.Button("Sektor Utama", id="btn-qp-3", className="quick-prompt-pill"),
-                        html.Button("Efisiensi Investasi (ICOR)", id="btn-qp-4", className="quick-prompt-pill"),
-                        html.Button("Peringkat Per Kapita", id="btn-qp-5", className="quick-prompt-pill"),
+                        html.Button("Efisiensi (ICOR)", id="btn-qp-4", className="quick-prompt-pill"),
+                        html.Button("PDRB Per Kapita", id="btn-qp-5", className="quick-prompt-pill"),
                     ],
                 ),
 
@@ -146,7 +143,7 @@ layout = html.Div(
                         dcc.Input(
                             id="chat-user-input",
                             type="text",
-                            placeholder="Ketik pertanyaan analisis ekonomi Kepri di sini... (tekan Enter untuk kirim)",
+                            placeholder="Ketik pertanyaan data PDRB di sini... (Enter untuk kirim)",
                             className="chat-input-field",
                             debounce=False,
                             n_submit=0,
