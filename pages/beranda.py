@@ -1,49 +1,60 @@
-import json
-from pathlib import Path
-
 import dash
-from dash import html, dcc, callback, Output, Input
-import plotly.express as px
-import plotly.graph_objects as go
-import pandas as pd
+from dash import html, dcc, callback, Output, Input, State, ctx, no_update
 
-from utils.data_loader import DATA, PROVINSI_LABEL, get_years_list
-from utils.analysis import hitung_laju_pertumbuhan
-from theme import COLORS, KABKOTA_COLORS
+from theme import COLORS
+from utils.gemini_assistant import tanya_gemini
 
 dash.register_page(__name__, path="/", name="Beranda")
 
-_BASE_DIR = Path(__file__).resolve().parent.parent
-_GEOJSON_PATH = _BASE_DIR / "data" / "kepri_kabkota.geojson"
-
-with open(_GEOJSON_PATH, "r", encoding="utf-8") as f:
-    _GEOJSON = json.load(f)
-
-# Titik koordinat centroid untuk label nama kabupaten/kota di atas peta
-_CENTROIDS = {
-    "Kabupaten Karimun": {"lat": 0.88, "lon": 103.42, "short": "Karimun"},
-    "Kabupaten Bintan": {"lat": 1.05, "lon": 104.58, "short": "Bintan"},
-    "Kabupaten Natuna": {"lat": 3.90, "lon": 108.20, "short": "Natuna"},
-    "Kabupaten Lingga": {"lat": -0.15, "lon": 104.60, "short": "Lingga"},
-    "Kabupaten Kepulauan Anambas": {"lat": 3.05, "lon": 106.00, "short": "Anambas"},
-    "Kota Batam": {"lat": 1.05, "lon": 104.03, "short": "Batam"},
-    "Kota Tanjungpinang": {"lat": 0.92, "lon": 104.46, "short": "Tanjungpinang"},
+INITIAL_GREETING = {
+    "role": "model",
+    "text": (
+        "Halo! Saya **Asisten Analis PDRB Kepulauan Riau** berbasis AI.\n\n"
+        "Saya telah dibekali basis data resmi BPS mengenai **PDRB Riil (ADHK 2010)**, "
+        "**PDRB Per Kapita**, **Sumber Pertumbuhan (SOG)**, serta indikator makroekonomi "
+        "(**ICOR, ILOR, Tax Ratio, dan Neraca Perdagangan**) 7 Kabupaten/Kota "
+        "periode **2021–2025**.\n\n"
+        "Silakan ketik pertanyaan Anda atau gunakan tombol pertanyaan cepat di atas untuk memulai analisis."
+    ),
 }
 
-years = get_years_list()
-latest_year = max(years) if years else 2025
+QUICK_PROMPTS = {
+    "btn-qp-1": "Berikan ringkasan performa ekonomi Kepulauan Riau tahun 2025.",
+    "btn-qp-2": "Bandingkan skala dan pertumbuhan ekonomi Kota Batam vs Kabupaten Bintan.",
+    "btn-qp-3": "Sektor apa saja yang menjadi pendorong utama pertumbuhan ekonomi Kepri?",
+    "btn-qp-4": "Bagaimana efisiensi investasi modal (ICOR) Kepri dari 2021 hingga 2025?",
+    "btn-qp-5": "Bagaimana peringkat dan disparitas PDRB per kapita antar 7 kabupaten/kota?",
+}
 
-# Skala warna konsisten tema: Biru Tua (#0C203A) -> Navy (#173A66) -> Emas (#C99204) -> Kuning Aksen (#F2B705)
-BLUE_YELLOW_SCALE = [
-    (0.0, "#0C203A"),
-    (0.40, "#173A66"),
-    (0.72, "#C99204"),
-    (1.0, "#F2B705"),
-]
+
+def render_chat_bubbles(history):
+    bubbles = []
+    for msg in history:
+        role = msg.get("role")
+        text = msg.get("text", "")
+        if role == "user":
+            bubbles.append(
+                html.Div(
+                    className="chat-bubble-user",
+                    children=html.P(text, style={"margin": 0}),
+                )
+            )
+        else:
+            bubbles.append(
+                html.Div(
+                    className="chat-bubble-ai",
+                    children=[
+                        html.Div("Asisten Analis PDRB (BPS Kepri)", className="chat-ai-label"),
+                        dcc.Markdown(text, className="chat-ai-markdown"),
+                    ],
+                )
+            )
+    return bubbles
+
 
 layout = html.Div(
     [
-        # ── 1. Hero Card Banner Lebar Penuh (Tanpa Card Kecil-Kecil) ──────────
+        # ── 1. Hero Card Banner Lebar Penuh ───────────────────────────────────
         html.Div(
             className="home-top-row",
             children=[
@@ -58,7 +69,7 @@ layout = html.Div(
                                     className="hero-title",
                                 ),
                                 html.P(
-                                    "Pemantauan dan analisis indikator PDRB 7 Kabupaten/Kota Provinsi Kepulauan Riau (2021–2025).",
+                                    "Pemantauan indikator ekonomi 7 Kabupaten/Kota dan Asisten Analis Cerdas AI terintegrasi (2021–2025).",
                                     className="hero-subtitle",
                                 ),
                                 html.Div(
@@ -84,271 +95,156 @@ layout = html.Div(
             ],
         ),
 
-        # ── 2. Kontrol Filter Peta & Komparasi ─────────────────────────────
+        # ── 2. Asisten Cerdas AI Chat (Menggantikan Peta Spasial) ─────────────
         html.Div(
-            className="filter-row",
+            className="ai-chat-card",
             children=[
+                # Header Chat
                 html.Div(
-                    className="filter-item",
-                    style={"minWidth": "280px"},
+                    className="ai-chat-header",
                     children=[
-                        html.Label("Indikator Spasial", className="filter-label"),
-                        dcc.Dropdown(
-                            id="home-map-indikator",
-                            options=[
-                                {"label": "PDRB Riil ADHK 2010 (Miliar Rp)", "value": "adhk"},
-                                {"label": "PDRB Per Kapita Riil (Juta Rp/jiwa)", "value": "perkapita"},
-                                {"label": "Laju Pertumbuhan Ekonomi Riil (%)", "value": "pertumbuhan"},
-                            ],
-                            value="adhk",
-                            clearable=False,
-                        ),
+                        html.Div([
+                            html.H3("Tanya Jawab Analis PDRB Kepri", className="card-title", style={"margin": 0}),
+                            html.Span(
+                                "Konsultasi cerdas data PDRB, disparitas wilayah, dan indikator makro berbasis data resmi BPS.",
+                                style={"fontSize": "12px", "color": COLORS["gray_mid"]},
+                            ),
+                        ]),
+                        html.Div("Gemini AI Active", className="ai-status-badge"),
                     ],
                 ),
+
+                # Quick Prompt Pills
                 html.Div(
-                    className="filter-item",
-                    style={"minWidth": "160px"},
+                    className="ai-quick-prompts",
                     children=[
-                        html.Label("Tahun Analisis", className="filter-label"),
-                        dcc.Dropdown(
-                            id="home-map-tahun",
-                            options=[{"label": str(y), "value": y} for y in years],
-                            value=latest_year,
-                            clearable=False,
+                        html.Span("Topik Cepat:", className="quick-prompt-label"),
+                        html.Button("Ringkasan Ekonomi 2025", id="btn-qp-1", className="quick-prompt-pill"),
+                        html.Button("Batam vs Bintan", id="btn-qp-2", className="quick-prompt-pill"),
+                        html.Button("Sektor Utama", id="btn-qp-3", className="quick-prompt-pill"),
+                        html.Button("Efisiensi Investasi (ICOR)", id="btn-qp-4", className="quick-prompt-pill"),
+                        html.Button("Peringkat Per Kapita", id="btn-qp-5", className="quick-prompt-pill"),
+                    ],
+                ),
+
+                # Area Percakapan (Scroll Area)
+                dcc.Loading(
+                    id="chat-loading",
+                    type="dot",
+                    color=COLORS["primary"],
+                    children=html.Div(
+                        id="chat-messages-container",
+                        className="chat-scroll-area",
+                        children=render_chat_bubbles([INITIAL_GREETING]),
+                    ),
+                ),
+
+                # Input Bar
+                html.Div(
+                    className="ai-chat-input-row",
+                    children=[
+                        dcc.Input(
+                            id="chat-user-input",
+                            type="text",
+                            placeholder="Ketik pertanyaan analisis ekonomi Kepri di sini... (tekan Enter untuk kirim)",
+                            className="chat-input-field",
+                            debounce=False,
+                            n_submit=0,
+                        ),
+                        html.Button(
+                            "Kirim",
+                            id="btn-send-chat",
+                            className="hero-button",
+                            style={"height": "42px", "padding": "0 22px", "flexShrink": 0},
+                            n_clicks=0,
+                        ),
+                        html.Button(
+                            "Reset",
+                            id="btn-clear-chat",
+                            className="hero-button-outline",
+                            style={
+                                "height": "42px",
+                                "padding": "0 16px",
+                                "flexShrink": 0,
+                                "color": COLORS["primary_dark"],
+                                "borderColor": "rgba(23, 58, 102, 0.2)",
+                                "backgroundColor": "rgba(23, 58, 102, 0.05)",
+                            },
+                            n_clicks=0,
                         ),
                     ],
                 ),
             ],
         ),
 
-        # ── 3. Baris Peta Spasial & Grafik Peringkat Daerah ───────────────────
-        html.Div(
-            className="home-map-row",
-            children=[
-                # Peta Spasial (Sisi Kiri)
-                html.Div(
-                    className="home-map-card",
-                    children=[
-                        html.Div(
-                            style={"display": "flex", "justifyContent": "space-between", "alignItems": "center", "marginBottom": "12px"},
-                            children=[
-                                html.H3("Peta Sebaran Ekonomi Kepulauan Riau", className="card-title", style={"margin": 0}),
-                                html.Span(
-                                    id="home-map-badge",
-                                    style={
-                                        "fontSize": "11.5px",
-                                        "fontWeight": "600",
-                                        "color": COLORS["primary"],
-                                        "backgroundColor": "rgba(23, 58, 102, 0.08)",
-                                        "padding": "4px 10px",
-                                        "borderRadius": "6px",
-                                    },
-                                ),
-                            ],
-                        ),
-                        dcc.Graph(
-                            id="home-spatial-map",
-                            config={"displayModeBar": False},
-                            style={"height": "480px"},
-                        ),
-                    ],
-                ),
-                # Grafik Peringkat Daerah & Benchmark (Sisi Kanan)
-                html.Div(
-                    className="home-ranking-card",
-                    children=[
-                        html.H3("Peringkat Kabupaten / Kota", className="card-title", style={"marginBottom": "12px"}),
-                        dcc.Graph(
-                            id="home-ranking-chart",
-                            config={"displayModeBar": False},
-                            style={"height": "480px"},
-                        ),
-                    ],
-                ),
-            ],
-        ),
+        # Store History Percakapan
+        dcc.Store(id="chat-history-store", data=[INITIAL_GREETING]),
     ]
 )
 
 
-# ── Callbacks ─────────────────────────────────────────────────────────────
+# ── Callback Interaksi Chat AI ────────────────────────────────────────────────
 @callback(
-    Output("home-spatial-map", "figure"),
-    Output("home-ranking-chart", "figure"),
-    Output("home-map-badge", "children"),
-    Input("home-map-indikator", "value"),
-    Input("home-map-tahun", "value"),
+    Output("chat-messages-container", "children"),
+    Output("chat-history-store", "data"),
+    Output("chat-user-input", "value"),
+    Input("btn-send-chat", "n_clicks"),
+    Input("chat-user-input", "n_submit"),
+    Input("btn-qp-1", "n_clicks"),
+    Input("btn-qp-2", "n_clicks"),
+    Input("btn-qp-3", "n_clicks"),
+    Input("btn-qp-4", "n_clicks"),
+    Input("btn-qp-5", "n_clicks"),
+    Input("btn-clear-chat", "n_clicks"),
+    State("chat-user-input", "value"),
+    State("chat-history-store", "data"),
+    prevent_initial_call=True,
 )
-def update_beranda_visuals(indikator, tahun):
-    df_pdrb = DATA["pdrb"]
-    df_pk = DATA["perkapita"]
+def handle_chat_interaction(
+    send_clicks,
+    n_submit,
+    qp1_clicks,
+    qp2_clicks,
+    qp3_clicks,
+    qp4_clicks,
+    qp5_clicks,
+    clear_clicks,
+    user_input,
+    history_data,
+):
+    triggered_id = ctx.triggered_id
+    if not triggered_id:
+        return no_update, no_update, no_update
 
-    # 1. Total PDRB ADHK per kab/kota
-    sub_pdrb = df_pdrb[(df_pdrb["kab_kota"] != PROVINSI_LABEL) & (df_pdrb["tahun"] == tahun)]
-    agg_pdrb = sub_pdrb.groupby("kab_kota", as_index=False)["adhk"].sum()
+    # Jika tombol Reset diklik
+    if triggered_id == "btn-clear-chat":
+        reset_history = [INITIAL_GREETING]
+        return render_chat_bubbles(reset_history), reset_history, ""
 
-    # 2. PDRB Perkapita
-    sub_pk = df_pk[(df_pk["kab_kota"] != PROVINSI_LABEL) & (df_pk["tahun"] == tahun)][
-        ["kab_kota", "perkapita_adhk_juta", "perkapita_adhb_juta"]
-    ]
-
-    # 3. Laju Pertumbuhan
-    growth_df = hitung_laju_pertumbuhan(df_pdrb)
-    sub_growth = growth_df[(growth_df["kab_kota"] != PROVINSI_LABEL) & (growth_df["tahun"] == tahun)][
-        ["kab_kota", "laju_pertumbuhan"]
-    ]
-
-    # Gabungkan Data Kabupaten/Kota
-    df_m = pd.merge(agg_pdrb, sub_pk, on="kab_kota")
-    df_m = pd.merge(df_m, sub_growth, on="kab_kota")
-
-    # Ambil Nilai Acuan Provinsi Kepri
-    prov_row_pdrb = df_pdrb[(df_pdrb["kab_kota"] == PROVINSI_LABEL) & (df_pdrb["tahun"] == tahun)]
-    prov_adhk = prov_row_pdrb["adhk"].sum() if not prov_row_pdrb.empty else 0.0
-
-    prov_row_pk = df_pk[(df_pk["kab_kota"] == PROVINSI_LABEL) & (df_pk["tahun"] == tahun)]
-    prov_pk = prov_row_pk["perkapita_adhk_juta"].iloc[0] if not prov_row_pk.empty else 0.0
-
-    prov_row_growth = growth_df[(growth_df["kab_kota"] == PROVINSI_LABEL) & (growth_df["tahun"] == tahun)]
-    prov_growth = prov_row_growth["laju_pertumbuhan"].iloc[0] if not prov_row_growth.empty else 0.0
-
-    # Tentukan Kolom, Label, dan Format
-    if indikator == "adhk":
-        target_col = "adhk"
-        label_metrik = "PDRB Riil ADHK"
-        unit = "Miliar Rp"
-        val_format = ":,.1f"
-        prov_val = prov_adhk
-        badge_text = f"PDRB ADHK • Tahun {tahun}"
-    elif indikator == "perkapita":
-        target_col = "perkapita_adhk_juta"
-        label_metrik = "PDRB Per Kapita Riil"
-        unit = "Juta Rp/jiwa"
-        val_format = ":,.2f"
-        prov_val = prov_pk
-        badge_text = f"Per Kapita ADHK • Tahun {tahun}"
+    # Tentukan teks pertanyaan yang diajukan
+    if triggered_id in QUICK_PROMPTS:
+        prompt_text = QUICK_PROMPTS[triggered_id]
+    elif triggered_id in ("btn-send-chat", "chat-user-input"):
+        if not user_input or not user_input.strip():
+            return no_update, no_update, no_update
+        prompt_text = user_input.strip()
     else:
-        target_col = "laju_pertumbuhan"
-        label_metrik = "Laju Pertumbuhan Riil"
-        unit = "%"
-        val_format = ":.2f"
-        prov_val = prov_growth
-        badge_text = f"Pertumbuhan • Tahun {tahun}"
+        return no_update, no_update, no_update
 
-    df_m["display_val"] = df_m[target_col]
+    history = history_data if history_data else [INITIAL_GREETING]
 
-    # ── Bangun Peta Choropleth Interaktif ─────────────────────────────────
-    map_args = dict(
-        geojson=_GEOJSON,
-        locations="kab_kota",
-        featureidkey="properties.kab_kota",
-        color="display_val",
-        color_continuous_scale=BLUE_YELLOW_SCALE,
-        center={"lat": 2.1, "lon": 106.0},
-        zoom=5.1,
-        opacity=0.88,
-        hover_name="kab_kota",
-        hover_data={
-            "kab_kota": False,
-            "display_val": val_format,
-            "adhk": ":,.1f",
-            "perkapita_adhk_juta": ":.2f",
-            "laju_pertumbuhan": ":.2f",
-        },
-        labels={
-            "display_val": f"{label_metrik} ({unit})",
-            "adhk": "PDRB ADHK (M)",
-            "perkapita_adhk_juta": "Per Kapita (Jt)",
-            "laju_pertumbuhan": "Laju (%)",
-        },
-    )
+    # 1. Masukkan pertanyaan pengguna ke history
+    history.append({"role": "user", "text": prompt_text})
 
-    if hasattr(px, "choropleth_map"):
-        fig_map = px.choropleth_map(df_m, map_style="carto-positron", **map_args)
-        fig_map.add_trace(
-            go.Scattermap(
-                lat=[_CENTROIDS[k]["lat"] for k in df_m["kab_kota"] if k in _CENTROIDS],
-                lon=[_CENTROIDS[k]["lon"] for k in df_m["kab_kota"] if k in _CENTROIDS],
-                mode="text",
-                text=[_CENTROIDS[k]["short"] for k in df_m["kab_kota"] if k in _CENTROIDS],
-                textfont=dict(size=11, color="#0C203A", family="Inter, sans-serif"),
-                showlegend=False,
-                hoverinfo="skip",
-            )
-        )
-    else:
-        fig_map = px.choropleth_mapbox(df_m, mapbox_style="carto-positron", **map_args)
-        fig_map.add_trace(
-            go.Scattermapbox(
-                lat=[_CENTROIDS[k]["lat"] for k in df_m["kab_kota"] if k in _CENTROIDS],
-                lon=[_CENTROIDS[k]["lon"] for k in df_m["kab_kota"] if k in _CENTROIDS],
-                mode="text",
-                text=[_CENTROIDS[k]["short"] for k in df_m["kab_kota"] if k in _CENTROIDS],
-                textfont=dict(size=11, color="#0C203A", family="Inter, sans-serif"),
-                showlegend=False,
-                hoverinfo="skip",
-            )
-        )
+    # 2. Panggil API Gemini dengan grounding data
+    ai_answer = tanya_gemini(prompt_text, riwayat_chat=history)
 
-    if len(fig_map.data) > 0 and hasattr(fig_map.data[0], "marker") and hasattr(fig_map.data[0].marker, "line"):
-        fig_map.data[0].marker.line.width = 1.5
-        fig_map.data[0].marker.line.color = "rgba(255, 255, 255, 0.95)"
-    fig_map.update_layout(
-        margin=dict(l=0, r=0, t=0, b=0),
-        coloraxis_colorbar=dict(
-            title=f"{unit}",
-            thickness=14,
-            len=0.75,
-            x=0.98,
-            xanchor="right",
-            y=0.5,
-            title_font=dict(size=11),
-            tickfont=dict(size=10),
-        ),
-    )
+    # 3. Masukkan jawaban AI ke history
+    history.append({"role": "model", "text": ai_answer})
 
-    # ── Bangun Grafik Batang Peringkat Daerah ─────────────────────────────
-    df_sorted = df_m.sort_values("display_val", ascending=True).reset_index(drop=True)
-    bar_colors = [KABKOTA_COLORS.get(kk, COLORS["primary"]) for kk in df_sorted["kab_kota"]]
+    # 4. Render tampilan visual chat baru
+    new_bubbles = render_chat_bubbles(history)
 
-    if indikator == "adhk":
-        bar_text = [f"Rp {v:,.1f} M" for v in df_sorted["display_val"]]
-    elif indikator == "perkapita":
-        bar_text = [f"Rp {v:,.1f} Jt" for v in df_sorted["display_val"]]
-    else:
-        bar_text = [f"{v:+.2f}%" for v in df_sorted["display_val"]]
+    return new_bubbles, history, ""
 
-    fig_rank = go.Figure(
-        go.Bar(
-            y=df_sorted["kab_kota"],
-            x=df_sorted["display_val"],
-            orientation="h",
-            marker=dict(color=bar_colors),
-            text=bar_text,
-            textposition="outside",
-            hovertemplate=f"<b>%{{y}}</b><br>{label_metrik}: %{{x{val_format}}} {unit}<extra></extra>",
-        )
-    )
-
-    # Tambahkan garis acuan provinsi jika indikator bukan total volume PDRB
-    if indikator != "adhk" and prov_val > 0:
-        fig_rank.add_vline(
-            x=prov_val,
-            line_dash="dash",
-            line_color=COLORS["accent_dark"],
-            line_width=2,
-            annotation_text=f"Rata-rata Kepri: {prov_val:.2f}{unit}",
-            annotation_position="top right",
-            annotation_font=dict(size=10, color=COLORS["accent_dark"]),
-        )
-
-    fig_rank.update_layout(
-        margin=dict(l=10, r=80, t=10, b=30),
-        xaxis=dict(showgrid=True, gridcolor="#EFEFEF", title=f"{label_metrik} ({unit})"),
-        yaxis=dict(showgrid=False, title=""),
-        plot_bgcolor="white",
-        paper_bgcolor="white",
-    )
-
-    return fig_map, fig_rank, badge_text
 
