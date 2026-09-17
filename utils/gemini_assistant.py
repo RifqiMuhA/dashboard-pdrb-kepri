@@ -42,7 +42,7 @@ def _load_env_safely():
 
 _load_env_safely()
 
-CANDIDATE_MODELS = ["gemini-3.5-flash", "gemini-3.6-flash", "gemini-3.5-flash-lite"]
+CANDIDATE_MODELS = ["gemini-3.6-flash", "gemini-3.5-flash"]
 
 
 def get_api_key() -> str:
@@ -167,45 +167,69 @@ def tanya_gemini(pertanyaan: str, riwayat_chat: list = None) -> str:
             "contents": contents,
             "generationConfig": {
                 "temperature": 0.2,
-                "maxOutputTokens": 800,
+                "maxOutputTokens": 3000,
+                "thinkingConfig": {
+                    "thinkingBudget": 0
+                }
             },
         }
-
-        data_bytes = json.dumps(payload).encode("utf-8")
 
         last_error = None
         for model_name in CANDIDATE_MODELS:
             url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent?key={api_key}"
-            req = urllib.request.Request(
-                url,
-                data=data_bytes,
-                headers={"Content-Type": "application/json"},
-                method="POST",
-            )
-            try:
-                with urllib.request.urlopen(req, timeout=20) as resp:
-                    resp_data = json.loads(resp.read().decode("utf-8"))
-                    candidates = resp_data.get("candidates", [])
-                    if candidates:
-                        parts = candidates[0].get("content", {}).get("parts", [])
-                        if parts and "text" in parts[0]:
-                            return parts[0]["text"].strip()
-            except urllib.error.HTTPError as http_err:
-                last_error = http_err
-                err_code = http_err.code
+            
+            # Coba kirim request (dengan fallback jika thinkingConfig tidak didukung)
+            for current_payload in [
+                payload,
+                {
+                    "system_instruction": payload["system_instruction"],
+                    "contents": payload["contents"],
+                    "generationConfig": {
+                        "temperature": 0.2,
+                        "maxOutputTokens": 3000,
+                    },
+                },
+            ]:
+                data_bytes = json.dumps(current_payload).encode("utf-8")
+                req = urllib.request.Request(
+                    url,
+                    data=data_bytes,
+                    headers={"Content-Type": "application/json"},
+                    method="POST",
+                )
                 try:
-                    err_body = http_err.read().decode("utf-8")
-                except Exception:
-                    err_body = ""
-                if err_code == 400 or "API_KEY_INVALID" in err_body:
-                    return "Kunci API Gemini tidak valid. Mohon periksa kembali nilai `GEMINI_API_KEY` di file `.env`."
-                if err_code == 429 or "RESOURCE_EXHAUSTED" in err_body:
-                    return "Batas kuota API Gemini telah tercapai. Mohon tunggu beberapa saat sebelum mencoba kembali."
-                # 503 / 404 -> coba model kandidat berikutnya
-                continue
-            except Exception as conn_err:
-                last_error = conn_err
-                continue
+                    with urllib.request.urlopen(req, timeout=35) as resp:
+                        resp_data = json.loads(resp.read().decode("utf-8"))
+                        candidates = resp_data.get("candidates", [])
+                        if candidates:
+                            parts = candidates[0].get("content", {}).get("parts", [])
+                            text_chunks = [p.get("text", "") for p in parts if "text" in p]
+                            full_text = "".join(text_chunks).strip()
+                            if full_text:
+                                return full_text
+                    # Jika berhasil, keluar dari loop payload
+                    break
+                except urllib.error.HTTPError as http_err:
+                    last_error = http_err
+                    err_code = http_err.code
+                    try:
+                        err_body = http_err.read().decode("utf-8")
+                    except Exception:
+                        err_body = ""
+
+                    if err_code == 400:
+                        if "API_KEY_INVALID" in err_body:
+                            return "Kunci API Gemini tidak valid. Mohon periksa kembali nilai `GEMINI_API_KEY` di file `.env`."
+                        # Coba payload berikutnya tanpa thinkingConfig
+                        continue
+                    if err_code == 429 or "RESOURCE_EXHAUSTED" in err_body:
+                        return "Batas kuota API Gemini telah tercapai. Mohon tunggu beberapa saat sebelum mencoba kembali."
+                    # 503 / 404 -> coba model kandidat berikutnya
+                    break
+                except Exception as conn_err:
+                    last_error = conn_err
+                    break
+
 
         if last_error:
             return f"Terjadi kendala saat menghubungi Asisten AI: {last_error}"
